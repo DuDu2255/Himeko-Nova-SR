@@ -1,4 +1,4 @@
 {
-  "disable_proxy": false,
+  "disable_proxy": true,
   "scene_debug": true
 }
