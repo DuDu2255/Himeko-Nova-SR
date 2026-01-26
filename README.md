@@ -60,4 +60,3 @@ protocol/                # 协议文件
 ## 贡献
 欢迎提交PR和Issue.
 感谢[Reversed Rooms](discord.gg/reversedrooms)，以及[他们的开源服务器](https://git.xeondev.com/HonkaiSlopRail/yaoguang-sr)
-感谢Kain开发的[代理服务器](https://git.kain.io.vn/Firefly-Shelter/FireflyGo_Proxy)

@@ -5,9 +5,9 @@ const protobuf = @import("protobuf");
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
+    const ps_version = b.option([]const u8, "ps_version", "CastoricePS version string (used by launcher updater)") orelse "dev";
 
     const dep_opts = .{ .target = target, .optimize = optimize };
-
     const protobuf_dep = b.dependency("protobuf", dep_opts);
 
     if (std.fs.cwd().access("protocol/StarRail.proto", .{})) {
@@ -32,28 +32,36 @@ pub fn build(b: *std.Build) void {
         b.installArtifact(program.artifact("CastoricePS"));
     }
 
-    // Optional: build bundled firefly-go-proxy (Go) and install it next to CastoricePS.
-    // Only run for native builds so cross-compiling doesn't require Go toolchains.
-    if (target.result.os.tag == builtin.os.tag and target.result.cpu.arch == builtin.cpu.arch) {
-        const proxy_dir = b.path("fireflygo_proxy");
-        const proxy_exe_name = if (target.result.os.tag == .windows) "firefly-proxy.exe" else "firefly-proxy";
-        const proxy_out = b.pathFromRoot(b.getInstallPath(.bin, proxy_exe_name));
-        const build_proxy_cmd = b.addSystemCommand(&.{
-            "go",
-            "build",
-            "-trimpath",
-            "-ldflags=-s -w",
-            "-o",
-            proxy_out,
-            ".",
-        });
-        build_proxy_cmd.setCwd(proxy_dir);
-        if (target.result.os.tag == .windows) {
-            build_proxy_cmd.setEnvironmentVariable("GOOS", "windows");
-            build_proxy_cmd.setEnvironmentVariable("GOARCH", "amd64");
-            build_proxy_cmd.setEnvironmentVariable("CGO_ENABLED", "0");
+    // Version file for launcher/update tooling.
+    const version_files = b.addWriteFiles();
+    const version_path = version_files.add("ps-version.json", b.fmt("{{\"version\":\"{s}\"}}\n", .{ps_version}));
+    const install_version = b.addInstallFileWithDir(version_path, .bin, "ps-version.json");
+    b.getInstallStep().dependOn(&install_version.step);
+
+    const with_proxy = b.option(bool, "with_proxy", "Build bundled firefly-go-proxy next to CastoricePS") orelse false;
+    if (with_proxy) {
+        // Only run for native builds so cross-compiling doesn't require Go toolchains.
+        if (target.result.os.tag == builtin.os.tag and target.result.cpu.arch == builtin.cpu.arch) {
+            const proxy_dir = b.path("fireflygo_proxy");
+            const proxy_exe_name = if (target.result.os.tag == .windows) "firefly-proxy.exe" else "firefly-proxy";
+            const proxy_out = b.pathFromRoot(b.getInstallPath(.bin, proxy_exe_name));
+            const build_proxy_cmd = b.addSystemCommand(&.{
+                "go",
+                "build",
+                "-trimpath",
+                "-ldflags=-s -w",
+                "-o",
+                proxy_out,
+                ".",
+            });
+            build_proxy_cmd.setCwd(proxy_dir);
+            if (target.result.os.tag == .windows) {
+                build_proxy_cmd.setEnvironmentVariable("GOOS", "windows");
+                build_proxy_cmd.setEnvironmentVariable("GOARCH", "amd64");
+                build_proxy_cmd.setEnvironmentVariable("CGO_ENABLED", "0");
+            }
+            b.getInstallStep().dependOn(&build_proxy_cmd.step);
         }
-        b.getInstallStep().dependOn(&build_proxy_cmd.step);
     }
 
     // Running is only meaningful for native builds.
