@@ -36,6 +36,9 @@ protocol/                # 协议文件
 - 仅构建：`zig build`
 - 发布构建：`zig build -Doptimize=ReleaseSafe`
 
+## 获取游戏客户端
+[3.8.5X Client here](https://gofile.io/d/whpait)
+
 ## 编译（Android）
 说明：这会生成 **Android ELF 可执行文件**（不是 APK）。
 
