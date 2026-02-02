@@ -17,9 +17,9 @@
     "lineups": [
       [
         1501,
-        1502,
-        1306,
-        1414
+        0,
+        0,
+        0
       ],
       [
         1408,
@@ -64,6 +64,7 @@
       1101
     ],
     "opened_chests": [
+      1028
     ],
     "inventory": [
       {
@@ -117,11 +118,16 @@
       227002,
       227001
     ],
+    "tutorial_guides": [],
     "position": {
       "plane_id": 20502,
       "floor_id": 20502001,
       "entry_id": 2050201,
-      "teleport_id": 1031
+      "teleport_id": 1031,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "use_coordinates": false
     }
   },
   "mc_gender": "female",

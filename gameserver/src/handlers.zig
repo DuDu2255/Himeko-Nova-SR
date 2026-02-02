@@ -4,6 +4,7 @@ const Session = @import("Session.zig");
 const Packet = @import("Packet.zig");
 const avatar = @import("services/avatar.zig");
 const chat = @import("services/chat.zig");
+const friend_assist = @import("services/friend_assist.zig");
 const gacha = @import("services/gacha.zig");
 const item = @import("services/item.zig");
 const battle = @import("services/battle.zig");
@@ -17,6 +18,7 @@ const profile = @import("services/profile.zig");
 const scene = @import("services/scene.zig");
 const events = @import("services/events.zig");
 const challenge = @import("services/challenge.zig");
+const trial_activity = @import("activity/trial_activity.zig");
 
 const Allocator = std.mem.Allocator;
 const ArenaAllocator = std.heap.ArenaAllocator;
@@ -103,6 +105,7 @@ pub const HandlerList = [_]struct { CmdID, Action }{
     .{ CmdID.CmdGetQuestDataCsReq, mission.onGetQuestData },
     //chat
     .{ CmdID.CmdGetFriendListInfoCsReq, chat.onGetFriendListInfo },
+    .{ CmdID.CmdGetFriendAssistListCsReq, friend_assist.onGetFriendAssistList },
     .{ CmdID.CmdGetPrivateChatHistoryCsReq, chat.onPrivateChatHistory },
     .{ CmdID.CmdGetChatEmojiListCsReq, chat.onChatEmojiList },
     .{ CmdID.CmdSendMsgCsReq, chat.onSendMsg },
@@ -145,6 +148,11 @@ pub const HandlerList = [_]struct { CmdID, Action }{
     .{ CmdID.CmdSetChallengePeakBossHardModeCsReq, challenge.onSetChallengePeakBossHardMode },
     .{ CmdID.CmdConfirmChallengePeakSettleCsReq, challenge.onConfirmChallengePeakSettle },
     .{ CmdID.CmdGetFriendBattleRecordDetailCsReq, challenge.onGetFriendBattleRecordDetail },
+    // trial activity
+    .{ CmdID.CmdGetTrialActivityDataCsReq, trial_activity.onGetTrialActivityData },
+    .{ CmdID.CmdStartTrialActivityCsReq, trial_activity.onStartTrialActivity },
+    .{ CmdID.CmdLeaveTrialActivityCsReq, trial_activity.onLeaveTrialActivity },
+    .{ CmdID.CmdTakeTrialActivityRewardCsReq, trial_activity.onTakeTrialActivityReward },
 };
 // Dummy handlers for packets that can fix random loading issues.
 const DummyCmdList = [_]struct { CmdID, CmdID }{

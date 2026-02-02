@@ -1,4 +1,3 @@
-
 {
     "OSBETAWin3.8.51": {
         "asset_bundle_url": "https://autopatchos.starrails.com/asb/BetaLive/output_13490885_bf25e1553b38_e9adc23a6b6710",
@@ -22,6 +21,14 @@
         "ifix_url": "https://autopatchcn.bhsr.com/ifix/BetaLive/output_0_40d2ce0253_c61ba99f70b885",
         "ifix_version": "0",
         "lua_url": "https://autopatchcn.bhsr.com/lua/BetaLive/output_13708835_821b84e29f22_7bc055c8412410",
+        "lua_version": ""
+    },
+    "CNBETAWin3.8.55": {
+        "asset_bundle_url": "https://autopatchcn.bhsr.com/asb/BetaLive/output_13904530_a7ce47be89b3_f9a36e42cc8ba2",
+        "ex_resource_url": "https://autopatchcn.bhsr.com/design_data/BetaLive/output_13923739_439d39a502f2_8bc4d8e9e45971",
+        "ifix_url": "https://autopatchcn.bhsr.com/ifix/BetaLive/output_0_40d2ce0253_c61ba99f70b885",
+        "ifix_version": "0",
+        "lua_url": "https://autopatchcn.bhsr.com/lua/BetaLive/output_13905268_a72d73506589_8f9b7e89c5c80f",
         "lua_version": ""
     }
 }

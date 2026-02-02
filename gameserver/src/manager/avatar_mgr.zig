@@ -103,6 +103,13 @@ fn stableItemUid(tag: []const u8, avatar_id: u32, tid: u32, slot: u32) u32 {
     return u;
 }
 
+fn resolveItemUid(tag: []const u8, avatar_id: u32, tid: u32, slot: u32, internal_uid: u32) u32 {
+    // `internal_uid` in freesr-data is treated as a type/config marker and may repeat.
+    // Build a deterministic per-owner unique_id to avoid collisions in bag/equip display.
+    const seed_tid = if (internal_uid != 0) internal_uid else tid;
+    return stableItemUid(tag, avatar_id, seed_tid, slot);
+}
+
 fn mapMcId(gender: MiscDefaults.Gender, path: MiscDefaults.Path) u32 {
     const base: u32 = switch (path) {
         .warrior => 0,
@@ -186,10 +193,8 @@ pub fn createAvatar(
     // 当 freesr-data 缺失 internal_uid 时，使用稳定派生的 uid，避免因生成顺序/重置导致不一致。
     avatar.equipment_unique_id = if (avatarConf.lightcone.id == 0)
         0
-    else if (avatarConf.lightcone.internal_uid != 0)
-        avatarConf.lightcone.internal_uid
     else
-        stableItemUid("LC", avatarConf.id, avatarConf.lightcone.id, 0);
+        resolveItemUid("LC", avatarConf.id, avatarConf.lightcone.id, 0, avatarConf.lightcone.internal_uid);
     return avatar;
 }
 pub fn createAllAvatar(
@@ -222,10 +227,8 @@ pub fn createAvatarPathData(
     }
     avatar.path_equipment_id = if (avatarConf.lightcone.id == 0)
         0
-    else if (avatarConf.lightcone.internal_uid != 0)
-        avatarConf.lightcone.internal_uid
     else
-        stableItemUid("LC", avatarConf.id, avatarConf.lightcone.id, 0);
+        resolveItemUid("LC", avatarConf.id, avatarConf.lightcone.id, 0, avatarConf.lightcone.internal_uid);
 
     avatar.equip_relic_list = ArrayList(protocol.EquipRelic).init(allocator);
     const max_slots: usize = 6;
@@ -234,10 +237,8 @@ pub fn createAvatarPathData(
         const relic_conf = avatarConf.relics.items[slot];
         const relic_uid = if (relic_conf.id == 0)
             0
-        else if (relic_conf.internal_uid != 0)
-            relic_conf.internal_uid
         else
-            stableItemUid("RELIC", avatarConf.id, relic_conf.id, @intCast(slot));
+            resolveItemUid("RELIC", avatarConf.id, relic_conf.id, @intCast(slot), relic_conf.internal_uid);
         try avatar.equip_relic_list.append(.{
             .relic_unique_id = relic_uid,
             .type = @intCast(slot),
@@ -311,10 +312,7 @@ pub fn createEquipment(
     dress_avatar_id: u32,
 ) !protocol.Equipment {
     return protocol.Equipment{
-        .unique_id = if (lightconeConf.internal_uid != 0)
-            lightconeConf.internal_uid
-        else
-            stableItemUid("LC", dress_avatar_id, lightconeConf.id, 0),
+        .unique_id = resolveItemUid("LC", dress_avatar_id, lightconeConf.id, 0, lightconeConf.internal_uid),
         .tid = lightconeConf.id,
         .is_protected = true,
         .level = lightconeConf.level,
@@ -333,10 +331,7 @@ pub fn createRelic(
     var r = protocol.Relic{
         .tid = relicConf.id,
         .main_affix_id = relicConf.main_affix_id,
-        .unique_id = if (relicConf.internal_uid != 0)
-            relicConf.internal_uid
-        else
-            stableItemUid("RELIC", dress_avatar_id, relicConf.id, slot),
+        .unique_id = resolveItemUid("RELIC", dress_avatar_id, relicConf.id, slot, relicConf.internal_uid),
         .exp = 0,
         .dress_avatar_id = dress_avatar_id,
         .is_protected = true,

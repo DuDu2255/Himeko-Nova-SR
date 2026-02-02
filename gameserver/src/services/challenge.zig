@@ -201,6 +201,7 @@ pub fn onStartChallenge(session: *Session, packet: *const Packet, allocator: All
         try Logic.Challenge().UseSecondLineup();
         Logic.Challenge().SetChallengeBuffID(Logic.Challenge().GetChallengeBuffTwo());
     }
+    try LineupManager.getSelectedAvatarID(allocator, Logic.Challenge().GetAvatarIDs().items);
     var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
     var lineup_info = try lineup_manager.createLineup(Logic.Challenge().GetAvatarIDs());
     _ = &lineup_info;
@@ -276,6 +277,8 @@ pub fn onEnterChallengeNextPhase(session: *Session, packet: *const Packet, alloc
     // Already in 2nd half: just resend current scene snapshot.
     if (Logic.Challenge().InSecondHalf()) {
         var scene_challenge_manager = SceneManager.ChallengeSceneManager.init(allocator);
+        var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
+        const lineup_info = try lineup_manager.createLineup(Logic.Challenge().GetAvatarIDs());
         const ids = Logic.Challenge().GetSceneIDs();
         const scene_info = try scene_challenge_manager.createScene(
             Logic.Challenge().GetAvatarIDs(),
@@ -288,6 +291,12 @@ pub fn onEnterChallengeNextPhase(session: *Session, packet: *const Packet, alloc
             ids[6],
             ids[7],
         );
+        try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
+        try session.send(CmdID.CmdEnterSceneByServerScNotify, protocol.EnterSceneByServerScNotify{
+            .reason = protocol.EnterSceneReason.ENTER_SCENE_REASON_NONE,
+            .lineup = lineup_info,
+            .scene = scene_info,
+        });
         rsp.scene = scene_info;
         try session.send(CmdID.CmdEnterChallengeNextPhaseScRsp, rsp);
         return;
@@ -302,6 +311,7 @@ pub fn onEnterChallengeNextPhase(session: *Session, packet: *const Packet, alloc
     }
     try Logic.Challenge().UseSecondLineup();
     Logic.Challenge().SetChallengeBuffID(Logic.Challenge().GetChallengeBuffTwo());
+    try LineupManager.getSelectedAvatarID(allocator, Logic.Challenge().GetAvatarIDs().items);
 
     var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
     const lineup_info = try lineup_manager.createLineup(Logic.Challenge().GetAvatarIDs());
@@ -332,6 +342,12 @@ pub fn onEnterChallengeNextPhase(session: *Session, packet: *const Packet, alloc
     });
 
     rsp.scene = scene_info;
+    try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
+    try session.send(CmdID.CmdEnterSceneByServerScNotify, protocol.EnterSceneByServerScNotify{
+        .reason = protocol.EnterSceneReason.ENTER_SCENE_REASON_NONE,
+        .lineup = lineup_info,
+        .scene = scene_info,
+    });
     try session.send(CmdID.CmdEnterChallengeNextPhaseScRsp, rsp);
 
     const anchor_motion = SceneManager.ChallengeSceneManager.getAnchorMotion(scene_info.entry_id);

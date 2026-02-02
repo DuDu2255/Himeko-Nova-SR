@@ -115,12 +115,6 @@ pub fn buildLineup(
         avatar.avatar_type = protocol.AvatarType.AVATAR_FORMAL_TYPE;
         try lineup.avatar_list.append(avatar);
     }
-    var id_list = try allocator.alloc(u32, lineup.avatar_list.items.len);
-    defer allocator.free(id_list);
-    for (lineup.avatar_list.items, 0..) |ava, idx| {
-        id_list[idx] = ava.id;
-    }
-    try getSelectedAvatarID(allocator, id_list);
     return lineup;
 }
 

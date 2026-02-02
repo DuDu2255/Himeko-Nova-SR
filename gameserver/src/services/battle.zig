@@ -8,9 +8,11 @@ const ConfigManager = @import("../manager/config_mgr.zig");
 const Logic = @import("../utils/logic.zig");
 const SceneManager = @import("../manager/scene_mgr.zig");
 const LineupManager = @import("../manager/lineup_mgr.zig");
+const ChallengeManager = @import("../manager/challenge_mgr.zig");
 const AvatarManager = @import("../manager/avatar_mgr.zig");
 const LineupService = @import("lineup.zig");
 const terminal_commands = @import("terminal_commands");
+const trial_activity = @import("../activity/trial_activity.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
@@ -24,7 +26,9 @@ fn refreshBattleLineup(session: *Session, allocator: Allocator, send_sync: bool)
     var ids = ArrayList(u32).init(allocator);
     defer ids.deinit();
 
-    if (session.player_state) |state| {
+    if (Logic.Challenge().ChallengeMode() and Logic.Challenge().GetAvatarIDs().items.len != 0) {
+        for (Logic.Challenge().GetAvatarIDs().items) |id| if (id != 0) try ids.append(id);
+    } else if (session.player_state) |state| {
         const preset = state.lineups[@intCast(state.cur_lineup_index)];
         for (preset) |id| if (id != 0) try ids.append(id);
     } else {
@@ -251,6 +255,9 @@ pub fn onPVEBattleResult(session: *Session, packet: *const Packet, allocator: Al
     on_battle = false;
     try session.send(CmdID.CmdPVEBattleResultScRsp, rsp);
 
+    // Trial Activity completion hook (stage finished -> history + status notify).
+    try trial_activity.onBattleFinished(session, req.end_status, req.stage_id, allocator);
+
     // 多关卡高难度副本（MOC/PF/AS）：胜利后自动切到下一关
     if (!Logic.Challenge().ChallengeMode()) return;
 
@@ -267,7 +274,27 @@ pub fn onPVEBattleResult(session: *Session, packet: *const Packet, allocator: Al
         return;
     }
 
-    if (req.end_status != .BATTLE_END_WIN) return;
+    if (req.end_status != .BATTLE_END_WIN) {
+        try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
+        var lose_settle = protocol.ChallengeSettleNotify.init(allocator);
+        lose_settle.is_win = false;
+        lose_settle.challenge_id = Logic.Challenge().GetChallengeID();
+        lose_settle.star = 0;
+        lose_settle.challenge_score = Logic.Challenge().GetChallengeScoreTotal();
+        lose_settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
+        try session.send(CmdID.CmdChallengeSettleNotify, lose_settle);
+        Logic.Challenge().resetChallengeState();
+        return;
+    }
+
+    const phase_score = calcChallengeScore(&req);
+    const phase_star = calcChallengeStar(&req);
+    Logic.Challenge().SetChallengeScore(phase_score);
+    const settle_page_type: u32 = switch (Logic.Challenge().GetChallengeMode()) {
+        0 => 0, // MOC
+        1 => 1, // PF
+        else => 2, // AS
+    };
 
     const challenge_id = Logic.Challenge().GetChallengeID();
     const ids = Logic.Challenge().GetSceneIDs();
@@ -338,25 +365,74 @@ pub fn onPVEBattleResult(session: *Session, packet: *const Packet, allocator: Al
     // or finish the whole challenge and send settle notify.
     if (next_event_id == null or next_monster_id == null or next_entry_id == null or next_plane_id == null or next_floor_id == null or next_world_id == null or next_group_id == null or next_maze_group_id == null) {
         if (!Logic.Challenge().InSecondHalf() and has_second_half_cfg and Logic.Challenge().HasSecondLineup()) {
+            // MOC uses a different settle flow than PF/AS: switch directly into 2nd half scene.
+            if (Logic.Challenge().GetChallengeMode() == 0) {
+                Logic.CustomMode().SelectCustomNode(2);
+                try Logic.Challenge().UseSecondLineup();
+                Logic.Challenge().SetChallengeBuffID(Logic.Challenge().GetChallengeBuffTwo());
+                try LineupManager.getSelectedAvatarID(allocator, Logic.Challenge().GetAvatarIDs().items);
+
+                var challenge_manager = ChallengeManager.ChallengeManager.init(allocator);
+                var cur_challenge_info = try challenge_manager.createChallenge(
+                    Logic.Challenge().GetChallengeID(),
+                    Logic.Challenge().GetChallengeBuffID(),
+                );
+                _ = &cur_challenge_info;
+
+                var lineup_manager_moc = LineupManager.ChallengeLineupManager.init(allocator);
+                const lineup_moc = try lineup_manager_moc.createLineup(Logic.Challenge().GetAvatarIDs());
+                var scene_manager_moc = SceneManager.ChallengeSceneManager.init(allocator);
+                const moc_ids = Logic.Challenge().GetSceneIDs();
+                const scene_moc = try scene_manager_moc.createScene(
+                    Logic.Challenge().GetAvatarIDs(),
+                    moc_ids[0],
+                    moc_ids[1],
+                    moc_ids[2],
+                    moc_ids[3],
+                    moc_ids[4],
+                    moc_ids[5],
+                    moc_ids[6],
+                    moc_ids[7],
+                );
+
+                try session.send(CmdID.CmdChallengeLineupNotify, protocol.ChallengeLineupNotify{
+                    .extra_lineup_type = protocol.ExtraLineupType.LINEUP_CHALLENGE_2,
+                });
+                try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
+                try session.send(CmdID.CmdEnterSceneByServerScNotify, protocol.EnterSceneByServerScNotify{
+                    .reason = protocol.EnterSceneReason.ENTER_SCENE_REASON_NONE,
+                    .lineup = lineup_moc,
+                    .scene = scene_moc,
+                });
+                return;
+            }
+
             // First half finished; send phase settle so client shows "next phase" and then
             // client will send EnterChallengeNextPhaseCsReq.
+            try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
             var phase_settle = protocol.ChallengeBossPhaseSettleNotify.init(allocator);
             phase_settle.is_win = true;
             phase_settle.is_second_half = false;
             phase_settle.phase = 1;
-            phase_settle.star = 7;
+            phase_settle.star = phase_star;
             phase_settle.challenge_id = challenge_id;
+            phase_settle.challenge_score = phase_score;
+            phase_settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
+            phase_settle.page_type = settle_page_type;
+            phase_settle.is_reward = true;
             try session.send(CmdID.CmdChallengeBossPhaseSettleNotify, phase_settle);
             return;
         }
 
+        try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
         var settle = protocol.ChallengeSettleNotify.init(allocator);
         settle.is_win = true;
         settle.challenge_id = challenge_id;
-        settle.star = 7;
-        settle.challenge_score = 0;
-        settle.score_two = 0;
+        settle.star = phase_star;
+        settle.challenge_score = Logic.Challenge().GetChallengeScoreTotal();
+        settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
         try session.send(CmdID.CmdChallengeSettleNotify, settle);
+        Logic.Challenge().resetChallengeState();
         return;
     }
 
@@ -392,6 +468,30 @@ pub fn onPVEBattleResult(session: *Session, packet: *const Packet, allocator: Al
         .lineup = lineup,
         .scene = scene_info,
     });
+}
+
+fn calcChallengeScore(req: *const protocol.PVEBattleResultCsReq) u32 {
+    if (req.stt) |stt| {
+        if (stt.challenge_score != 0) return stt.challenge_score;
+        if (stt.round_cnt != 0) {
+            const penalty: u32 = stt.round_cnt * 100;
+            return if (penalty >= 10000) 1 else (10000 - penalty);
+        }
+    }
+    if (req.cost_time != 0) {
+        const penalty: u32 = @intCast(@min(req.cost_time / 10, 9000));
+        return 10000 - penalty;
+    }
+    return 1000;
+}
+
+fn calcChallengeStar(req: *const protocol.PVEBattleResultCsReq) u32 {
+    if (req.stt) |stt| {
+        if (stt.round_cnt <= 4) return 3;
+        if (stt.round_cnt <= 8) return 2;
+        return 1;
+    }
+    return 3;
 }
 
 pub fn onSceneCastSkillCostMp(session: *Session, packet: *const Packet, allocator: Allocator) !void {

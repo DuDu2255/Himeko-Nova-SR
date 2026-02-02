@@ -126,10 +126,12 @@ pub fn onReplaceLineup(session: *Session, packet: *const Packet, allocator: Allo
     const req = try packet.getProto(protocol.ReplaceLineupCsReq, allocator);
     defer req.deinit();
 
-    var idx: u32 = req.index;
-    if (idx >= MaxLineups) idx = 0;
-
     if (session.player_state) |*state| {
+        var idx: u32 = req.index;
+        if (idx >= MaxLineups or (idx == 0 and state.cur_lineup_index != 0)) {
+            idx = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
+        }
+
         // Persist into preset slots (max 4).
         var preset: PlayerStateMod.LineupPreset = std.mem.zeroes(PlayerStateMod.LineupPreset);
         for (req.lineup_slot_list.items) |slot_data| {

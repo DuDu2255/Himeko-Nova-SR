@@ -54,6 +54,8 @@ pub fn Challenge() type {
         var challenge_buff_one: u32 = 0;
         var challenge_buff_two: u32 = 0;
         var in_second_half: bool = false;
+        var challenge_score_one: u32 = 0;
+        var challenge_score_two: u32 = 0;
 
         pub fn GetAvatarIDs() std.ArrayList(u32) {
             return avatar_list;
@@ -97,6 +99,22 @@ pub fn Challenge() type {
         pub fn GetChallengeBuffTwo() u32 {
             return challenge_buff_two;
         }
+        pub fn SetChallengeScore(score: u32) void {
+            if (in_second_half) {
+                challenge_score_two = score;
+            } else {
+                challenge_score_one = score;
+            }
+        }
+        pub fn GetChallengeScoreOne() u32 {
+            return challenge_score_one;
+        }
+        pub fn GetChallengeScoreTwo() u32 {
+            return challenge_score_two;
+        }
+        pub fn GetChallengeScoreTotal() u32 {
+            return challenge_score_one + challenge_score_two;
+        }
 
         pub fn resetChallengeState() void {
             on_challenge = false;
@@ -114,6 +132,8 @@ pub fn Challenge() type {
             challenge_buffID = 0;
             challenge_buff_one = 0;
             challenge_buff_two = 0;
+            challenge_score_one = 0;
+            challenge_score_two = 0;
             in_second_half = false;
             on_peak_king_stage = false;
             on_challenge_peak = false;
