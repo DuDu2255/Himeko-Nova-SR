@@ -57,9 +57,6 @@ protocol/                # 协议文件
 - srtools 网页保存的数据会写入根目录 `freesr-data.json`，服务器侧会在 `/sync` 
 - 如果你需要更多的参考，请关注 `resources/` 目录。可以通过修改Resources的方式来修改buff和技能效果。
 
-## 启动游戏
-实际上内置代理在新版本不凑效。如果你需要更简单的办法，请参考[CastoriceLauncher](https://github.com/DBKAHHK/CastoriceLauncher)
-
 ## 贡献
 欢迎提交PR和Issue.
 感谢[Reversed Rooms](discord.gg/reversedrooms)，以及[他们的开源服务器](https://git.xeondev.com/HonkaiSlopRail/yaoguang-sr)
