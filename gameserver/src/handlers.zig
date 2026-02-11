@@ -109,6 +109,8 @@ pub const HandlerList = [_]struct { CmdID, Action }{
     .{ CmdID.CmdGetPrivateChatHistoryCsReq, chat.onPrivateChatHistory },
     .{ CmdID.CmdGetChatEmojiListCsReq, chat.onChatEmojiList },
     .{ CmdID.CmdSendMsgCsReq, chat.onSendMsg },
+    .{ CmdID.CmdTriggerAiPamSpeakCsReq, chat.onTriggerAiPamSpeak },
+    .{ CmdID.CmdGetAiPamChatHistoryCsReq, chat.onGetAiPamChatHistory },
     //scene
     .{ CmdID.CmdGetCurSceneInfoCsReq, scene.onGetCurSceneInfo },
     .{ CmdID.CmdSceneUpdatePositionVersionNotify, scene.onSceneUpdatePositionVersionNotify },
@@ -130,7 +132,6 @@ pub const HandlerList = [_]struct { CmdID, Action }{
     .{ CmdID.CmdSetTrainWorldIdCsReq, scene.onSetTrainWorldId },
     //events
     .{ CmdID.CmdGetActivityScheduleConfigCsReq, events.onGetActivity },
-    .{ CmdID.CmdUpdateServerPrefsDataCsReq, events.onUpdateServerPrefsData },
     //challenge
     .{ CmdID.CmdGetChallengeCsReq, challenge.onGetChallenge },
     .{ CmdID.CmdGetChallengeGroupStatisticsCsReq, challenge.onGetChallengeGroupStatistics },
@@ -237,7 +238,7 @@ const DummyCmdList = [_]struct { CmdID, CmdID }{
     .{ CmdID.CmdTarotBookGetDataCsReq, CmdID.CmdTarotBookGetDataScRsp },
     .{ CmdID.CmdGetMarkChestCsReq, CmdID.CmdGetMarkChestScRsp },
     //.{ CmdID.CmdMatchThreeGetDataCsReq, CmdID.CmdMatchThreeGetDataScRsp },//
-    .{ CmdID.CmdUpdateTrackMainMissionIdCsReq, CmdID.CmdUpdateTrackMainMissionIdScRsp },
+    .{ CmdID.CmdUpdateTrackMainMissionCsReq, CmdID.CmdUpdateTrackMainMissionScRsp },
     .{ CmdID.CmdGetNpcMessageGroupCsReq, CmdID.CmdGetNpcMessageGroupScRsp },
     .{ CmdID.CmdGetAllSaveRaidCsReq, CmdID.CmdGetAllSaveRaidScRsp },
     .{ CmdID.CmdGetAssistHistoryCsReq, CmdID.CmdGetAssistHistoryScRsp },

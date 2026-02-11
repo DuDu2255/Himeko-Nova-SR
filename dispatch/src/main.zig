@@ -35,6 +35,8 @@ pub fn main() !void {
     router.post("/:product_name/mdk/shield/api/login", authentication.onShieldLogin, .{});
     router.post("/:product_name/mdk/shield/api/verify", authentication.onVerifyLogin, .{});
     router.post("/:product_name/combo/granter/login/v2/login", authentication.onComboTokenReq, .{});
+    router.post("/account/ma-cn-passport/app/loginByPassword", authentication.onappLoginByPassword, .{});
+    router.post("/account/ma-cn-session/app/verify", authentication.onVerify, .{});
     router.options("/srtools", srtools.onSrtoolsOptions, .{});
     router.post("/srtools", srtools.onSrtoolsSave, .{});
     router.options("/srtools/", srtools.onSrtoolsOptions, .{});

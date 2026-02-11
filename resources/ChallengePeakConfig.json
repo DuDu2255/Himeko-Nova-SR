@@ -207,8 +207,8 @@
         "hash": -1272192747,
         "hash64": 9534971313111157091
       },
-      "MapEntranceID": 3013701,
-      "MazeGroupID": 10
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "DamageType": [
@@ -249,8 +249,8 @@
         "hash": -1272192748,
         "hash64": 16196939618065014687
       },
-      "MapEntranceID": 3013701,
-      "MazeGroupID": 10
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "DamageType": [
@@ -275,7 +275,7 @@
         30502013
       ],
       "NpcMonsterIDList": [
-        3003014
+        2023020
       ],
       "TagList": [
         3033001
@@ -290,8 +290,8 @@
         "hash": -1272192749,
         "hash64": 2595282763128539863
       },
-      "MapEntranceID": 3013701,
-      "MazeGroupID": 10
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "DamageType": [
@@ -334,8 +334,8 @@
         "hash": -1272192750,
         "hash64": 1721509265295027434
       },
-      "MapEntranceID": 3013701,
-      "MazeGroupID": 10
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 301,
@@ -375,8 +375,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3012302,
-      "MazeGroupID": 5
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 302,
@@ -397,7 +397,7 @@
         30503012
       ],
       "NpcMonsterIDList": [
-        8024011
+        8024010
       ],
       "TagList": [
         3033002
@@ -416,8 +416,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3012302,
-      "MazeGroupID": 5
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 303,
@@ -458,8 +458,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3012302,
-      "MazeGroupID": 5
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 304,
@@ -479,7 +479,7 @@
         30503021
       ],
       "NpcMonsterIDList": [
-        3025016
+        3025010
       ],
       "TagList": [
         3033028,
@@ -500,8 +500,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3012302,
-      "MazeGroupID": 72
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 401,
@@ -541,8 +541,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3014001,
-      "MazeGroupID": 7
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 402,
@@ -583,8 +583,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3014001,
-      "MazeGroupID": 7
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 403,
@@ -624,8 +624,8 @@
         60,
         60
       ],
-      "MapEntranceID": 3014001,
-      "MazeGroupID": 7
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     },
     {
       "ID": 404,
@@ -665,8 +665,174 @@
         60,
         60
       ],
-      "MapEntranceID": 3014001,
-      "MazeGroupID": 7
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
+    },
+    {
+      "ID": 501,
+      "Title": {
+        "Hash": -1272192912,
+        "Hash64": 14880597212601158674
+      },
+      "NormalTargetList": [
+        3001,
+        3002,
+        3000
+      ],
+      "DamageType": [
+        "Fire"
+      ],
+      "EventIDList": [
+        30505011
+      ],
+      "NpcMonsterIDList": [
+        5012010
+      ],
+      "TagList": [
+        3033041
+      ],
+      "ProgressValueList": [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      "HPProgressValueList": [
+        0,
+        0,
+        20,
+        60,
+        60
+      ],
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
+    },
+    {
+      "ID": 502,
+      "Title": {
+        "Hash": -1272192911,
+        "Hash64": 5140565958766345864
+      },
+      "NormalTargetList": [
+        3001,
+        3002,
+        3000
+      ],
+      "DamageType": [
+        "Ice",
+        "Quantum"
+      ],
+      "EventIDList": [
+        30505012
+      ],
+      "NpcMonsterIDList": [
+        4014030
+      ],
+      "TagList": [
+        3033038,
+        3033024
+      ],
+      "ProgressValueList": [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      "HPProgressValueList": [
+        0,
+        0,
+        20,
+        60,
+        60
+      ],
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
+    },
+    {
+      "ID": 503,
+      "Title": {
+        "Hash": -1272192910,
+        "Hash64": 1298036568055044276
+      },
+      "NormalTargetList": [
+        3001,
+        3002,
+        3000
+      ],
+      "DamageType": [
+        "Physical",
+        "Thunder"
+      ],
+      "EventIDList": [
+        30505013
+      ],
+      "NpcMonsterIDList": [
+        4044010
+      ],
+      "TagList": [
+        3033025
+      ],
+      "ProgressValueList": [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      "HPProgressValueList": [
+        0,
+        0,
+        20,
+        60,
+        60
+      ],
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
+    },
+    {
+      "ID": 504,
+      "Title": {
+        "Hash": -1272192909,
+        "Hash64": 11754851440761829148
+      },
+      "NormalTargetList": [
+        3003,
+        3004,
+        3005
+      ],
+      "DamageType": [
+        "Fire",
+        "Thunder"
+      ],
+      "EventIDList": [
+        30505021
+      ],
+      "NpcMonsterIDList": [
+        5014020
+      ],
+      "TagList": [
+        3033017,
+        3033025,
+        3033041
+      ],
+      "ProgressValueList": [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      "HPProgressValueList": [
+        0,
+        0,
+        20,
+        60,
+        60
+      ],
+      "MapEntranceID": 3013501,
+      "MazeGroupID": 8
     }
   ]
 }

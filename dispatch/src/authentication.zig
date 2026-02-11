@@ -196,23 +196,41 @@ pub fn onappLoginByPassword(req: *httpz.Request, res: *httpz.Response) !void {
         .retcode = 0,
         .message = "OK",
         .data = .{
-            .bind_email_action_ticket = "",
-            .ext_user_info = .{
-                .birth = "0",
-                .guardian_email = "",
-            },
-            .reactivate_action_token = "",
             .token = .{
                 .token = "aa",
                 .token_type = "1",
             },
             .user_info = .{
-                .account_name = "ReversedRooms",
                 .aid = "1337",
+                .mid = "1337",
                 .area_code = "**",
                 .country = "RU",
                 .email = "HyacineLover@StarRail.com",
                 .is_email_verify = "1",
+                .is_adult = "1",
+            },
+        },
+    }, .{});
+}
+pub fn onVerify(req: *httpz.Request, res: *httpz.Response) !void {
+    std.log.debug("onVerify: {any}", .{req.body_len});
+
+    try res.json(.{
+        .retcode = 0,
+        .message = "OK",
+        .data = .{
+            .tokens = .{
+                .token = "aa",
+                .token_type = "1",
+            },
+            .user_info = .{
+                .aid = "1337",
+                .mid = "1337",
+                .area_code = "**",
+                .country = "RU",
+                .email = "ReversedRoooms@StarRail.com",
+                .is_email_verify = "1",
+                .is_adult = "1",
             },
         },
     }, .{});

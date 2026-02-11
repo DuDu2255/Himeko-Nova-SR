@@ -10,8 +10,6 @@
       "MapEntranceID": 3000101,
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
-      "PreChallengeMazeID": 0,
-      "Floor": 0,
       "RewardID": 101001,
       "DamageType1": [
         "Physical",
@@ -38,7 +36,6 @@
       "EventIDList1": [
         30001011
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -57,7 +54,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 1,
-      "Floor": 0,
       "RewardID": 101002,
       "DamageType1": [
         "Ice",
@@ -84,7 +80,6 @@
       "EventIDList1": [
         30001021
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -103,7 +98,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 2,
-      "Floor": 0,
       "RewardID": 101003,
       "DamageType1": [
         "Fire",
@@ -130,7 +124,6 @@
       "EventIDList1": [
         30001031
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -149,7 +142,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 3,
-      "Floor": 0,
       "RewardID": 101004,
       "DamageType1": [
         "Physical",
@@ -176,7 +168,6 @@
       "EventIDList1": [
         30001041
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -195,7 +186,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 4,
-      "Floor": 0,
       "RewardID": 101005,
       "DamageType1": [
         "Fire",
@@ -222,7 +212,6 @@
       "EventIDList1": [
         30001051
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -241,7 +230,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 5,
-      "Floor": 0,
       "RewardID": 101006,
       "DamageType1": [
         "Ice"
@@ -269,7 +257,6 @@
         30001061,
         30001062
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -288,7 +275,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 6,
-      "Floor": 0,
       "RewardID": 101007,
       "DamageType1": [
         "Physical",
@@ -317,7 +303,6 @@
         30001071,
         30001072
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -336,7 +321,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 7,
-      "Floor": 0,
       "RewardID": 101008,
       "DamageType1": [
         "Ice",
@@ -365,7 +349,6 @@
         30001081,
         30001082
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -384,7 +367,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 8,
-      "Floor": 0,
       "RewardID": 101009,
       "DamageType1": [
         "Physical"
@@ -412,7 +394,6 @@
         30001091,
         30001092
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -431,7 +412,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 9,
-      "Floor": 0,
       "RewardID": 101010,
       "DamageType1": [
         "Physical",
@@ -460,7 +440,6 @@
         30001101,
         30001102
       ],
-      "MazeGroupID2": 0,
       "ConfigList2": [
         0
       ],
@@ -479,7 +458,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 10,
-      "Floor": 0,
       "RewardID": 101011,
       "DamageType1": [
         "Physical",
@@ -533,7 +511,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 11,
-      "Floor": 0,
       "RewardID": 101012,
       "DamageType1": [
         "Ice",
@@ -587,7 +564,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 12,
-      "Floor": 0,
       "RewardID": 101013,
       "DamageType1": [
         "Fire",
@@ -641,7 +617,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 13,
-      "Floor": 0,
       "RewardID": 101014,
       "DamageType1": [
         "Physical",
@@ -695,7 +670,6 @@
       "MapEntranceID2": 3000101,
       "PreLevel": 1,
       "PreChallengeMazeID": 14,
-      "Floor": 0,
       "RewardID": 101015,
       "DamageType1": [
         "Physical",
@@ -748,8 +722,6 @@
       "MapEntranceID": 3000501,
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
-      "PreChallengeMazeID": 0,
-      "Floor": 0,
       "RewardID": 101016,
       "DamageType1": [
         "Physical",
@@ -802,7 +774,6 @@
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
       "PreChallengeMazeID": 21,
-      "Floor": 0,
       "RewardID": 101017,
       "DamageType1": [
         "Thunder",
@@ -856,7 +827,6 @@
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
       "PreChallengeMazeID": 22,
-      "Floor": 0,
       "RewardID": 101018,
       "DamageType1": [
         "Physical",
@@ -908,7 +878,6 @@
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
       "PreChallengeMazeID": 23,
-      "Floor": 0,
       "RewardID": 101019,
       "DamageType1": [
         "Quantum"
@@ -960,7 +929,6 @@
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
       "PreChallengeMazeID": 24,
-      "Floor": 0,
       "RewardID": 101020,
       "DamageType1": [
         "Ice",
@@ -1014,7 +982,6 @@
       "MapEntranceID2": 3000501,
       "PreLevel": 1,
       "PreChallengeMazeID": 25,
-      "Floor": 0,
       "RewardID": 101021,
       "DamageType1": [
         "Physical",
@@ -29444,6 +29411,625 @@
       "MazeBuffID": 3030143
     },
     {
+      "ID": 5001,
+      "Name": {
+        "Hash": 362632957,
+        "Hash64": 6720446310968558855
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 15,
+      "Floor": 1,
+      "RewardID": 101201,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "EventIDList1": [
+        30121011
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList2": [
+        30121012
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5002,
+      "Name": {
+        "Hash": 362632954,
+        "Hash64": 15448979881018004586
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5001,
+      "Floor": 2,
+      "RewardID": 101202,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Ice",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        3003020
+      ],
+      "EventIDList1": [
+        30121021
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2023010
+      ],
+      "EventIDList2": [
+        30121022
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5003,
+      "Name": {
+        "Hash": 362632955,
+        "Hash64": 14960959284029367780
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5002,
+      "Floor": 3,
+      "RewardID": 101203,
+      "DamageType1": [
+        "Fire",
+        "Ice"
+      ],
+      "DamageType2": [
+        "Fire"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "EventIDList1": [
+        30121031
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        3003010
+      ],
+      "EventIDList2": [
+        30121032
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5004,
+      "Name": {
+        "Hash": 362632952,
+        "Hash64": 9171109905862632712
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5003,
+      "Floor": 4,
+      "RewardID": 101204,
+      "DamageType1": [
+        "Wind"
+      ],
+      "DamageType2": [
+        "Thunder",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        2033010
+      ],
+      "EventIDList1": [
+        30121041
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        1004020
+      ],
+      "EventIDList2": [
+        30121042
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5005,
+      "Name": {
+        "Hash": 362632953,
+        "Hash64": 8547963219146850047
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5004,
+      "Floor": 5,
+      "RewardID": 101205,
+      "DamageType1": [
+        "Thunder",
+        "Wind"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Ice"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4033020
+      ],
+      "EventIDList1": [
+        30121051
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        3024010
+      ],
+      "EventIDList2": [
+        30121052
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5006,
+      "Name": {
+        "Hash": 362632950,
+        "Hash64": 8041439809873185842
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5005,
+      "Floor": 6,
+      "RewardID": 101206,
+      "DamageType1": [
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        1023020
+      ],
+      "EventIDList1": [
+        30121061
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2013020
+      ],
+      "EventIDList2": [
+        30121062
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5007,
+      "Name": {
+        "Hash": 362632951,
+        "Hash64": 9811338241981886891
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5006,
+      "Floor": 7,
+      "RewardID": 101207,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Ice",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        3003020
+      ],
+      "EventIDList1": [
+        30121071
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2023010
+      ],
+      "EventIDList2": [
+        30121072
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5008,
+      "Name": {
+        "Hash": 362632964,
+        "Hash64": 16694882017995634918
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5007,
+      "Floor": 8,
+      "RewardID": 101208,
+      "DamageType1": [
+        "Fire",
+        "Ice"
+      ],
+      "DamageType2": [
+        "Fire"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        1013010
+      ],
+      "EventIDList1": [
+        30121081
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        3003010
+      ],
+      "EventIDList2": [
+        30121082
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5009,
+      "Name": {
+        "Hash": 362632965,
+        "Hash64": 7198678360231782455
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5008,
+      "Floor": 9,
+      "RewardID": 101209,
+      "DamageType1": [
+        "Wind"
+      ],
+      "DamageType2": [
+        "Thunder",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        2033010
+      ],
+      "EventIDList1": [
+        30121091
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        1004020
+      ],
+      "EventIDList2": [
+        30121092
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5010,
+      "Name": {
+        "Hash": 1928716897,
+        "Hash64": 5482873044221967083
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5009,
+      "Floor": 10,
+      "RewardID": 101210,
+      "DamageType1": [
+        "Ice",
+        "Imaginary"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        3003014
+      ],
+      "EventIDList1": [
+        30121101
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2034010
+      ],
+      "EventIDList2": [
+        30121102
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5011,
+      "Name": {
+        "Hash": 1928716898,
+        "Hash64": 13336401152145329200
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5010,
+      "Floor": 11,
+      "RewardID": 101211,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Fire",
+        "Thunder",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        5014010
+      ],
+      "EventIDList1": [
+        30121111
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        1014010
+      ],
+      "EventIDList2": [
+        30121112
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
+      "ID": 5012,
+      "Name": {
+        "Hash": 1928716895,
+        "Hash64": 3353335328486475382
+      },
+      "GroupID": 1031,
+      "MapEntranceID": 3013601,
+      "MapEntranceID2": 3013601,
+      "PreLevel": 1,
+      "PreChallengeMazeID": 5011,
+      "Floor": 12,
+      "RewardID": 101212,
+      "DamageType1": [
+        "Ice",
+        "Thunder"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        251,
+        252,
+        253
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "ChallengeCountDown": 30,
+      "MazeGroupID1": 6,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4014020
+      ],
+      "EventIDList1": [
+        30121121
+      ],
+      "MazeGroupID2": 7,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        4064010
+      ],
+      "EventIDList2": [
+        30121122
+      ],
+      "MazeBuffID": 3030144
+    },
+    {
       "ID": 20011,
       "Name": {
         "Hash": 1100449586,
@@ -29452,8 +30038,6 @@
       "GroupID": 2001,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -29472,7 +30056,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -29504,7 +30087,6 @@
       "GroupID": 2001,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20011,
       "Floor": 2,
       "RewardID": 101402,
@@ -29524,7 +30106,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -29556,7 +30137,6 @@
       "GroupID": 2001,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20012,
       "Floor": 3,
       "RewardID": 101403,
@@ -29576,7 +30156,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -29608,7 +30187,6 @@
       "GroupID": 2001,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20013,
       "Floor": 4,
       "RewardID": 101404,
@@ -29628,7 +30206,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -29660,8 +30237,6 @@
       "GroupID": 2002,
       "MapEntranceID": 30002061,
       "MapEntranceID2": 30002061,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -29680,7 +30255,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 13,
       "ConfigList1": [
         200001
@@ -29712,7 +30286,6 @@
       "GroupID": 2002,
       "MapEntranceID": 30002061,
       "MapEntranceID2": 30002061,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20021,
       "Floor": 2,
       "RewardID": 101402,
@@ -29732,7 +30305,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 13,
       "ConfigList1": [
         200001
@@ -29764,7 +30336,6 @@
       "GroupID": 2002,
       "MapEntranceID": 30002061,
       "MapEntranceID2": 30002061,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20022,
       "Floor": 3,
       "RewardID": 101403,
@@ -29784,7 +30355,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 13,
       "ConfigList1": [
         200001
@@ -29816,7 +30386,6 @@
       "GroupID": 2002,
       "MapEntranceID": 30002061,
       "MapEntranceID2": 30002061,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20023,
       "Floor": 4,
       "RewardID": 101404,
@@ -29836,7 +30405,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 13,
       "ConfigList1": [
         200001
@@ -29868,8 +30436,6 @@
       "GroupID": 2003,
       "MapEntranceID": 3000203,
       "MapEntranceID2": 3000203,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -29888,7 +30454,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -29920,7 +30485,6 @@
       "GroupID": 2003,
       "MapEntranceID": 3000203,
       "MapEntranceID2": 3000203,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20031,
       "Floor": 2,
       "RewardID": 101402,
@@ -29940,7 +30504,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -29972,7 +30535,6 @@
       "GroupID": 2003,
       "MapEntranceID": 3000203,
       "MapEntranceID2": 3000203,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20032,
       "Floor": 3,
       "RewardID": 101403,
@@ -29992,7 +30554,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -30024,7 +30585,6 @@
       "GroupID": 2003,
       "MapEntranceID": 3000203,
       "MapEntranceID2": 3000203,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20033,
       "Floor": 4,
       "RewardID": 101404,
@@ -30044,7 +30604,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -30076,8 +30635,6 @@
       "GroupID": 2004,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -30096,7 +30653,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30128,7 +30684,6 @@
       "GroupID": 2004,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20041,
       "Floor": 2,
       "RewardID": 101402,
@@ -30148,7 +30703,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30180,7 +30734,6 @@
       "GroupID": 2004,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20042,
       "Floor": 3,
       "RewardID": 101403,
@@ -30200,7 +30753,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30232,7 +30784,6 @@
       "GroupID": 2004,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20043,
       "Floor": 4,
       "RewardID": 101404,
@@ -30252,7 +30803,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30284,8 +30834,6 @@
       "GroupID": 2005,
       "MapEntranceID": 3012201,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -30304,7 +30852,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 7,
       "ConfigList1": [
         200001
@@ -30336,7 +30883,6 @@
       "GroupID": 2005,
       "MapEntranceID": 3012201,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20051,
       "Floor": 2,
       "RewardID": 101402,
@@ -30356,7 +30902,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 7,
       "ConfigList1": [
         200001
@@ -30388,7 +30933,6 @@
       "GroupID": 2005,
       "MapEntranceID": 3012201,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20052,
       "Floor": 3,
       "RewardID": 101403,
@@ -30408,7 +30952,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 7,
       "ConfigList1": [
         200001
@@ -30440,7 +30983,6 @@
       "GroupID": 2005,
       "MapEntranceID": 3012201,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20053,
       "Floor": 4,
       "RewardID": 101404,
@@ -30460,7 +31002,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 7,
       "ConfigList1": [
         200001
@@ -30492,8 +31033,6 @@
       "GroupID": 2006,
       "MapEntranceID": 3000201,
       "MapEntranceID2": 3000201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -30512,7 +31051,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30544,7 +31082,6 @@
       "GroupID": 2006,
       "MapEntranceID": 3000201,
       "MapEntranceID2": 3000201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20061,
       "Floor": 2,
       "RewardID": 101402,
@@ -30564,7 +31101,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30596,7 +31132,6 @@
       "GroupID": 2006,
       "MapEntranceID": 3000201,
       "MapEntranceID2": 3000201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20062,
       "Floor": 3,
       "RewardID": 101403,
@@ -30616,7 +31151,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30648,7 +31182,6 @@
       "GroupID": 2006,
       "MapEntranceID": 3000201,
       "MapEntranceID2": 3000201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20063,
       "Floor": 4,
       "RewardID": 101404,
@@ -30668,7 +31201,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30700,8 +31232,6 @@
       "GroupID": 2007,
       "MapEntranceID": 3000501,
       "MapEntranceID2": 3000501,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -30720,7 +31250,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -30752,7 +31281,6 @@
       "GroupID": 2007,
       "MapEntranceID": 3000501,
       "MapEntranceID2": 3000501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20071,
       "Floor": 2,
       "RewardID": 101402,
@@ -30772,7 +31300,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -30804,7 +31331,6 @@
       "GroupID": 2007,
       "MapEntranceID": 3000501,
       "MapEntranceID2": 3000501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20072,
       "Floor": 3,
       "RewardID": 101403,
@@ -30824,7 +31350,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -30856,7 +31381,6 @@
       "GroupID": 2007,
       "MapEntranceID": 3000501,
       "MapEntranceID2": 3000501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20073,
       "Floor": 4,
       "RewardID": 101404,
@@ -30876,7 +31400,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -30908,8 +31431,6 @@
       "GroupID": 2008,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -30928,7 +31449,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -30960,7 +31480,6 @@
       "GroupID": 2008,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20081,
       "Floor": 2,
       "RewardID": 101402,
@@ -30980,7 +31499,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31012,7 +31530,6 @@
       "GroupID": 2008,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20082,
       "Floor": 3,
       "RewardID": 101403,
@@ -31032,7 +31549,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31064,7 +31580,6 @@
       "GroupID": 2008,
       "MapEntranceID": 3000301,
       "MapEntranceID2": 3000301,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20083,
       "Floor": 4,
       "RewardID": 101404,
@@ -31084,7 +31599,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31116,8 +31630,6 @@
       "GroupID": 2009,
       "MapEntranceID": 3000101,
       "MapEntranceID2": 3000101,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -31136,7 +31648,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 2,
       "ConfigList1": [
         200001
@@ -31168,7 +31679,6 @@
       "GroupID": 2009,
       "MapEntranceID": 3000101,
       "MapEntranceID2": 3000101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20091,
       "Floor": 2,
       "RewardID": 101402,
@@ -31188,7 +31698,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 2,
       "ConfigList1": [
         200001
@@ -31220,7 +31729,6 @@
       "GroupID": 2009,
       "MapEntranceID": 3000101,
       "MapEntranceID2": 3000101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20092,
       "Floor": 3,
       "RewardID": 101403,
@@ -31240,7 +31748,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 2,
       "ConfigList1": [
         200001
@@ -31272,7 +31779,6 @@
       "GroupID": 2009,
       "MapEntranceID": 3000101,
       "MapEntranceID2": 3000101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20093,
       "Floor": 4,
       "RewardID": 101404,
@@ -31292,7 +31798,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 2,
       "ConfigList1": [
         200001
@@ -31324,8 +31829,6 @@
       "GroupID": 2010,
       "MapEntranceID": 3000202,
       "MapEntranceID2": 3000202,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -31344,7 +31847,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -31376,7 +31878,6 @@
       "GroupID": 2010,
       "MapEntranceID": 3000202,
       "MapEntranceID2": 3000202,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20101,
       "Floor": 2,
       "RewardID": 101402,
@@ -31396,7 +31897,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -31428,7 +31928,6 @@
       "GroupID": 2010,
       "MapEntranceID": 3000202,
       "MapEntranceID2": 3000202,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20102,
       "Floor": 3,
       "RewardID": 101403,
@@ -31448,7 +31947,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -31480,7 +31978,6 @@
       "GroupID": 2010,
       "MapEntranceID": 3000202,
       "MapEntranceID2": 3000202,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20103,
       "Floor": 4,
       "RewardID": 101404,
@@ -31500,7 +31997,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -31532,8 +32028,6 @@
       "GroupID": 2011,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -31552,7 +32046,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -31584,7 +32077,6 @@
       "GroupID": 2011,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20111,
       "Floor": 2,
       "RewardID": 101402,
@@ -31604,7 +32096,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -31636,7 +32127,6 @@
       "GroupID": 2011,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20112,
       "Floor": 3,
       "RewardID": 101403,
@@ -31656,7 +32146,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -31688,7 +32177,6 @@
       "GroupID": 2011,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20113,
       "Floor": 4,
       "RewardID": 101404,
@@ -31708,7 +32196,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -31740,8 +32227,6 @@
       "GroupID": 2012,
       "MapEntranceID": 3013002,
       "MapEntranceID2": 3013002,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -31760,7 +32245,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31792,7 +32276,6 @@
       "GroupID": 2012,
       "MapEntranceID": 3013002,
       "MapEntranceID2": 3013002,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20121,
       "Floor": 2,
       "RewardID": 101402,
@@ -31812,7 +32295,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31844,7 +32326,6 @@
       "GroupID": 2012,
       "MapEntranceID": 3013002,
       "MapEntranceID2": 3013002,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20122,
       "Floor": 3,
       "RewardID": 101403,
@@ -31864,7 +32345,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31896,7 +32376,6 @@
       "GroupID": 2012,
       "MapEntranceID": 3013002,
       "MapEntranceID2": 3013002,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20123,
       "Floor": 4,
       "RewardID": 101404,
@@ -31916,7 +32395,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -31948,8 +32426,6 @@
       "GroupID": 2013,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -31968,7 +32444,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -32000,7 +32475,6 @@
       "GroupID": 2013,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20131,
       "Floor": 2,
       "RewardID": 101402,
@@ -32020,7 +32494,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -32052,7 +32525,6 @@
       "GroupID": 2013,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20132,
       "Floor": 3,
       "RewardID": 101403,
@@ -32072,7 +32544,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -32104,7 +32575,6 @@
       "GroupID": 2013,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20133,
       "Floor": 4,
       "RewardID": 101404,
@@ -32124,7 +32594,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -32156,8 +32625,6 @@
       "GroupID": 2014,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -32176,7 +32643,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32208,7 +32674,6 @@
       "GroupID": 2014,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20141,
       "Floor": 2,
       "RewardID": 101402,
@@ -32228,7 +32693,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32260,7 +32724,6 @@
       "GroupID": 2014,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20142,
       "Floor": 3,
       "RewardID": 101403,
@@ -32280,7 +32743,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32312,7 +32774,6 @@
       "GroupID": 2014,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20143,
       "Floor": 4,
       "RewardID": 101404,
@@ -32332,7 +32793,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32364,8 +32824,6 @@
       "GroupID": 2015,
       "MapEntranceID": 3012101,
       "MapEntranceID2": 3012101,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -32384,7 +32842,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32416,7 +32873,6 @@
       "GroupID": 2015,
       "MapEntranceID": 3012101,
       "MapEntranceID2": 3012101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20151,
       "Floor": 2,
       "RewardID": 101402,
@@ -32436,7 +32892,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32468,7 +32923,6 @@
       "GroupID": 2015,
       "MapEntranceID": 3012101,
       "MapEntranceID2": 3012101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20152,
       "Floor": 3,
       "RewardID": 101403,
@@ -32488,7 +32942,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32520,7 +32973,6 @@
       "GroupID": 2015,
       "MapEntranceID": 3012101,
       "MapEntranceID2": 3012101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20153,
       "Floor": 4,
       "RewardID": 101404,
@@ -32540,7 +32992,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32572,8 +33023,6 @@
       "GroupID": 2016,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -32592,7 +33041,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32624,7 +33072,6 @@
       "GroupID": 2016,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20161,
       "Floor": 2,
       "RewardID": 101402,
@@ -32644,7 +33091,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32676,7 +33122,6 @@
       "GroupID": 2016,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20162,
       "Floor": 3,
       "RewardID": 101403,
@@ -32696,7 +33141,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32728,7 +33172,6 @@
       "GroupID": 2016,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20163,
       "Floor": 4,
       "RewardID": 101404,
@@ -32748,7 +33191,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -32780,8 +33222,6 @@
       "GroupID": 2017,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -32800,7 +33240,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32832,7 +33271,6 @@
       "GroupID": 2017,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20171,
       "Floor": 2,
       "RewardID": 101402,
@@ -32852,7 +33290,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32884,7 +33321,6 @@
       "GroupID": 2017,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20172,
       "Floor": 3,
       "RewardID": 101403,
@@ -32904,7 +33340,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32936,7 +33371,6 @@
       "GroupID": 2017,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013001,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20173,
       "Floor": 4,
       "RewardID": 101404,
@@ -32956,7 +33390,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -32988,8 +33421,6 @@
       "GroupID": 2018,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -33008,7 +33439,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -33040,7 +33470,6 @@
       "GroupID": 2018,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20181,
       "Floor": 2,
       "RewardID": 101402,
@@ -33060,7 +33489,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -33092,7 +33520,6 @@
       "GroupID": 2018,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20182,
       "Floor": 3,
       "RewardID": 101403,
@@ -33112,7 +33539,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -33144,7 +33570,6 @@
       "GroupID": 2018,
       "MapEntranceID": 3013101,
       "MapEntranceID2": 3013101,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20183,
       "Floor": 4,
       "RewardID": 101404,
@@ -33164,7 +33589,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 10,
       "ConfigList1": [
         200001
@@ -33196,8 +33620,6 @@
       "GroupID": 2019,
       "MapEntranceID": 3013501,
       "MapEntranceID2": 3013501,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -33216,7 +33638,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -33248,7 +33669,6 @@
       "GroupID": 2019,
       "MapEntranceID": 3013501,
       "MapEntranceID2": 3013501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20191,
       "Floor": 2,
       "RewardID": 101402,
@@ -33268,7 +33688,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -33300,7 +33719,6 @@
       "GroupID": 2019,
       "MapEntranceID": 3013501,
       "MapEntranceID2": 3013501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20192,
       "Floor": 3,
       "RewardID": 101403,
@@ -33320,7 +33738,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -33352,7 +33769,6 @@
       "GroupID": 2019,
       "MapEntranceID": 3013501,
       "MapEntranceID2": 3013501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20193,
       "Floor": 4,
       "RewardID": 101404,
@@ -33372,7 +33788,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 8,
       "ConfigList1": [
         200001
@@ -33404,8 +33819,6 @@
       "GroupID": 2020,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -33424,7 +33837,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -33456,7 +33868,6 @@
       "GroupID": 2020,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20201,
       "Floor": 2,
       "RewardID": 101402,
@@ -33476,7 +33887,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -33508,7 +33918,6 @@
       "GroupID": 2020,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20202,
       "Floor": 3,
       "RewardID": 101403,
@@ -33528,7 +33937,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -33560,7 +33968,6 @@
       "GroupID": 2020,
       "MapEntranceID": 3012701,
       "MapEntranceID2": 3012701,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20203,
       "Floor": 4,
       "RewardID": 101404,
@@ -33580,7 +33987,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -33612,8 +34018,6 @@
       "GroupID": 2021,
       "MapEntranceID": 3014003,
       "MapEntranceID2": 3014003,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -33632,7 +34036,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -33664,7 +34067,6 @@
       "GroupID": 2021,
       "MapEntranceID": 3014003,
       "MapEntranceID2": 3014003,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20211,
       "Floor": 2,
       "RewardID": 101402,
@@ -33684,7 +34086,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -33716,7 +34117,6 @@
       "GroupID": 2021,
       "MapEntranceID": 3014003,
       "MapEntranceID2": 3014003,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20212,
       "Floor": 3,
       "RewardID": 101403,
@@ -33736,7 +34136,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -33768,7 +34167,6 @@
       "GroupID": 2021,
       "MapEntranceID": 3014003,
       "MapEntranceID2": 3014003,
-      "PreLevel": 0,
       "PreChallengeMazeID": 20213,
       "Floor": 4,
       "RewardID": 101404,
@@ -33788,7 +34186,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -33799,7 +34196,7 @@
       "EventIDList1": [
         30319041
       ],
-      "MazeGroupID2": 6,
+      "MazeGroupID2": 7,
       "ConfigList2": [
         200001
       ],
@@ -33818,18 +34215,16 @@
         "Hash64": 3452848110356815428
       },
       "GroupID": 2022,
-      "MapEntranceID": 3014003,
-      "MapEntranceID2": 3014003,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
+      "MapEntranceID": 3012201,
+      "MapEntranceID2": 3012201,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
-        "Fire",
+        "Physical",
         "Ice"
       ],
       "DamageType2": [
-        "Physical",
+        "Thunder",
         "Imaginary"
       ],
       "ChallengeTargetID": [
@@ -33840,28 +34235,27 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
-      "MazeGroupID1": 6,
+      "MazeGroupID1": 7,
       "ConfigList1": [
         200001
       ],
       "NpcMonsterIDList1": [
-        8033010
+        2023030
       ],
       "EventIDList1": [
-        30319011
+        30320011
       ],
-      "MazeGroupID2": 7,
+      "MazeGroupID2": 8,
       "ConfigList2": [
         200001
       ],
       "NpcMonsterIDList2": [
-        3003020
+        2033010
       ],
       "EventIDList2": [
-        30319012
+        30320012
       ],
-      "MazeBuffID": 3031220
+      "MazeBuffID": 3031205
     },
     {
       "ID": 20222,
@@ -33870,64 +34264,11 @@
         "Hash64": 8452873277519920600
       },
       "GroupID": 2022,
-      "MapEntranceID": 3014003,
-      "MapEntranceID2": 3014003,
-      "PreLevel": 0,
+      "MapEntranceID": 3012201,
+      "MapEntranceID2": 3012201,
       "PreChallengeMazeID": 20221,
       "Floor": 2,
       "RewardID": 101402,
-      "DamageType1": [
-        "Wind",
-        "Quantum"
-      ],
-      "DamageType2": [
-        "Ice",
-        "Thunder"
-      ],
-      "ChallengeTargetID": [
-        2001,
-        2002,
-        2003
-      ],
-      "StageNum": 2,
-      "MonsterID1": [],
-      "MonsterID2": [],
-      "ChallengeCountDown": 0,
-      "MazeGroupID1": 6,
-      "ConfigList1": [
-        200001
-      ],
-      "NpcMonsterIDList1": [
-        8003030
-      ],
-      "EventIDList1": [
-        30319021
-      ],
-      "MazeGroupID2": 7,
-      "ConfigList2": [
-        200001
-      ],
-      "NpcMonsterIDList2": [
-        2023030
-      ],
-      "EventIDList2": [
-        30319022
-      ],
-      "MazeBuffID": 3031220
-    },
-    {
-      "ID": 20223,
-      "Name": {
-        "Hash": -1628433705,
-        "Hash64": 14032183653902725817
-      },
-      "GroupID": 2022,
-      "MapEntranceID": 3014003,
-      "MapEntranceID2": 3014003,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 20222,
-      "Floor": 3,
-      "RewardID": 101403,
       "DamageType1": [
         "Fire",
         "Ice"
@@ -33944,8 +34285,7 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
-      "MazeGroupID1": 6,
+      "MazeGroupID1": 7,
       "ConfigList1": [
         200001
       ],
@@ -33953,9 +34293,9 @@
         8033010
       ],
       "EventIDList1": [
-        30319031
+        30320021
       ],
-      "MazeGroupID2": 7,
+      "MazeGroupID2": 8,
       "ConfigList2": [
         200001
       ],
@@ -33963,29 +34303,28 @@
         3003020
       ],
       "EventIDList2": [
-        30319032
+        30320022
       ],
-      "MazeBuffID": 3031220
+      "MazeBuffID": 3031205
     },
     {
-      "ID": 20224,
+      "ID": 20223,
       "Name": {
-        "Hash": -1628433708,
-        "Hash64": 5282632862635207804
+        "Hash": -1628433705,
+        "Hash64": 14032183653902725817
       },
       "GroupID": 2022,
-      "MapEntranceID": 3014003,
-      "MapEntranceID2": 3014003,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 20223,
-      "Floor": 4,
-      "RewardID": 101404,
+      "MapEntranceID": 3012201,
+      "MapEntranceID2": 3012201,
+      "PreChallengeMazeID": 20222,
+      "Floor": 3,
+      "RewardID": 101403,
       "DamageType1": [
         "Physical",
-        "Fire"
+        "Ice"
       ],
       "DamageType2": [
-        "Quantum",
+        "Thunder",
         "Imaginary"
       ],
       "ChallengeTargetID": [
@@ -33996,28 +34335,77 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
-      "MazeGroupID1": 6,
+      "MazeGroupID1": 7,
       "ConfigList1": [
         200001
       ],
       "NpcMonsterIDList1": [
-        1004030
+        2023030
       ],
       "EventIDList1": [
-        30319041
+        30320031
       ],
-      "MazeGroupID2": 7,
+      "MazeGroupID2": 8,
       "ConfigList2": [
         200001
       ],
       "NpcMonsterIDList2": [
-        8024011
+        2033010
       ],
       "EventIDList2": [
-        30319042
+        30320032
       ],
-      "MazeBuffID": 3031220
+      "MazeBuffID": 3031205
+    },
+    {
+      "ID": 20224,
+      "Name": {
+        "Hash": -1628433708,
+        "Hash64": 5282632862635207804
+      },
+      "GroupID": 2022,
+      "MapEntranceID": 3012201,
+      "MapEntranceID2": 3012201,
+      "PreChallengeMazeID": 20223,
+      "Floor": 4,
+      "RewardID": 101404,
+      "DamageType1": [
+        "Physical",
+        "Fire"
+      ],
+      "DamageType2": [
+        "Thunder",
+        "Imaginary"
+      ],
+      "ChallengeTargetID": [
+        2001,
+        2002,
+        2003
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "MazeGroupID1": 7,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        3024010
+      ],
+      "EventIDList1": [
+        30320041
+      ],
+      "MazeGroupID2": 8,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        3024020
+      ],
+      "EventIDList2": [
+        30320042
+      ],
+      "MazeBuffID": 3031205
     },
     {
       "ID": 30011,
@@ -34028,8 +34416,6 @@
       "GroupID": 3001,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012402,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -34049,7 +34435,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -34081,7 +34466,6 @@
       "GroupID": 3001,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012402,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30011,
       "Floor": 2,
       "RewardID": 101402,
@@ -34102,7 +34486,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -34134,7 +34517,6 @@
       "GroupID": 3001,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012402,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30012,
       "Floor": 3,
       "RewardID": 101403,
@@ -34155,7 +34537,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -34187,7 +34568,6 @@
       "GroupID": 3001,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012402,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30013,
       "Floor": 4,
       "RewardID": 101404,
@@ -34208,7 +34588,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -34240,8 +34619,6 @@
       "GroupID": 3002,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -34263,7 +34640,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34295,7 +34671,6 @@
       "GroupID": 3002,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30021,
       "Floor": 2,
       "RewardID": 101402,
@@ -34318,7 +34693,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34350,7 +34724,6 @@
       "GroupID": 3002,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30022,
       "Floor": 3,
       "RewardID": 101403,
@@ -34373,7 +34746,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34405,7 +34777,6 @@
       "GroupID": 3002,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30023,
       "Floor": 4,
       "RewardID": 101404,
@@ -34428,7 +34799,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34460,8 +34830,6 @@
       "GroupID": 3003,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -34484,7 +34852,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -34516,7 +34883,6 @@
       "GroupID": 3003,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30031,
       "Floor": 2,
       "RewardID": 101402,
@@ -34540,7 +34906,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -34572,7 +34937,6 @@
       "GroupID": 3003,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30032,
       "Floor": 3,
       "RewardID": 101403,
@@ -34596,7 +34960,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -34628,7 +34991,6 @@
       "GroupID": 3003,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30033,
       "Floor": 4,
       "RewardID": 101404,
@@ -34652,7 +35014,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -34684,8 +35045,6 @@
       "GroupID": 3004,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012302,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -34708,7 +35067,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34740,7 +35098,6 @@
       "GroupID": 3004,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012302,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30041,
       "Floor": 2,
       "RewardID": 101402,
@@ -34764,7 +35121,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34796,7 +35152,6 @@
       "GroupID": 3004,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012302,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30042,
       "Floor": 3,
       "RewardID": 101403,
@@ -34820,7 +35175,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34852,7 +35206,6 @@
       "GroupID": 3004,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3012302,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30043,
       "Floor": 4,
       "RewardID": 101404,
@@ -34876,7 +35229,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -34908,8 +35260,6 @@
       "GroupID": 3005,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -34936,7 +35286,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -34968,7 +35317,6 @@
       "GroupID": 3005,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30051,
       "Floor": 2,
       "RewardID": 101402,
@@ -34996,7 +35344,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -35028,7 +35375,6 @@
       "GroupID": 3005,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30052,
       "Floor": 3,
       "RewardID": 101403,
@@ -35056,7 +35402,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -35088,7 +35433,6 @@
       "GroupID": 3005,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30053,
       "Floor": 4,
       "RewardID": 101404,
@@ -35116,7 +35460,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -35148,8 +35491,6 @@
       "GroupID": 3006,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -35172,7 +35513,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35204,7 +35544,6 @@
       "GroupID": 3006,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30061,
       "Floor": 2,
       "RewardID": 101402,
@@ -35228,7 +35567,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35260,7 +35598,6 @@
       "GroupID": 3006,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30062,
       "Floor": 3,
       "RewardID": 101403,
@@ -35284,7 +35621,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35316,7 +35652,6 @@
       "GroupID": 3006,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30063,
       "Floor": 4,
       "RewardID": 101404,
@@ -35340,7 +35675,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35372,8 +35706,6 @@
       "GroupID": 3007,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -35400,7 +35732,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -35432,7 +35763,6 @@
       "GroupID": 3007,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30071,
       "Floor": 2,
       "RewardID": 101402,
@@ -35460,7 +35790,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -35492,7 +35821,6 @@
       "GroupID": 3007,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30072,
       "Floor": 3,
       "RewardID": 101403,
@@ -35520,7 +35848,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -35552,7 +35879,6 @@
       "GroupID": 3007,
       "MapEntranceID": 3012202,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30073,
       "Floor": 4,
       "RewardID": 101404,
@@ -35580,7 +35906,6 @@
         3002022,
         3002012
       ],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 9,
       "ConfigList1": [
         200001
@@ -35612,8 +35937,6 @@
       "GroupID": 3008,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -35636,7 +35959,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35668,7 +35990,6 @@
       "GroupID": 3008,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30081,
       "Floor": 2,
       "RewardID": 101402,
@@ -35692,7 +36013,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35724,7 +36044,6 @@
       "GroupID": 3008,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30082,
       "Floor": 3,
       "RewardID": 101403,
@@ -35748,7 +36067,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35780,7 +36098,6 @@
       "GroupID": 3008,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012602,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30083,
       "Floor": 4,
       "RewardID": 101404,
@@ -35804,7 +36121,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -35836,8 +36152,6 @@
       "GroupID": 3009,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -35860,7 +36174,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -35892,7 +36205,6 @@
       "GroupID": 3009,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30091,
       "Floor": 2,
       "RewardID": 101402,
@@ -35916,7 +36228,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -35948,7 +36259,6 @@
       "GroupID": 3009,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30092,
       "Floor": 3,
       "RewardID": 101403,
@@ -35972,7 +36282,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36004,7 +36313,6 @@
       "GroupID": 3009,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3000205,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30093,
       "Floor": 4,
       "RewardID": 101404,
@@ -36028,7 +36336,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36060,8 +36367,6 @@
       "GroupID": 3010,
       "MapEntranceID": 3013102,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -36084,7 +36389,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -36116,7 +36420,6 @@
       "GroupID": 3010,
       "MapEntranceID": 3013102,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30101,
       "Floor": 2,
       "RewardID": 101402,
@@ -36140,7 +36443,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -36172,7 +36474,6 @@
       "GroupID": 3010,
       "MapEntranceID": 3013102,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30102,
       "Floor": 3,
       "RewardID": 101403,
@@ -36196,7 +36497,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -36228,7 +36528,6 @@
       "GroupID": 3010,
       "MapEntranceID": 3013102,
       "MapEntranceID2": 3012501,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30103,
       "Floor": 4,
       "RewardID": 101404,
@@ -36252,7 +36551,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 4,
       "ConfigList1": [
         200001
@@ -36284,8 +36582,6 @@
       "GroupID": 3011,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -36308,7 +36604,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -36340,7 +36635,6 @@
       "GroupID": 3011,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30111,
       "Floor": 2,
       "RewardID": 101402,
@@ -36364,7 +36658,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -36396,7 +36689,6 @@
       "GroupID": 3011,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30112,
       "Floor": 3,
       "RewardID": 101403,
@@ -36420,7 +36712,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -36452,7 +36743,6 @@
       "GroupID": 3011,
       "MapEntranceID": 3012602,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30113,
       "Floor": 4,
       "RewardID": 101404,
@@ -36476,7 +36766,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -36508,8 +36797,6 @@
       "GroupID": 3012,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -36532,7 +36819,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36564,7 +36850,6 @@
       "GroupID": 3012,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30121,
       "Floor": 2,
       "RewardID": 101402,
@@ -36588,7 +36873,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36620,7 +36904,6 @@
       "GroupID": 3012,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30122,
       "Floor": 3,
       "RewardID": 101403,
@@ -36644,7 +36927,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36676,7 +36958,6 @@
       "GroupID": 3012,
       "MapEntranceID": 3012401,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30123,
       "Floor": 4,
       "RewardID": 101404,
@@ -36700,7 +36981,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -36732,8 +37012,6 @@
       "GroupID": 3013,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -36756,7 +37034,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -36788,7 +37065,6 @@
       "GroupID": 3013,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30131,
       "Floor": 2,
       "RewardID": 101402,
@@ -36812,7 +37088,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -36844,7 +37119,6 @@
       "GroupID": 3013,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30132,
       "Floor": 3,
       "RewardID": 101403,
@@ -36868,7 +37142,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -36900,7 +37173,6 @@
       "GroupID": 3013,
       "MapEntranceID": 3000204,
       "MapEntranceID2": 3012601,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30133,
       "Floor": 4,
       "RewardID": 101404,
@@ -36924,7 +37196,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 3,
       "ConfigList1": [
         200001
@@ -36956,8 +37227,6 @@
       "GroupID": 3014,
       "MapEntranceID": 3012402,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -36978,7 +37247,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -37010,7 +37278,6 @@
       "GroupID": 3014,
       "MapEntranceID": 3012402,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30141,
       "Floor": 2,
       "RewardID": 101402,
@@ -37032,7 +37299,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -37064,7 +37330,6 @@
       "GroupID": 3014,
       "MapEntranceID": 3012402,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30142,
       "Floor": 3,
       "RewardID": 101403,
@@ -37086,7 +37351,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -37118,7 +37382,6 @@
       "GroupID": 3014,
       "MapEntranceID": 3012402,
       "MapEntranceID2": 3012201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30143,
       "Floor": 4,
       "RewardID": 101404,
@@ -37140,7 +37403,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 5,
       "ConfigList1": [
         200001
@@ -37172,8 +37434,6 @@
       "GroupID": 3015,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -37196,7 +37456,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -37228,7 +37487,6 @@
       "GroupID": 3015,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30151,
       "Floor": 2,
       "RewardID": 101402,
@@ -37252,7 +37510,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -37284,7 +37541,6 @@
       "GroupID": 3015,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30152,
       "Floor": 3,
       "RewardID": 101403,
@@ -37308,7 +37564,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -37340,7 +37595,6 @@
       "GroupID": 3015,
       "MapEntranceID": 3000205,
       "MapEntranceID2": 3013201,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30153,
       "Floor": 4,
       "RewardID": 101404,
@@ -37364,7 +37618,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 6,
       "ConfigList1": [
         200001
@@ -37396,8 +37649,6 @@
       "GroupID": 3016,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
-      "PreChallengeMazeID": 0,
       "Floor": 1,
       "RewardID": 101401,
       "DamageType1": [
@@ -37420,7 +37671,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -37452,7 +37702,6 @@
       "GroupID": 3016,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30161,
       "Floor": 2,
       "RewardID": 101402,
@@ -37476,7 +37725,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -37508,7 +37756,6 @@
       "GroupID": 3016,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30162,
       "Floor": 3,
       "RewardID": 101403,
@@ -37532,7 +37779,6 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001
@@ -37564,7 +37810,6 @@
       "GroupID": 3016,
       "MapEntranceID": 3013001,
       "MapEntranceID2": 3013502,
-      "PreLevel": 0,
       "PreChallengeMazeID": 30163,
       "Floor": 4,
       "RewardID": 101404,
@@ -37588,7 +37833,221 @@
       "StageNum": 2,
       "MonsterID1": [],
       "MonsterID2": [],
-      "ChallengeCountDown": 0,
+      "MazeGroupID1": 20,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4014013
+      ],
+      "EventIDList1": [
+        420384
+      ],
+      "MazeGroupID2": 4,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2035010
+      ],
+      "EventIDList2": [
+        420394
+      ],
+      "MazeBuffID": 3110015
+    },
+    {
+      "ID": 30171,
+      "Name": {
+        "Hash": -864550566,
+        "Hash64": 15872130406069260002
+      },
+      "GroupID": 3017,
+      "MapEntranceID": 3013001,
+      "MapEntranceID2": 3013502,
+      "Floor": 1,
+      "RewardID": 101401,
+      "DamageType1": [
+        "Fire",
+        "Ice",
+        "Thunder",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire",
+        "Thunder",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        3001,
+        3002,
+        3003
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "MazeGroupID1": 20,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4014013
+      ],
+      "EventIDList1": [
+        420381
+      ],
+      "MazeGroupID2": 4,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2035010
+      ],
+      "EventIDList2": [
+        420391
+      ],
+      "MazeBuffID": 3110015
+    },
+    {
+      "ID": 30172,
+      "Name": {
+        "Hash": 701533375,
+        "Hash64": 13254911350403977251
+      },
+      "GroupID": 3017,
+      "MapEntranceID": 3013001,
+      "MapEntranceID2": 3013502,
+      "PreChallengeMazeID": 30171,
+      "Floor": 2,
+      "RewardID": 101402,
+      "DamageType1": [
+        "Fire",
+        "Ice",
+        "Thunder",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire",
+        "Thunder",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        3001,
+        3002,
+        3003
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "MazeGroupID1": 20,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4014013
+      ],
+      "EventIDList1": [
+        420382
+      ],
+      "MazeGroupID2": 4,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2035010
+      ],
+      "EventIDList2": [
+        420392
+      ],
+      "MazeBuffID": 3110015
+    },
+    {
+      "ID": 30173,
+      "Name": {
+        "Hash": -2027349980,
+        "Hash64": 11064988067064301857
+      },
+      "GroupID": 3017,
+      "MapEntranceID": 3013001,
+      "MapEntranceID2": 3013502,
+      "PreChallengeMazeID": 30172,
+      "Floor": 3,
+      "RewardID": 101403,
+      "DamageType1": [
+        "Fire",
+        "Ice",
+        "Thunder",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire",
+        "Thunder",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        3001,
+        3002,
+        3003
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
+      "MazeGroupID1": 20,
+      "ConfigList1": [
+        200001
+      ],
+      "NpcMonsterIDList1": [
+        4014013
+      ],
+      "EventIDList1": [
+        420383
+      ],
+      "MazeGroupID2": 4,
+      "ConfigList2": [
+        200001
+      ],
+      "NpcMonsterIDList2": [
+        2035010
+      ],
+      "EventIDList2": [
+        420393
+      ],
+      "MazeBuffID": 3110015
+    },
+    {
+      "ID": 30174,
+      "Name": {
+        "Hash": -461266039,
+        "Hash64": 17442917764175070179
+      },
+      "GroupID": 3017,
+      "MapEntranceID": 3013001,
+      "MapEntranceID2": 3013502,
+      "PreChallengeMazeID": 30173,
+      "Floor": 4,
+      "RewardID": 101404,
+      "DamageType1": [
+        "Fire",
+        "Ice",
+        "Thunder",
+        "Quantum"
+      ],
+      "DamageType2": [
+        "Physical",
+        "Fire",
+        "Thunder",
+        "Wind"
+      ],
+      "ChallengeTargetID": [
+        3001,
+        3002,
+        3003
+      ],
+      "StageNum": 2,
+      "MonsterID1": [],
+      "MonsterID2": [],
       "MazeGroupID1": 20,
       "ConfigList1": [
         200001

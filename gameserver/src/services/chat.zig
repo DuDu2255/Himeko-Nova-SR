@@ -31,7 +31,7 @@ pub fn onGetFriendListInfo(session: *Session, _: *const Packet, allocator: Alloc
     friend.is_marked = true;
     friend.player_info = protocol.PlayerSimpleInfo{
         .personal_card = 253001,
-        .signature = .{ .Const = "DBKAHHK" },
+        .signature = .{ .Const = "这一定是个不同以往的浪漫故事，你说对吧？" },
         .nickname = .{ .Const = "CastoricePS" },
         .level = 99,
         .uid = 2000,
@@ -63,55 +63,49 @@ pub fn onPrivateChatHistory(session: *Session, _: *const Packet, allocator: Allo
     rsp.target_side = 1;
     rsp.contact_side = 2000;
     try rsp.chat_message_list.appendSlice(&[_]protocol.ChatMessageData{
-        .{
-            .message_data = .{
-                .message_type = .MSG_TYPE_CUSTOM_TEXT,
-                .chat_data = .{
-                    .GHLBBDKIJKK = .{
-                        .message_text = .{ .Const = "Use https://srtools.neonteam.dev/ to setup config" },
-                    },
-                },
-            },
-            .BOFJJHIKIJL = .{
-                .EEDAADMACAP = .{
-                    .uid = 2000,
-                },
-            },
-        },
-        .{
-            .message_data = .{
-                .message_type = .MSG_TYPE_CUSTOM_TEXT,
-                .chat_data = .{
-                    .GHLBBDKIJKK = .{
-                        .message_text = .{ .Const = "/help for command list" },
-                    },
-                },
-            },
-            .BOFJJHIKIJL = .{
-                .EEDAADMACAP = .{
-                    .uid = 2000,
-                },
-            },
-        },
-        .{
-            .message_data = .{
-                .message_type = .MSG_TYPE_CUSTOM_TEXT,
-                .chat_data = .{
-                    .GHLBBDKIJKK = .{
-                        .message_text = .{ .Const = "to use command, use '/' first" },
-                    },
-                },
-            },
-            .BOFJJHIKIJL = .{
-                .EEDAADMACAP = .{
-                    .uid = 2000,
-                },
-            },
-        },
+        try makeTextChat(allocator, 2000, "Use https://srtools.neonteam.dev/ to setup config"),
+        try makeTextChat(allocator, 2000, "/help for command list"),
+        try makeTextChat(allocator, 2000, "to use command, use '/' first"),
     });
 
     try session.send(CmdID.CmdGetPrivateChatHistoryScRsp, rsp);
 }
+
+pub fn onGetAiPamChatHistory(session: *Session, _: *const Packet, allocator: Allocator) !void {
+    var rsp = protocol.GetAiPamChatHistoryScRsp.init(allocator);
+
+    rsp.retcode = 0;
+    rsp.target_side = 1;
+    try rsp.LOGPAINLECC.appendSlice(&[_]protocol.ChatMessageData{
+        try makeTextChat(allocator, 2000, "Kill all nantong :Đ"),
+    });
+
+    try session.send(CmdID.CmdGetAiPamChatHistoryScRsp, rsp);
+}
+
+fn makeTextChat(
+    allocator: Allocator,
+    uid: u32,
+    text: []const u8,
+) !protocol.ChatMessageData {
+    var datas = std.ArrayList(protocol.MessageChatData).init(allocator);
+    try datas.append(.{
+        .message_type = .MSG_TYPE_CUSTOM_TEXT,
+        .chat_data = .{
+            .FPMABADPBPO = .{
+                .message_text = .{ .Const = text },
+            },
+        },
+    });
+
+    return .{
+        .message_datas = datas,
+        .AEELKNKIICI = .{
+            .MHHBNFFOPOJ = .{ .uid = uid },
+        },
+    };
+}
+
 pub fn onSendMsg(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     std.debug.print("Received packet: {any}\n", .{packet});
     const req = protocol.SendMsgCsReq.init(allocator);
@@ -119,26 +113,21 @@ pub fn onSendMsg(session: *Session, packet: *const Packet, allocator: Allocator)
 
     std.debug.print("Decoded request: {any}\n", .{req});
     std.debug.print("Raw packet body: {any}\n", .{packet.body});
-    const msg_text = switch (req.message_text) {
-        .Empty => "",
-        .Owned => |owned| owned.str,
-        .Const => |const_str| const_str,
-    };
-    var msg_text2: []const u8 = "";
-    if (packet.body.len > 9 and packet.body[9] == 47) {
-        msg_text2 = packet.body[9 .. packet.body.len - 6];
+    var msg_text: []const u8 = "";
+    if (packet.body.len > 9 and packet.body[15] == 47) {
+        msg_text = packet.body[15..packet.body.len];
     }
-    std.debug.print("Manually extracted message text: '{s}'\n", .{msg_text2});
+    std.debug.print("Manually extracted message text: '{s}'\n", .{msg_text});
 
-    std.debug.print("Message Text 1: {any}\n", .{msg_text});
+    std.debug.print("Manually extracted message text: '{s}'\n", .{msg_text});
 
-    if (msg_text2.len > 0) {
-        if (std.mem.indexOf(u8, msg_text2, "/") != null) {
+    if (msg_text.len > 0) {
+        if (std.mem.indexOf(u8, msg_text, "/") != null) {
             std.debug.print("Message contains a '/'\n", .{});
-            try commandhandler.handleCommand(session, msg_text2, allocator);
+            try commandhandler.handleCommand(session, msg_text, allocator);
         } else {
             std.debug.print("Message does not contain a '/'\n", .{});
-            try commandhandler.sendMessage(session, msg_text2, allocator);
+            try commandhandler.sendMessage(session, msg_text, allocator);
         }
     } else {
         std.debug.print("Empty message received\n", .{});
@@ -147,4 +136,13 @@ pub fn onSendMsg(session: *Session, packet: *const Packet, allocator: Allocator)
     var rsp = protocol.SendMsgScRsp.init(allocator);
     rsp.retcode = 0;
     try session.send(CmdID.CmdSendMsgScRsp, rsp);
+}
+
+pub fn onTriggerAiPamSpeak(session: *Session, packet: *const Packet, allocator: Allocator) !void {
+    const req = try packet.getProto(protocol.TriggerAiPamSpeakCsReq, allocator);
+    defer req.deinit();
+    try session.send(CmdID.CmdTriggerAiPamSpeakScRsp, protocol.TriggerAiPamSpeakScRsp{
+        .KJPAOFNJKDA = req.KJPAOFNJKDA,
+        .retcode = 0,
+    });
 }

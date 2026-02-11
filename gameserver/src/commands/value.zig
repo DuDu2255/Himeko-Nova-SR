@@ -9,7 +9,6 @@ const AvatarManager = @import("../manager/avatar_mgr.zig");
 const BattleManager = @import("../manager/battle_mgr.zig");
 const SceneManager = @import("../manager/scene_mgr.zig");
 const PlayerStateMod = @import("../player_state.zig");
-const ItemDb = @import("../item_db.zig");
 const Logic = @import("../utils/logic.zig");
 const MailService = @import("../services/mail.zig");
 const MiscDefaults = @import("../data/misc_defaults.zig");
@@ -311,15 +310,12 @@ pub fn give(session: *Session, args: []const u8, allocator: Allocator) !void {
     const count = std.fmt.parseInt(u32, cnt_str, 10) catch return commandhandler.sendMessage(session, "Usage: /give <itemId> <count>", allocator);
     if (count == 0) return commandhandler.sendMessage(session, "Count must be > 0", allocator);
 
-    const cfg_opt = ItemDb.findById(tid);
-    if (cfg_opt == null) {
-        var buf: [128]u8 = undefined;
-        const msg = try std.fmt.bufPrint(&buf, "Unknown item ID: {d} (check items.json)", .{tid});
-        return commandhandler.sendMessage(session, msg, allocator);
-    }
-
     if (session.player_state) |*state| {
-        try state.inventory.addMaterial(tid, count);
+        switch (tid) {
+            1 => state.mcoin += count,
+            2 => state.scoin += count,
+            else => {},
+        }
         try PlayerStateMod.save(state);
     }
 
@@ -364,9 +360,9 @@ pub fn stop(session: *Session, _: []const u8, allocator: Allocator) !void {
 }
 
 pub fn kick(session: *Session, _: []const u8, allocator: Allocator) !void {
-    var notify = protocol.PlayerKickOutScNotify.init(allocator);
-    notify.kick_type = .KICK_BY_GM;
-    try session.send(CmdID.CmdPlayerKickOutScNotify, notify);
+    var notify = protocol.FightKickOutScNotify.init(allocator);
+    notify.kick_type = @enumFromInt(4);
+    //try session.send(CmdID.CmdPlayerKickOutScNotify, notify);
     try commandhandler.sendMessage(session, "You have been kicked by admin.", allocator);
     session.close();
 }
@@ -569,7 +565,6 @@ pub fn mailCommand(session: *Session, args: []const u8, allocator: Allocator) !v
             const item_id = std.fmt.parseInt(u32, key_s, 10) catch continue;
             const num = std.fmt.parseInt(u32, val_s, 10) catch continue;
             if (num == 0) continue;
-            if (ItemDb.findById(item_id) == null) continue;
             try attachments.append(.{ .item_id = item_id, .num = num });
             continue;
         }

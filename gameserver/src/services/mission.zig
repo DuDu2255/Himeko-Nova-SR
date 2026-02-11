@@ -37,15 +37,6 @@ pub fn onGetTutorialGuideStatus(session: *Session, _: *const Packet, allocator: 
             try rsp.tutorial_guide_list.append(protocol.TutorialGuide{ .id = id, .status = protocol.TutorialStatus.TUTORIAL_FINISH });
         }
     }
-    if (session.player_state) |state| {
-        for (state.tutorial_guides.items) |id| {
-            if (!seen.contains(id)) {
-                try seen.put(id, {});
-                try rsp.tutorial_guide_list.append(protocol.TutorialGuide{ .id = id, .status = protocol.TutorialStatus.TUTORIAL_FINISH });
-            }
-        }
-    }
-
     try session.send(CmdID.CmdGetTutorialGuideScRsp, rsp);
 }
 

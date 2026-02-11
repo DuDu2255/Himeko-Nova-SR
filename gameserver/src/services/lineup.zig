@@ -39,7 +39,7 @@ fn buildPresetLineup(allocator: Allocator, preset: PlayerStateMod.LineupPreset, 
 
 pub fn onGetCurLineupData(session: *Session, _: *const Packet, allocator: Allocator) !void {
     const lineup = if (session.player_state) |*state| blk: {
-        const idx = state.cur_lineup_index;
+        const idx: u32 = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
         break :blk try buildPresetLineup(allocator, state.lineups[@intCast(idx)], idx);
     } else blk: {
         var lineup_mgr = LineupManager.LineupManager.init(allocator);
@@ -56,7 +56,7 @@ pub fn onGetAllLineupData(session: *Session, _: *const Packet, allocator: Alloca
     rsp.retcode = 0;
 
     if (session.player_state) |*state| {
-        rsp.cur_index = state.cur_lineup_index;
+        rsp.cur_index = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
         var i: u32 = 0;
         while (i < MaxLineups) : (i += 1) {
             const lineup = try buildPresetLineup(allocator, state.lineups[@intCast(i)], i);
@@ -128,7 +128,7 @@ pub fn onReplaceLineup(session: *Session, packet: *const Packet, allocator: Allo
 
     if (session.player_state) |*state| {
         var idx: u32 = req.index;
-        if (idx >= MaxLineups or (idx == 0 and state.cur_lineup_index != 0)) {
+        if (idx >= MaxLineups) {
             idx = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
         }
 

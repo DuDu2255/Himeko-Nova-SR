@@ -10,6 +10,7 @@ const SceneManager = @import("../manager/scene_mgr.zig");
 const LineupManager = @import("../manager/lineup_mgr.zig");
 const ChallengeManager = @import("../manager/challenge_mgr.zig");
 const AvatarManager = @import("../manager/avatar_mgr.zig");
+const PlayerStateMod = @import("../player_state.zig");
 const LineupService = @import("lineup.zig");
 const terminal_commands = @import("terminal_commands");
 const trial_activity = @import("../activity/trial_activity.zig");
@@ -29,7 +30,8 @@ fn refreshBattleLineup(session: *Session, allocator: Allocator, send_sync: bool)
     if (Logic.Challenge().ChallengeMode() and Logic.Challenge().GetAvatarIDs().items.len != 0) {
         for (Logic.Challenge().GetAvatarIDs().items) |id| if (id != 0) try ids.append(id);
     } else if (session.player_state) |state| {
-        const preset = state.lineups[@intCast(state.cur_lineup_index)];
+        const safe_idx: u32 = if (state.cur_lineup_index < PlayerStateMod.MaxLineups) state.cur_lineup_index else 0;
+        const preset = state.lineups[@intCast(safe_idx)];
         for (preset) |id| if (id != 0) try ids.append(id);
     } else {
         const misc_lineup = ConfigManager.global_misc_defaults.player.lineup;
@@ -115,7 +117,7 @@ pub fn onQuickStartFarmElement(session: *Session, packet: *const Packet, allocat
     try session.send(CmdID.CmdQuickStartFarmElementScRsp, protocol.QuickStartFarmElementScRsp{
         .retcode = 0,
         .world_level = req.world_level,
-        .COBCONOPIAP = req.COBCONOPIAP,
+        .CMFPEABAKPB = req.CMFPEABAKPB,
         .battle_info = battle,
     });
 }

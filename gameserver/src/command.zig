@@ -120,22 +120,23 @@ pub fn sendMessage(session: *Session, msg: []const u8, allocator: Allocator) !vo
 
     var chat = protocol.RevcMsgScNotify.init(allocator);
     chat.chat_type = protocol.ChatType.CHAT_TYPE_PRIVATE;
-    chat.source_uid = 2000;
-    chat.RecvMessageData = .{
-        .message_data = .{
-            .message_type = .MSG_TYPE_CUSTOM_TEXT,
-            .chat_data = .{
-                .GHLBBDKIJKK = .{
-                    .message_text = .{ .Const = msg },
-                },
+    chat.source_uid = 1;
+    var message_datas = std.ArrayList(protocol.MessageChatData).init(allocator);
+    try message_datas.append(.{
+        .message_type = .MSG_TYPE_CUSTOM_TEXT,
+        .chat_data = .{
+            .FPMABADPBPO = .{
+                .message_text = .{ .Const = msg },
             },
         },
-        .BOFJJHIKIJL = .{
-            .EEDAADMACAP = .{
+    });
+    chat.recv_message_data = .{
+        .message_datas = message_datas,
+        .AEELKNKIICI = .{
+            .MHHBNFFOPOJ = .{
                 .uid = 2000,
             },
         },
     };
-    chat.target_uid = 1;
     try session.send(CmdID.CmdRevcMsgScNotify, chat);
 }

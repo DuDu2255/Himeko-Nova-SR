@@ -113,7 +113,7 @@ pub fn onEnterScene(session: *Session, packet: *const Packet, allocator: Allocat
     var spawn_override_pos: ?protocol.Vector = null;
     var spawn_override_rot: ?protocol.Vector = null;
     // Client may provide a direct spawn transform; treat it as highest priority.
-    if (req.NDLCINEFPFJ) |pos| {
+    if (req.BGMJIJPIJDM) |pos| {
         spawn_override_pos = pos;
     }
     if (req.rot) |rot| {
@@ -358,7 +358,7 @@ pub fn onUpdateGroupProperty(session: *Session, packet: *const Packet, allocator
     rsp.floor_id = req.floor_id;
     rsp.group_id = req.group_id;
     rsp.dimension_id = req.dimension_id;
-    rsp.GCJKIDIBJHJ = req.GCJKIDIBJHJ;
+    rsp.NOCBONMOOGC = req.NOCBONMOOGC;
     try session.send(CmdID.CmdUpdateGroupPropertyScRsp, rsp);
 }
 pub fn onChangePropTimeline(session: *Session, packet: *const Packet, allocator: Allocator) !void {
@@ -426,32 +426,10 @@ pub fn onInteractProp(session: *Session, packet: *const Packet, allocator: Alloc
 
     var new_prop_state: u32 = 0;
     if (is_chest_open) {
-        if (session.player_state) |*state| {
-            // If this chest has already been opened, don't process it again
-            var already: bool = false;
-            for (state.opened_chests.items) |id| {
-                if (id == req.prop_entity_id) {
-                    already = true;
-                    break;
-                }
-            }
-            if (!already) {
-                // set new_prop_state to 2 (commonly used for opened/used chests in resources)
-                new_prop_state = 2;
-                // Notify client that chest is opened
-
-                // Grant items (items are saved in the player state)
-
-                // Record chest as opened
-                try state.opened_chests.append(req.prop_entity_id);
-                try PlayerStateMod.save(state);
-            } else {
-                // already opened -> ensure client sees opened state
-                new_prop_state = 2;
-            }
-        }
+        // Always mark chest as opened on this interaction; no persistent opened_chests tracking.
+        new_prop_state = 2;
     } else {
-        // not a chest open action 鈥?leave default new_prop_state = 0
+        // not a chest open action: leave default new_prop_state = 0
     }
 
     // send scene refresh so client updates prop visuals (add_entity with updated prop_state)
@@ -475,7 +453,7 @@ pub fn onInteractProp(session: *Session, packet: *const Packet, allocator: Alloc
         var prop = protocol.ScenePropInfo.init(allocator);
         prop.prop_state = new_prop_state;
         ent.entity = .{ .prop = prop };
-        r.BOEDFMAFHOM = .{ .add_entity = ent };
+        r.AEMKIFPBBJM = .{ .add_entity = ent };
         try refresh_list.append(r);
 
         g.refresh_entity = refresh_list;
@@ -504,6 +482,6 @@ pub fn onSetTrainWorldId(session: *Session, packet: *const Packet, allocator: Al
 
     try session.send(CmdID.CmdSetTrainWorldIdScRsp, protocol.SetTrainWorldIdScRsp{
         .retcode = 0,
-        .KNNGJBPJFIB = req.KNNGJBPJFIB,
+        .IJGLDCNMELH = req.IJGLDCNMELH,
     });
 }

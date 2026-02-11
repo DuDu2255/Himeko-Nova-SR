@@ -299,7 +299,7 @@ fn createSkillTree(
             }
             if (level) |lv| {
                 try skilltree_list.append(.{
-                    .multi_point_id = skill.anchor_type,
+                    .point_id = skill.anchor_type,
                     .level = lv,
                 });
             }
@@ -338,12 +338,12 @@ pub fn createRelic(
         .level = relicConf.level,
         .sub_affix_list = ArrayList(protocol.RelicAffix).init(allocator),
         .reforge_sub_affix_list = ArrayList(protocol.RelicAffix).init(allocator),
-        .ACNHGLOCFEN = ArrayList(protocol.RelicAffix).init(allocator),
+        .AOLFKGGECNB = ArrayList(protocol.RelicAffix).init(allocator),
     };
-    try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat1, .cnt = relicConf.cnt1, .step = relicConf.step1 });
-    try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat2, .cnt = relicConf.cnt2, .step = relicConf.step2 });
-    try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat3, .cnt = relicConf.cnt3, .step = relicConf.step3 });
-    try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat4, .cnt = relicConf.cnt4, .step = relicConf.step4 });
+    if (relicConf.stat1 != 0) try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat1, .cnt = relicConf.cnt1, .step = relicConf.step1 });
+    if (relicConf.stat2 != 0) try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat2, .cnt = relicConf.cnt2, .step = relicConf.step2 });
+    if (relicConf.stat3 != 0) try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat3, .cnt = relicConf.cnt3, .step = relicConf.step3 });
+    if (relicConf.stat4 != 0) try r.sub_affix_list.append(protocol.RelicAffix{ .affix_id = relicConf.stat4, .cnt = relicConf.cnt4, .step = relicConf.step4 });
     return r;
 }
 

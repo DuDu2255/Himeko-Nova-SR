@@ -231,7 +231,6 @@ pub const SceneManager = struct {
             const g = entry.value_ptr.*;
             try scene_info.entity_group_list.append(g);
             try scene_info.entity_list.appendSlice(g.entity_list.items);
-            try scene_info.opened_chests_list.append(g.group_id);
             try scene_info.custom_data_list.append(.{ .group_id = g.group_id });
             try scene_info.group_state_list.append(.{
                 .group_id = g.group_id,

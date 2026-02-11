@@ -3,8 +3,6 @@
     {
       "TutorialID": 1001,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1001.json",
       "TriggerParams": [
         {
@@ -42,7 +40,6 @@
       "TutorialID": 1003,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1003.json",
       "TriggerParams": [
         {
@@ -64,8 +61,6 @@
     {
       "TutorialID": 1004,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1004.json",
       "TriggerParams": [
         {
@@ -83,8 +78,6 @@
     {
       "TutorialID": 1005,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1005.json",
       "TriggerParams": [
         {
@@ -102,8 +95,6 @@
     {
       "TutorialID": 1007,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1007.json",
       "TriggerParams": [
         {
@@ -145,7 +136,6 @@
       "TutorialID": 1010,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_1010.json",
       "TriggerParams": [
         {
@@ -167,8 +157,6 @@
     {
       "TutorialID": 2000,
       "Priority": 1,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2000.json",
       "TriggerParams": [
         {
@@ -190,8 +178,6 @@
     {
       "TutorialID": 2001,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2001.json",
       "TriggerParams": [
         {
@@ -209,8 +195,6 @@
     {
       "TutorialID": 2002,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2002.json",
       "TriggerParams": [
         {
@@ -232,8 +216,6 @@
     {
       "TutorialID": 2003,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2003.json",
       "TriggerParams": [
         {
@@ -250,9 +232,6 @@
     },
     {
       "TutorialID": 2004,
-      "Priority": 0,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2004.json",
       "TriggerParams": [
         {
@@ -270,8 +249,6 @@
     {
       "TutorialID": 2008,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2008.json",
       "TriggerParams": [
         {
@@ -290,7 +267,6 @@
       "TutorialID": 2010,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2010.json",
       "TriggerParams": [
         {
@@ -313,7 +289,6 @@
       "TutorialID": 2011,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2011.json",
       "TriggerParams": [
         {
@@ -332,7 +307,6 @@
       "TutorialID": 2012,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2012.json",
       "TriggerParams": [
         {
@@ -355,7 +329,6 @@
       "TutorialID": 2013,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_2013.json",
       "TriggerParams": [],
       "FinishTriggerParams": [
@@ -368,8 +341,6 @@
     {
       "TutorialID": 3001,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3001.json",
       "TriggerParams": [
         {
@@ -395,8 +366,6 @@
     {
       "TutorialID": 3002,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3002.json",
       "TriggerParams": [
         {
@@ -418,8 +387,6 @@
     {
       "TutorialID": 3003,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3003.json",
       "TriggerParams": [
         {
@@ -441,8 +408,6 @@
     {
       "TutorialID": 3004,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3004.json",
       "TriggerParams": [
         {
@@ -460,8 +425,6 @@
     {
       "TutorialID": 3005,
       "Priority": 9,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3005.json",
       "TriggerParams": [],
       "FinishTriggerParams": [
@@ -474,8 +437,6 @@
     {
       "TutorialID": 3006,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3006.json",
       "TriggerParams": [
         {
@@ -498,7 +459,6 @@
       "TutorialID": 3008,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3008.json",
       "TriggerParams": [
         {
@@ -526,7 +486,6 @@
       "TutorialID": 3010,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3010.json",
       "TriggerParams": [
         {
@@ -633,7 +592,6 @@
     {
       "TutorialID": 3202,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_3202.json",
       "TriggerParams": [
@@ -647,8 +605,6 @@
     {
       "TutorialID": 4002,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4002.json",
       "TriggerParams": [
         {
@@ -674,7 +630,6 @@
     {
       "TutorialID": 4003,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4003.json",
       "TriggerParams": [
@@ -701,7 +656,6 @@
       "TutorialID": 4004,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4004.json",
       "TriggerParams": [
         {
@@ -724,7 +678,6 @@
       "TutorialID": 4005,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4005.json",
       "TriggerParams": [
         {
@@ -747,7 +700,6 @@
       "TutorialID": 4006,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4006.json",
       "TriggerParams": [
         {
@@ -770,7 +722,6 @@
       "TutorialID": 4007,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4007.json",
       "TriggerParams": [
         {
@@ -793,7 +744,6 @@
       "TutorialID": 4008,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4008.json",
       "TriggerParams": [
         {
@@ -819,7 +769,6 @@
     {
       "TutorialID": 4009,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4009.json",
       "TriggerParams": [
@@ -838,7 +787,6 @@
       "TutorialID": 4010,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4010.json",
       "TriggerParams": [
         {
@@ -860,7 +808,6 @@
     {
       "TutorialID": 4011,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4011.json",
       "TriggerParams": [
@@ -888,7 +835,6 @@
     {
       "TutorialID": 4014,
       "Priority": 11,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4014.json",
       "TriggerParams": [
@@ -907,7 +853,6 @@
       "TutorialID": 4015,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4015.json",
       "TriggerParams": [
         {
@@ -1871,168 +1816,6 @@
       "FinishTriggerParams": []
     },
     {
-      "TutorialID": 4086,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4086.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "ShowUIDialog",
-          "TriggerParam": "LimaoNewsIntroductionDialog"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4087,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4087.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "ShowUIDialog",
-          "TriggerParam": "LimaoNewsPostDetailWindow"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4088,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4088.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "4088"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4089,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4089.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "LimaoNewsPostTriggerGuide"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4090,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4090.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "4090"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4091,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4091.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "ShowUIDialog",
-          "TriggerParam": "LimaoNewsPostSubmitWindow"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4092,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4092.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "4092"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4093,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4093.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "FinishMainMission",
-          "TriggerParam": "1054007"
-        },
-        {
-          "TriggerType": "OnMazeMainPage",
-          "TriggerParam": "0"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4094,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4094.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "4094"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4095,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4095.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TutorialFinish",
-          "TriggerParam": "4093"
-        },
-        {
-          "TriggerType": "ShowUIPage",
-          "TriggerParam": "LimaoNewsMainEntrancePage"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
-      "TutorialID": 4096,
-      "Priority": 10,
-      "RestoreType": "AutoFinish",
-      "CanInterrupt": true,
-      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_4096.json",
-      "TriggerParams": [
-        {
-          "TriggerType": "TaskUnlock",
-          "TriggerParam": "4096"
-        }
-      ],
-      "FinishTriggerParams": []
-    },
-    {
       "TutorialID": 4097,
       "Priority": 10,
       "RestoreType": "AutoFinish",
@@ -2053,8 +1836,6 @@
     {
       "TutorialID": 5001,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5001.json",
       "TriggerParams": [
         {
@@ -2103,7 +1884,6 @@
       "TutorialID": 5003,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5003.json",
       "TriggerParams": [
         {
@@ -2116,8 +1896,6 @@
     {
       "TutorialID": 5004,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5004.json",
       "TriggerParams": [
         {
@@ -2139,8 +1917,6 @@
     {
       "TutorialID": 5005,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5005.json",
       "TriggerParams": [
         {
@@ -2163,7 +1939,6 @@
       "TutorialID": 5006,
       "Priority": 9,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5006.json",
       "TriggerParams": [
         {
@@ -2198,7 +1973,6 @@
       "TutorialID": 5007,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5007.json",
       "TriggerParams": [
         {
@@ -2216,7 +1990,6 @@
       "TutorialID": 5008,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5008.json",
       "TriggerParams": [
         {
@@ -2305,8 +2078,6 @@
     {
       "TutorialID": 5013,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5013.json",
       "TriggerParams": [
         {
@@ -2341,7 +2112,6 @@
     {
       "TutorialID": 5015,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5015.json",
       "TriggerParams": [
@@ -2374,7 +2144,6 @@
       "TutorialID": 5017,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5017.json",
       "TriggerParams": [
         {
@@ -2388,7 +2157,6 @@
       "TutorialID": 5018,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5018.json",
       "TriggerParams": [
         {
@@ -2406,7 +2174,6 @@
       "TutorialID": 5019,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5019.json",
       "TriggerParams": [
         {
@@ -2434,7 +2201,6 @@
       "TutorialID": 5022,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5022.json",
       "TriggerParams": [
         {
@@ -2448,7 +2214,6 @@
       "TutorialID": 5023,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5023.json",
       "TriggerParams": [
         {
@@ -2462,7 +2227,6 @@
       "TutorialID": 5024,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5024.json",
       "TriggerParams": [
         {
@@ -2476,7 +2240,6 @@
       "TutorialID": 5025,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5025.json",
       "TriggerParams": [
         {
@@ -2494,7 +2257,6 @@
       "TutorialID": 5026,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5026.json",
       "TriggerParams": [
         {
@@ -2526,7 +2288,6 @@
       "TutorialID": 5028,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5028.json",
       "TriggerParams": [
         {
@@ -2544,7 +2305,6 @@
       "TutorialID": 5029,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5029.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -2553,7 +2313,6 @@
       "TutorialID": 5030,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5030.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -2562,7 +2321,6 @@
       "TutorialID": 5031,
       "Priority": 11,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5031.json",
       "TriggerParams": [
         {
@@ -2614,7 +2372,6 @@
       "TutorialID": 5033,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5033.json",
       "TriggerParams": [
         {
@@ -2632,7 +2389,6 @@
       "TutorialID": 5034,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5034.json",
       "TriggerParams": [
         {
@@ -2654,7 +2410,6 @@
       "TutorialID": 5035,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5035.json",
       "TriggerParams": [
         {
@@ -2676,7 +2431,6 @@
       "TutorialID": 5036,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5036.json",
       "TriggerParams": [
         {
@@ -2698,7 +2452,6 @@
       "TutorialID": 5038,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5038.json",
       "TriggerParams": [
         {
@@ -2716,7 +2469,6 @@
       "TutorialID": 5039,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5039.json",
       "TriggerParams": [
         {
@@ -2734,7 +2486,6 @@
       "TutorialID": 5041,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5041.json",
       "TriggerParams": [
         {
@@ -2752,7 +2503,6 @@
       "TutorialID": 5044,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5044.json",
       "TriggerParams": [
         {
@@ -2766,7 +2516,6 @@
       "TutorialID": 5045,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5045.json",
       "TriggerParams": [
         {
@@ -2780,7 +2529,6 @@
       "TutorialID": 5046,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5046.json",
       "TriggerParams": [
         {
@@ -2794,7 +2542,6 @@
       "TutorialID": 5047,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5047.json",
       "TriggerParams": [
         {
@@ -2808,7 +2555,6 @@
       "TutorialID": 5048,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5048.json",
       "TriggerParams": [
         {
@@ -2822,7 +2568,6 @@
       "TutorialID": 5049,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5049.json",
       "TriggerParams": [
         {
@@ -2836,7 +2581,6 @@
       "TutorialID": 5050,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5050.json",
       "TriggerParams": [
         {
@@ -2850,7 +2594,6 @@
       "TutorialID": 5051,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5051.json",
       "TriggerParams": [
         {
@@ -2864,7 +2607,6 @@
       "TutorialID": 5052,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5052.json",
       "TriggerParams": [
         {
@@ -2878,7 +2620,6 @@
       "TutorialID": 5053,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5053.json",
       "TriggerParams": [
         {
@@ -2892,7 +2633,6 @@
       "TutorialID": 5054,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5054.json",
       "TriggerParams": [
         {
@@ -2906,7 +2646,6 @@
       "TutorialID": 5055,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5055.json",
       "TriggerParams": [
         {
@@ -2920,7 +2659,6 @@
       "TutorialID": 5056,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5056.json",
       "TriggerParams": [
         {
@@ -2938,7 +2676,6 @@
       "TutorialID": 5057,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5057.json",
       "TriggerParams": [
         {
@@ -2952,7 +2689,6 @@
       "TutorialID": 5058,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5058.json",
       "TriggerParams": [
         {
@@ -2966,7 +2702,6 @@
       "TutorialID": 5059,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5059.json",
       "TriggerParams": [
         {
@@ -2980,7 +2715,6 @@
       "TutorialID": 5060,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5060.json",
       "TriggerParams": [
         {
@@ -2994,7 +2728,6 @@
       "TutorialID": 5061,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5061.json",
       "TriggerParams": [
         {
@@ -3040,7 +2773,6 @@
       "TutorialID": 5064,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5064.json",
       "TriggerParams": [
         {
@@ -3103,8 +2835,6 @@
     {
       "TutorialID": 5072,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5072.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -3112,8 +2842,6 @@
     {
       "TutorialID": 5073,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5073.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -3121,8 +2849,6 @@
     {
       "TutorialID": 5074,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5074.json",
       "TriggerParams": [
         {
@@ -3135,8 +2861,6 @@
     {
       "TutorialID": 5075,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5075.json",
       "TriggerParams": [
         {
@@ -3149,7 +2873,6 @@
     {
       "TutorialID": 5077,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5077.json",
       "TriggerParams": [
@@ -3164,7 +2887,6 @@
       "TutorialID": 5078,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5078.json",
       "TriggerParams": [
         {
@@ -3182,7 +2904,6 @@
       "TutorialID": 5079,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5079.json",
       "TriggerParams": [
         {
@@ -3200,7 +2921,6 @@
       "TutorialID": 5081,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5081.json",
       "TriggerParams": [
         {
@@ -3218,7 +2938,6 @@
       "TutorialID": 5082,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5082.json",
       "TriggerParams": [
         {
@@ -3236,7 +2955,6 @@
       "TutorialID": 5083,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5083.json",
       "TriggerParams": [
         {
@@ -3254,7 +2972,6 @@
       "TutorialID": 5084,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5084.json",
       "TriggerParams": [
         {
@@ -3271,7 +2988,6 @@
     {
       "TutorialID": 5085,
       "Priority": 10,
-      "RestoreType": "Normal",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5085.json",
       "TriggerParams": [
@@ -3290,7 +3006,6 @@
       "TutorialID": 5086,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5086.json",
       "TriggerParams": [
         {
@@ -3308,7 +3023,6 @@
       "TutorialID": 5087,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5087.json",
       "TriggerParams": [
         {
@@ -3326,7 +3040,6 @@
       "TutorialID": 5088,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5088.json",
       "TriggerParams": [
         {
@@ -3340,7 +3053,6 @@
       "TutorialID": 5089,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5089.json",
       "TriggerParams": [
         {
@@ -3357,8 +3069,6 @@
     {
       "TutorialID": 5090,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5090.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -3367,7 +3077,6 @@
       "TutorialID": 5091,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5091.json",
       "TriggerParams": [
         {
@@ -3399,7 +3108,6 @@
       "TutorialID": 5093,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5093.json",
       "TriggerParams": [
         {
@@ -3427,7 +3135,6 @@
       "TutorialID": 5095,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5095.json",
       "TriggerParams": [
         {
@@ -3441,7 +3148,6 @@
       "TutorialID": 5096,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5096.json",
       "TriggerParams": [
         {
@@ -3455,7 +3161,6 @@
       "TutorialID": 5097,
       "Priority": 9,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5097.json",
       "TriggerParams": [
         {
@@ -3510,8 +3215,6 @@
     {
       "TutorialID": 5100,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5100.json",
       "TriggerParams": [
         {
@@ -3524,8 +3227,6 @@
     {
       "TutorialID": 5101,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5101.json",
       "TriggerParams": [
         {
@@ -3538,8 +3239,6 @@
     {
       "TutorialID": 5102,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5102.json",
       "TriggerParams": [
         {
@@ -3552,8 +3251,6 @@
     {
       "TutorialID": 5103,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5103.json",
       "TriggerParams": [
         {
@@ -3566,8 +3263,6 @@
     {
       "TutorialID": 5104,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5104.json",
       "TriggerParams": [
         {
@@ -3580,8 +3275,6 @@
     {
       "TutorialID": 5105,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5105.json",
       "TriggerParams": [
         {
@@ -3594,8 +3287,6 @@
     {
       "TutorialID": 5106,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5106.json",
       "TriggerParams": [
         {
@@ -3608,8 +3299,6 @@
     {
       "TutorialID": 5107,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5107.json",
       "TriggerParams": [
         {
@@ -3622,8 +3311,6 @@
     {
       "TutorialID": 5108,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5108.json",
       "TriggerParams": [
         {
@@ -3636,8 +3323,6 @@
     {
       "TutorialID": 5109,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5109.json",
       "TriggerParams": [
         {
@@ -3650,8 +3335,6 @@
     {
       "TutorialID": 5110,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5110.json",
       "TriggerParams": [
         {
@@ -3664,8 +3347,6 @@
     {
       "TutorialID": 5111,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_5111.json",
       "TriggerParams": [
         {
@@ -3927,8 +3608,6 @@
     {
       "TutorialID": 5150,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5150.json",
       "TriggerParams": [
         {
@@ -3956,7 +3635,6 @@
       "TutorialID": 5152,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5152.json",
       "TriggerParams": [
         {
@@ -3970,7 +3648,6 @@
       "TutorialID": 5153,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5153.json",
       "TriggerParams": [
         {
@@ -3984,7 +3661,6 @@
       "TutorialID": 5154,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5154.json",
       "TriggerParams": [
         {
@@ -3998,7 +3674,6 @@
       "TutorialID": 5155,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5155.json",
       "TriggerParams": [
         {
@@ -4015,8 +3690,6 @@
     {
       "TutorialID": 5156,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5156.json",
       "TriggerParams": [
         {
@@ -4034,7 +3707,6 @@
       "TutorialID": 5157,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5157.json",
       "TriggerParams": [
         {
@@ -4056,7 +3728,6 @@
       "TutorialID": 5158,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5158.json",
       "TriggerParams": [
         {
@@ -4069,8 +3740,6 @@
     {
       "TutorialID": 5159,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5159.json",
       "TriggerParams": [
         {
@@ -4088,7 +3757,6 @@
       "TutorialID": 5160,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5160.json",
       "TriggerParams": [
         {
@@ -4106,7 +3774,6 @@
       "TutorialID": 5161,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5161.json",
       "TriggerParams": [
         {
@@ -4120,7 +3787,6 @@
       "TutorialID": 5162,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5162.json",
       "TriggerParams": [
         {
@@ -4137,8 +3803,6 @@
     {
       "TutorialID": 5163,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5163.json",
       "TriggerParams": [
         {
@@ -4160,8 +3824,6 @@
     {
       "TutorialID": 5164,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5164.json",
       "TriggerParams": [
         {
@@ -4616,8 +4278,6 @@
     {
       "TutorialID": 5211,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5211.json",
       "TriggerParams": [
         {
@@ -5223,7 +4883,6 @@
       "TutorialID": 5388,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5388.json",
       "TriggerParams": [
         {
@@ -5246,7 +4905,6 @@
       "TutorialID": 5355,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5355.json",
       "TriggerParams": [
         {
@@ -5325,7 +4983,6 @@
       "TutorialID": 5357,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5357.json",
       "TriggerParams": [
         {
@@ -5371,7 +5028,6 @@
       "TutorialID": 5359,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5359.json",
       "TriggerParams": [
         {
@@ -5463,7 +5119,6 @@
       "TutorialID": 5367,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5367.json",
       "TriggerParams": [
         {
@@ -5615,7 +5270,6 @@
       "TutorialID": 5369,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5369.json",
       "TriggerParams": [],
       "FinishTriggerParams": [
@@ -5675,7 +5329,6 @@
       "TutorialID": 5372,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5372.json",
       "TriggerParams": [
         {
@@ -5698,7 +5351,6 @@
       "TutorialID": 5373,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5373.json",
       "TriggerParams": [
         {
@@ -6604,7 +6256,6 @@
       "TutorialID": 5514,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5514.json",
       "TriggerParams": [
         {
@@ -7891,7 +7542,6 @@
       "TutorialID": 5801,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5801.json",
       "TriggerParams": [
         {
@@ -8148,7 +7798,6 @@
       "TutorialID": 5716,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5716.json",
       "TriggerParams": [
         {
@@ -8448,6 +8097,280 @@
         {
           "TriggerType": "TaskUnlock",
           "TriggerParam": "MarblePve_FirstMatch"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5921,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5921.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_1_1"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5922,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5922.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5921"
+        },
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "ChenLingBattleSelectCardDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5923,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5923.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_1_2"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5924,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5924.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5923"
+        },
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "ChenLingBattleSelectCardDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5925,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5925.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_1_3"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5926,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5926.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5925"
+        },
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "ChenLingBattleSelectCardDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5927,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5927.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5938"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5928,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5928.json",
+      "TriggerParams": [],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5929,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5929.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TakeSubMission",
+          "TriggerParam": "804110215"
+        },
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "ChenLingBattleMainEntrancePage"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5930,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "",
+      "TriggerParams": [],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5931,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5931.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5926"
+        },
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "ChenLingBattleShopDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5933,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5933.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5931"
+        },
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "ChenLingBattleMainEntrancePage"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5934,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5934.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5933"
+        },
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "ChenLingBattleDeckSelectPage"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5936,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5936.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "5937"
+        },
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "ChenLingBattleSelectPolicyDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5937,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5937.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_2_1"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5938,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5938.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_3_1"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5939,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5939.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_4_1"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 5940,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_5940.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "ChenLingBattlePreparePage_Wave_5_1"
         }
       ],
       "FinishTriggerParams": []
@@ -11393,6 +11316,10 @@
         {
           "TriggerType": "ShowUIPage",
           "TriggerParam": "DiceCombatPVEBattlePreparePage"
+        },
+        {
+          "TriggerType": "TakeSubMission",
+          "TriggerParam": "105400302"
         }
       ],
       "FinishTriggerParams": []
@@ -11480,7 +11407,12 @@
       "RestoreType": "AutoFinish",
       "CanInterrupt": true,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_6706.json",
-      "TriggerParams": [],
+      "TriggerParams": [
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "DiceCombatNPCEntrancePage"
+        }
+      ],
       "FinishTriggerParams": []
     },
     {
@@ -11642,7 +11574,7 @@
         },
         {
           "TriggerType": "FinishSubMission",
-          "TriggerParam": "804010015"
+          "TriggerParam": "804010017"
         }
       ],
       "FinishTriggerParams": []
@@ -11686,8 +11618,6 @@
     {
       "TutorialID": 7001,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7001.json",
       "TriggerParams": [
         {
@@ -11700,8 +11630,6 @@
     {
       "TutorialID": 7002,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7002.json",
       "TriggerParams": [
         {
@@ -11714,8 +11642,6 @@
     {
       "TutorialID": 7003,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7003.json",
       "TriggerParams": [
         {
@@ -11728,8 +11654,6 @@
     {
       "TutorialID": 7004,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7004.json",
       "TriggerParams": [
         {
@@ -11742,8 +11666,6 @@
     {
       "TutorialID": 7005,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7005.json",
       "TriggerParams": [
         {
@@ -11756,8 +11678,6 @@
     {
       "TutorialID": 7006,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/InBattle/Tutorial_7006.json",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -11765,8 +11685,6 @@
     {
       "TutorialID": 7007,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7007.json",
       "TriggerParams": [
         {
@@ -11785,7 +11703,6 @@
       "TutorialID": 7008,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "",
       "TriggerParams": [],
       "FinishTriggerParams": []
@@ -11794,7 +11711,6 @@
       "TutorialID": 7009,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7009.json",
       "TriggerParams": [
         {
@@ -11825,8 +11741,6 @@
     {
       "TutorialID": 7011,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7011.json",
       "TriggerParams": [
         {
@@ -11839,8 +11753,6 @@
     {
       "TutorialID": 7012,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7012.json",
       "TriggerParams": [
         {
@@ -11853,8 +11765,6 @@
     {
       "TutorialID": 7013,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7013.json",
       "TriggerParams": [
         {
@@ -11867,8 +11777,6 @@
     {
       "TutorialID": 7014,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7014.json",
       "TriggerParams": [
         {
@@ -11886,8 +11794,6 @@
     {
       "TutorialID": 7015,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7015.json",
       "TriggerParams": [
         {
@@ -11905,8 +11811,6 @@
     {
       "TutorialID": 7016,
       "Priority": 10,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7016.json",
       "TriggerParams": [
         {
@@ -11925,7 +11829,6 @@
       "TutorialID": 7017,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_7017.json",
       "TriggerParams": [
         {
@@ -11943,7 +11846,6 @@
       "TutorialID": 9001,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9001.json",
       "TriggerParams": [
         {
@@ -11962,7 +11864,6 @@
       "TutorialID": 9002,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9002.json",
       "TriggerParams": [
         {
@@ -11985,7 +11886,6 @@
       "TutorialID": 9003,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9003.json",
       "TriggerParams": [
         {
@@ -12008,7 +11908,6 @@
       "TutorialID": 9004,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9004.json",
       "TriggerParams": [
         {
@@ -12031,7 +11930,6 @@
       "TutorialID": 9005,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9005.json",
       "TriggerParams": [
         {
@@ -12054,7 +11952,6 @@
       "TutorialID": 9006,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9006.json",
       "TriggerParams": [
         {
@@ -12073,7 +11970,6 @@
       "TutorialID": 9007,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9007.json",
       "TriggerParams": [
         {
@@ -12101,7 +11997,6 @@
       "TutorialID": 9009,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9009.json",
       "TriggerParams": [
         {
@@ -12115,7 +12010,6 @@
       "TutorialID": 9010,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9010.json",
       "TriggerParams": [
         {
@@ -12129,7 +12023,6 @@
       "TutorialID": 9011,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9011.json",
       "TriggerParams": [
         {
@@ -12145,9 +12038,6 @@
     },
     {
       "TutorialID": 9012,
-      "Priority": 0,
-      "RestoreType": "Normal",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9012.json",
       "TriggerParams": [
         {
@@ -12178,7 +12068,6 @@
       "TutorialID": 9014,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9014.json",
       "TriggerParams": [
         {
@@ -12192,7 +12081,6 @@
       "TutorialID": 9015,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9015.json",
       "TriggerParams": [
         {
@@ -12206,7 +12094,6 @@
       "TutorialID": 9016,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9016.json",
       "TriggerParams": [
         {
@@ -12220,7 +12107,6 @@
       "TutorialID": 9017,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9017.json",
       "TriggerParams": [
         {
@@ -12234,7 +12120,6 @@
       "TutorialID": 9018,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9018.json",
       "TriggerParams": [
         {
@@ -12252,7 +12137,6 @@
       "TutorialID": 9019,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9019.json",
       "TriggerParams": [
         {
@@ -12266,7 +12150,6 @@
       "TutorialID": 9020,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9020.json",
       "TriggerParams": [
         {
@@ -12289,7 +12172,6 @@
       "TutorialID": 9021,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9021.json",
       "TriggerParams": [
         {
@@ -13632,6 +13514,281 @@
       "FinishTriggerParams": []
     },
     {
+      "TutorialID": 9118,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9118.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9118"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9119,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9119.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9119"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9120,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9120.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9120"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9121,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9121.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9121"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9122,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9122.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9122"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9123,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9123.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9123"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9124,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9124.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9124"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9125,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "",
+      "TriggerParams": [],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9126,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9126.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "RoguePersonaSelectStylePage"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9127,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9127.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9127"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9128,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9128.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9128"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9129,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9129.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "ShowUIDialog",
+          "TriggerParam": "RoguePersonaStyleUpgradeDialog"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9130,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9130.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9130"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9131,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9131.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9131"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9132,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9132.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "ShowUIPage",
+          "TriggerParam": "RogueTournCastPersonaRoomCardPage"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9133,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9133.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9133"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9134,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9134.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9134"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9135,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9135.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9135"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9136,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9136.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "EnterBattle",
+          "TriggerParam": "83019904"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
+      "TutorialID": 9137,
+      "Priority": 10,
+      "RestoreType": "AutoFinish",
+      "CanInterrupt": true,
+      "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9137.json",
+      "TriggerParams": [
+        {
+          "TriggerType": "TaskUnlock",
+          "TriggerParam": "Tutorial_9137"
+        }
+      ],
+      "FinishTriggerParams": []
+    },
+    {
       "TutorialID": 9201,
       "Priority": 10,
       "RestoreType": "AutoFinish",
@@ -14165,7 +14322,6 @@
       "TutorialID": 9801,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9801.json",
       "TriggerParams": [
         {
@@ -14179,7 +14335,6 @@
       "TutorialID": 9802,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9802.json",
       "TriggerParams": [
         {
@@ -14202,7 +14357,6 @@
       "TutorialID": 9804,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9804.json",
       "TriggerParams": [
         {
@@ -14230,7 +14384,6 @@
       "TutorialID": 9806,
       "Priority": 10,
       "RestoreType": "AutoFinish",
-      "CanInterrupt": false,
       "TutorialJsonPath": "Config/Level/Tutorial/Tutorial_9806.json",
       "TriggerParams": [
         {

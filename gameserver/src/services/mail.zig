@@ -149,7 +149,11 @@ pub fn onTakeMailAttachment(session: *Session, packet: *const Packet, allocator:
             for (m.attachments) |a| {
                 try granted.append(.{ .item_id = a.item_id, .num = a.num });
                 if (session.player_state) |*state| {
-                    try state.inventory.addMaterial(a.item_id, a.num);
+                    switch (a.item_id) {
+                        1 => state.mcoin += a.num,
+                        2 => state.scoin += a.num,
+                        else => {},
+                    }
                 }
             }
             break;

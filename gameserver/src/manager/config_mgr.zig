@@ -15,6 +15,7 @@ const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
 
 const Data = @import("../data.zig");
+const Logic = @import("../utils/logic.zig");
 
 fn updateGameConfigMtime() !void {
     const stat = try std.fs.cwd().statFile("freesr-data.json");
@@ -173,12 +174,23 @@ pub fn initGameGlobals(main_allocator: Allocator) !void {
     // propagate misc data to shared globals
     Data.SkinList = global_misc_defaults.player.skins;
     Data.PlayerOutfitList = global_misc_defaults.player.player_outfits;
-    // ItemList tracks ids only; inventory entries carry counts
-    {
-        const ids = try main_allocator.alloc(u32, global_misc_defaults.player.inventory.len);
-        for (global_misc_defaults.player.inventory, 0..) |mat, idx| ids[idx] = mat.id;
-        Data.ItemList = ids;
+    // Inventory is intentionally disabled in this server flavor.
+    Data.ItemList = &.{};
+
+    // Apply misc-level enhanced avatar flags (if provided) to runtime list.
+    if (global_misc_defaults.enhanced_ids.len > 0) {
+        @memset(&Data.EnhanceAvatarID, 0);
+        var i: usize = 0;
+        for (global_misc_defaults.enhanced_ids) |id| {
+            if (i >= Data.EnhanceAvatarID.len) break;
+            Data.EnhanceAvatarID[i] = id;
+            i += 1;
+        }
     }
+
+    // Apply theory craft settings: explicit max HP override for enemies.
+    Logic.FunMode().SetFunMode(global_misc_defaults.costom_battlemode.enabled);
+    Logic.FunMode().SetHp(global_misc_defaults.costom_battlemode.enemy_max_hp_override);
 
     global_game_config_cache = try GameConfigCache.init(main_allocator);
 

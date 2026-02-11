@@ -95,4 +95,3 @@ setTextComponent(
 -- UI debugging helpers:
 -- dumpHierarchy("UIRoot", 4)
 -- findTransformsByName("VersionText", 30)
-

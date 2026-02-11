@@ -2,12 +2,10 @@
   "activity_config": [
     {
       "ActivityID": 10012,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1001201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10014,
@@ -16,8 +14,7 @@
       "ActivityModuleIDList": [
         1001402,
         1001401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10015,
@@ -25,8 +22,7 @@
       "ResidentModuleList": [
         1001501
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10016,
@@ -34,8 +30,7 @@
       "ResidentModuleList": [
         1001601
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10017,
@@ -43,8 +38,7 @@
       "ResidentModuleList": [
         1001701
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10018,
@@ -53,8 +47,7 @@
       "ActivityModuleIDList": [
         1001801,
         1001802
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10019,
@@ -62,8 +55,7 @@
       "ResidentModuleList": [
         1001901
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10020,
@@ -71,8 +63,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10021,
@@ -80,8 +71,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10023,
@@ -89,8 +79,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10024,
@@ -98,8 +87,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10025,
@@ -107,8 +95,7 @@
       "ResidentModuleList": [
         1002501
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10026,
@@ -117,8 +104,7 @@
       "ActivityModuleIDList": [
         1002601,
         1002602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10027,
@@ -127,8 +113,7 @@
       "ActivityModuleIDList": [
         1002601,
         1002602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10028,
@@ -136,8 +121,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10029,
@@ -145,17 +129,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10030,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10031,
@@ -163,8 +144,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10032,
@@ -172,8 +152,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10033,
@@ -182,35 +161,28 @@
       "ActivityModuleIDList": [
         1002601,
         1002602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10034,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10036,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10042,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10035,
@@ -218,8 +190,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10037,
@@ -227,8 +198,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10038,
@@ -237,8 +207,7 @@
       "ActivityModuleIDList": [
         1002601,
         1002602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10039,
@@ -246,8 +215,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1003901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10040,
@@ -255,8 +223,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10041,
@@ -264,8 +231,7 @@
       "ResidentModuleList": [
         1004101
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10043,
@@ -273,8 +239,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10044,
@@ -283,8 +248,7 @@
       "ActivityModuleIDList": [
         1002601,
         1002602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10045,
@@ -292,35 +256,28 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10054,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10046,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10055,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10047,
@@ -328,8 +285,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10048,
@@ -337,8 +293,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1004801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10049,
@@ -346,8 +301,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10050,
@@ -357,8 +311,7 @@
         1002601,
         1002602,
         1002603
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10051,
@@ -366,8 +319,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10052,
@@ -375,8 +327,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10053,
@@ -384,8 +335,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10056,
@@ -393,8 +343,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10057,
@@ -402,8 +351,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10058,
@@ -411,8 +359,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10059,
@@ -420,8 +367,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1005901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10060,
@@ -429,8 +375,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1006001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10061,
@@ -438,8 +383,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10062,
@@ -447,17 +391,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10063,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1006301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10064,
@@ -465,8 +406,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10065,
@@ -474,8 +414,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10066,
@@ -483,17 +422,14 @@
       "ResidentModuleList": [
         1006201
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10067,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1006701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10068,
@@ -501,17 +437,14 @@
       "ResidentModuleList": [
         1006801
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 10069,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1006901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10070,
@@ -519,8 +452,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10071,
@@ -528,8 +460,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10072,
@@ -537,8 +468,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1007201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10073,
@@ -546,8 +476,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10074,
@@ -555,44 +484,35 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10075,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1007501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10077,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10078,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10079,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1007901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10080,
@@ -600,8 +520,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10081,
@@ -609,8 +528,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10082,
@@ -618,8 +536,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10083,
@@ -627,17 +544,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10084,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10085,
@@ -645,17 +559,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10086,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10087,
@@ -663,8 +574,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10088,
@@ -672,8 +582,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10089,
@@ -681,17 +590,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10090,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1009001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10091,
@@ -699,8 +605,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10092,
@@ -708,44 +613,35 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10101,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10103,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10104,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10106,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10107,
@@ -753,8 +649,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1008001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10108,
@@ -762,8 +657,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10109,
@@ -771,17 +665,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10112,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1011201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10113,
@@ -789,8 +680,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10114,
@@ -798,8 +688,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10115,
@@ -807,17 +696,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10116,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1011601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10117,
@@ -825,17 +711,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10122,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1012201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10123,
@@ -843,8 +726,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10124,
@@ -852,8 +734,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10126,
@@ -861,17 +742,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1012601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10127,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1012701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10129,
@@ -879,8 +757,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10130,
@@ -888,8 +765,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10132,
@@ -897,8 +773,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10133,
@@ -906,17 +781,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10134,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1013401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10135,
@@ -924,17 +796,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1010801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10137,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1013701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10138,
@@ -942,8 +811,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1012601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10139,
@@ -951,8 +819,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 10140,
@@ -960,8 +827,30 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         1002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
+    },
+    {
+      "ActivityID": 10143,
+      "ActivityPanelID": 10026,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        1002601
+      ]
+    },
+    {
+      "ActivityID": 10144,
+      "ActivityPanelID": 10108,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        1010801
+      ]
+    },
+    {
+      "ActivityID": 10145,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        1014501
+      ]
     },
     {
       "ActivityID": 20001,
@@ -969,8 +858,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20002,
@@ -978,8 +866,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2000202
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20004,
@@ -987,8 +874,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2000401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20005,
@@ -1000,8 +886,7 @@
         2000503,
         2000504,
         2000505
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20006,
@@ -1013,8 +898,7 @@
         2000603,
         2000604,
         2000605
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20007,
@@ -1025,8 +909,7 @@
         2000604,
         2000601,
         2000701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20008,
@@ -1038,8 +921,7 @@
         2000803,
         2000804,
         2000805
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20009,
@@ -1051,8 +933,7 @@
         2000903,
         2000504,
         2000905
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20010,
@@ -1063,12 +944,10 @@
         2000901,
         2000801,
         2000902
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20011,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [
         2001101,
         2001102,
@@ -1080,8 +959,7 @@
         2001108,
         2001109
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 20012,
@@ -1093,8 +971,7 @@
         2000503,
         2001202,
         2001203
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20013,
@@ -1106,8 +983,7 @@
         2001303,
         2000602,
         2001304
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20014,
@@ -1118,8 +994,7 @@
         2001301,
         2001302,
         2001401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20016,
@@ -1131,8 +1006,7 @@
         2000603,
         2000903,
         2001603
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20017,
@@ -1145,8 +1019,7 @@
         2000902,
         2000804,
         2001704
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20018,
@@ -1157,8 +1030,7 @@
         2001601,
         2001703,
         2001801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20019,
@@ -1170,8 +1042,7 @@
         2000502,
         2000802,
         2000504
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20020,
@@ -1184,8 +1055,7 @@
         2002003,
         2001302,
         2000503
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20021,
@@ -1196,8 +1066,7 @@
         2001902,
         2002002,
         2002003
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20022,
@@ -1210,8 +1079,7 @@
         2002303,
         2001202,
         2001602
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20023,
@@ -1224,8 +1092,7 @@
         2000804,
         2000803,
         2001303
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20024,
@@ -1236,8 +1103,7 @@
         2002202,
         2002302,
         2002303
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20027,
@@ -1248,8 +1114,7 @@
         2002501,
         2002502,
         2002601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20030,
@@ -1260,8 +1125,7 @@
         2002801,
         2002901,
         2002803
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20033,
@@ -1271,8 +1135,7 @@
         2003300,
         2003101,
         2003201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20036,
@@ -1282,8 +1145,7 @@
         2003600,
         2003401,
         2003501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20039,
@@ -1293,8 +1155,7 @@
         2003900,
         2003701,
         2003801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20042,
@@ -1305,8 +1166,7 @@
         2004001,
         2004101,
         2004002
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20046,
@@ -1314,8 +1174,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2004401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20049,
@@ -1324,8 +1183,7 @@
       "ActivityModuleIDList": [
         2004701,
         2004801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20052,
@@ -1334,17 +1192,14 @@
       "ActivityModuleIDList": [
         2005001,
         2005101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20053,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2008007
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 20056,
@@ -1353,8 +1208,7 @@
       "ActivityModuleIDList": [
         2005401,
         2005501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 21001,
@@ -1362,8 +1216,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2100101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 21002,
@@ -1371,8 +1224,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2100201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 21003,
@@ -1380,8 +1232,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2100301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 21004,
@@ -1389,8 +1240,15 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2100401
-      ],
-      "EarlyAccessContentID": 0
+      ]
+    },
+    {
+      "ActivityID": 21005,
+      "ActivityPanelID": 21001,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        2100501
+      ]
     },
     {
       "ActivityID": 30002,
@@ -1398,17 +1256,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3000201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30003,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3000206
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 40001,
@@ -1425,8 +1280,7 @@
         4000108,
         4000109,
         4000110
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 40002,
@@ -1442,8 +1296,7 @@
         4000205,
         4000206,
         4000207
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 40003,
@@ -1459,8 +1312,7 @@
       ],
       "ActivityModuleIDList": [
         4000308
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 40004,
@@ -1472,8 +1324,7 @@
         4000403,
         4000404,
         4000405
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 40005,
@@ -1485,8 +1336,7 @@
         4000503,
         4000504,
         4000505
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50000,
@@ -1507,8 +1357,7 @@
       "ActivityModuleIDList": [
         5000001,
         5000012
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50001,
@@ -1525,8 +1374,7 @@
         5000104,
         5000108,
         5000109
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50002,
@@ -1540,8 +1388,7 @@
       "ActivityModuleIDList": [
         5000210,
         5000211
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30004,
@@ -1556,12 +1403,10 @@
         3000406,
         3000407,
         3000408
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30005,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3000501,
@@ -1572,8 +1417,7 @@
         3000506,
         3000507,
         3000508
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30006,
@@ -1587,8 +1431,7 @@
         3000605,
         3000606,
         3000607
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30007,
@@ -1602,8 +1445,7 @@
         3000705,
         3000706,
         3000707
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60001,
@@ -1611,17 +1453,14 @@
       "ResidentModuleList": [
         6000101
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 60003,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [
         6000302
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 60004,
@@ -1629,8 +1468,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6000401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60005,
@@ -1638,8 +1476,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6000501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60006,
@@ -1652,8 +1489,7 @@
         6000604,
         6000605,
         6000606
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60007,
@@ -1661,8 +1497,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6000701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60008,
@@ -1670,17 +1505,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6000801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60009,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [
         6000901
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 60010,
@@ -1688,8 +1520,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6001001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60011,
@@ -1720,14 +1551,12 @@
     },
     {
       "ActivityID": 60014,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [
         6001402
       ],
       "ActivityModuleIDList": [
         6001401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60015,
@@ -1735,17 +1564,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6001501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60016,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [
         6001601
       ],
-      "ActivityModuleIDList": [],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": []
     },
     {
       "ActivityID": 60017,
@@ -1758,12 +1584,10 @@
     },
     {
       "ActivityID": 60018,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         6001801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 60019,
@@ -1793,68 +1617,70 @@
       "EarlyAccessContentID": 200002
     },
     {
+      "ActivityID": 60022,
+      "ActivityPanelID": 60018,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        6002201
+      ],
+      "EarlyAccessContentID": 200002
+    },
+    {
+      "ActivityID": 60023,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        6002301
+      ]
+    },
+    {
       "ActivityID": 70001,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 70002,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 70003,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 70004,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 70005,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 70006,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 99901,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         9990101,
         9990102
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50003,
@@ -1868,88 +1694,71 @@
       "ActivityModuleIDList": [
         5000300,
         5000305
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22001,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200101,
         2200102
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22002,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200201,
         2200202
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22003,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22004,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200301,
         2200401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22005,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200301,
         2200501,
         2200401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22006,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200301,
         2200601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22007,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200301,
         2200701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 22008,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         2200301,
         2200801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50004,
@@ -1964,93 +1773,73 @@
         5000404,
         5000405,
         5000406
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80001,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80002,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80003,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80004,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80005,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80006,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80007,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80008,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80009,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8000901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80010,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8001001
@@ -2059,7 +1848,6 @@
     },
     {
       "ActivityID": 80011,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8001101
@@ -2081,8 +1869,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8001401
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80015,
@@ -2090,8 +1877,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8001501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 80016,
@@ -2099,8 +1885,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         8001601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50005,
@@ -2115,8 +1900,7 @@
       "ActivityModuleIDList": [
         5000500,
         5000506
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50006,
@@ -2130,8 +1914,7 @@
       ],
       "ActivityModuleIDList": [
         5000606
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30008,
@@ -2141,12 +1924,10 @@
       ],
       "ActivityModuleIDList": [
         3000800
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30009,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3000901,
@@ -2156,8 +1937,7 @@
         3000905,
         3000906,
         3000907
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50007,
@@ -2167,8 +1947,7 @@
       ],
       "ActivityModuleIDList": [
         5000701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30010,
@@ -2176,8 +1955,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3001001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50008,
@@ -2188,8 +1966,7 @@
         5000802,
         5000803,
         5000804
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50009,
@@ -2199,8 +1976,7 @@
       ],
       "ActivityModuleIDList": [
         5000901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50010,
@@ -2213,8 +1989,7 @@
         5001004,
         5001005,
         5001006
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50011,
@@ -2222,8 +1997,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5001101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50012,
@@ -2233,8 +2007,7 @@
       ],
       "ActivityModuleIDList": [
         5001201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50013,
@@ -2243,8 +2016,7 @@
       "ActivityModuleIDList": [
         5001301,
         5001302
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50014,
@@ -2254,8 +2026,7 @@
       ],
       "ActivityModuleIDList": [
         5001400
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50015,
@@ -2281,8 +2052,7 @@
         5001606,
         5001607,
         5001608
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50017,
@@ -2315,8 +2085,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5001901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50020,
@@ -2328,8 +2097,7 @@
         5002003,
         5002004,
         5002005
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50021,
@@ -2359,8 +2127,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5002301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50024,
@@ -2419,8 +2186,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         3001301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50026,
@@ -2452,8 +2218,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5002701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50028,
@@ -2463,8 +2228,7 @@
         5002801,
         5002802,
         5002803
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 30014,
@@ -2499,17 +2263,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5003001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50031,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5003101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50033,
@@ -2523,12 +2284,10 @@
         5003305,
         5003306,
         5003307
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 99998,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         9999800,
@@ -2536,19 +2295,16 @@
         2001703,
         2001601,
         2001701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 99999,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         9999901,
         9999902,
         9999903
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50034,
@@ -2574,30 +2330,24 @@
     },
     {
       "ActivityID": 50036,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5003601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50037,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5003701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50038,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5003801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50039,
@@ -2614,8 +2364,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5004001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50041,
@@ -2642,12 +2391,10 @@
     },
     {
       "ActivityID": 50043,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5004301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50045,
@@ -2666,8 +2413,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5004701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50057,
@@ -2684,17 +2430,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5005801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50060,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5006001
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50062,
@@ -2703,17 +2446,14 @@
       "ActivityModuleIDList": [
         5006201,
         5006202
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 71001,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7100101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 71002,
@@ -2735,12 +2475,10 @@
     },
     {
       "ActivityID": 71103,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         7110301
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50063,
@@ -2764,12 +2502,10 @@
     },
     {
       "ActivityID": 50066,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5006601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50067,
@@ -2793,12 +2529,10 @@
     },
     {
       "ActivityID": 50069,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5006901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50070,
@@ -2822,8 +2556,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5007201
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50073,
@@ -2849,21 +2582,17 @@
     },
     {
       "ActivityID": 50075,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5007501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50078,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5007801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50079,
@@ -2871,17 +2600,14 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5007901
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50081,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5008101
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50085,
@@ -2889,8 +2615,7 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5008501
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50086,
@@ -2898,35 +2623,61 @@
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5008601
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50087,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5008701
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50088,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
         5008801
-      ],
-      "EarlyAccessContentID": 0
+      ]
     },
     {
       "ActivityID": 50089,
-      "ActivityPanelID": 0,
       "ResidentModuleList": [],
       "ActivityModuleIDList": [
-        5008901
+        5008901,
+        5008902
+      ]
+    },
+    {
+      "ActivityID": 50091,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        5009101
+      ]
+    },
+    {
+      "ActivityID": 50092,
+      "ActivityPanelID": 50092,
+      "ResidentModuleList": [
+        5009202
       ],
-      "EarlyAccessContentID": 0
+      "ActivityModuleIDList": [
+        5009201
+      ],
+      "EarlyAccessContentID": 150074
+    },
+    {
+      "ActivityID": 50095,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        5009501
+      ]
+    },
+    {
+      "ActivityID": 50097,
+      "ResidentModuleList": [],
+      "ActivityModuleIDList": [
+        5009701
+      ]
     }
   ]
 }

@@ -255,82 +255,61 @@ pub fn parseConfig(root: json.Value, allocator: Allocator) anyerror!GameConfig {
 
     if (root.object.get("relics")) |rels| {
         for (rels.array.items) |r| {
-            const avatar_id: u32 = @intCast(r.object.get("equip_avatar").?.integer);
+            if (r != .object) continue;
+            const avatar_obj = r.object;
+
+            const avatar_id: u32 = clampU32FromJson(avatar_obj.get("equip_avatar") orelse continue, 0);
+            if (avatar_id == 0) continue;
             if (!avatar_map.contains(avatar_id)) continue;
             const idx = avatar_map.get(avatar_id).?;
 
-            const relic_id: u32 = @intCast(r.object.get("relic_id").?.integer);
-            const level: u32 = @intCast(r.object.get("level").?.integer);
-            const main_affix: u32 = @intCast(r.object.get("main_affix_id").?.integer);
-            const internal_uid: u32 = @intCast((r.object.get("internal_uid") orelse json.Value{ .integer = 0 }).integer);
+            const relic_id: u32 = clampU32FromJson(avatar_obj.get("relic_id") orelse continue, 0);
+            if (relic_id == 0) continue;
+            const level: u32 = if (avatar_obj.get("level")) |v| clampU32FromJson(v, 0) else 0;
+            const main_affix: u32 = if (avatar_obj.get("main_affix_id")) |v| clampU32FromJson(v, 0) else 0;
+            const internal_uid: u32 = if (avatar_obj.get("internal_uid")) |v| clampU32FromJson(v, 0) else 0;
 
-            const subs_val = r.object.get("sub_affixes");
+            const subs_val = avatar_obj.get("sub_affixes");
 
-            var sub_count: u32 = 0;
-            var s1: u32 = 0;
-            var c1: u32 = 0;
-            var t1: u32 = 0;
-            var s2: u32 = 0;
-            var c2: u32 = 0;
-            var t2: u32 = 0;
-            var s3: u32 = 0;
-            var c3: u32 = 0;
-            var t3: u32 = 0;
-            var s4: u32 = 0;
-            var c4: u32 = 0;
-            var t4: u32 = 0;
+            var sub_stats: [4]StatCount = std.mem.zeroes([4]StatCount);
+            var sub_count_usize: usize = 0;
 
             if (subs_val) |subs| {
-                sub_count = @intCast(subs.array.items.len);
+                if (subs == .array) {
+                    for (subs.array.items) |sv| {
+                        if (sub_count_usize >= sub_stats.len) break;
+                        if (sv != .object) continue;
+                        const sid: u32 = if (sv.object.get("sub_affix_id")) |v| clampU32FromJson(v, 0) else 0;
+                        if (sid == 0) continue;
 
-                for (subs.array.items, 0..) |sv, i| {
-                    const sid: u32 = @intCast(sv.object.get("sub_affix_id").?.integer);
-                    const cnt: u32 = @intCast(sv.object.get("count").?.integer);
-                    const step: u32 = @intCast(sv.object.get("step").?.integer);
-
-                    switch (i) {
-                        0 => {
-                            s1 = sid;
-                            c1 = cnt;
-                            t1 = step;
-                        },
-                        1 => {
-                            s2 = sid;
-                            c2 = cnt;
-                            t2 = step;
-                        },
-                        2 => {
-                            s3 = sid;
-                            c3 = cnt;
-                            t3 = step;
-                        },
-                        3 => {
-                            s4 = sid;
-                            c4 = cnt;
-                            t4 = step;
-                        },
-                        else => {},
+                        sub_stats[sub_count_usize] = .{
+                            .stat = sid,
+                            .count = if (sv.object.get("count")) |v| clampU32FromJson(v, 0) else 0,
+                            .step = if (sv.object.get("step")) |v| clampU32FromJson(v, 0) else 0,
+                        };
+                        sub_count_usize += 1;
                     }
                 }
             }
 
+            const sub_count: u32 = @intCast(sub_count_usize);
             try game_cfg.avatar_config.items[idx].relics.append(.{
                 .id = relic_id,
                 .level = level,
                 .main_affix_id = main_affix,
                 .sub_count = sub_count,
-                .stat1 = s1,
-                .cnt1 = c1,
-                .step1 = t1,
-                .stat2 = s2,
-                .cnt2 = c2,
-                .step2 = t2,
-                .stat3 = s3,
-                .cnt3 = c3,
-                .step3 = t3,
-                .stat4 = s4,
-                .cnt4 = c4,
-                .step4 = t4,
+                .stat1 = sub_stats[0].stat,
+                .cnt1 = sub_stats[0].count,
+                .step1 = sub_stats[0].step,
+                .stat2 = sub_stats[1].stat,
+                .cnt2 = sub_stats[1].count,
+                .step2 = sub_stats[1].step,
+                .stat3 = sub_stats[2].stat,
+                .cnt3 = sub_stats[2].count,
+                .step3 = sub_stats[2].step,
+                .stat4 = sub_stats[3].stat,
+                .cnt4 = sub_stats[3].count,
+                .step4 = sub_stats[3].step,
                 .internal_uid = internal_uid,
             });
         }

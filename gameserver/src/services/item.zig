@@ -6,9 +6,7 @@ const Data = @import("../data.zig");
 const GameConfig = @import("../data/game_config.zig");
 const LineupManager = @import("../manager/lineup_mgr.zig");
 const AvatarManager = @import("../manager/avatar_mgr.zig");
-const PlayerStateMod = @import("../player_state.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
-const ItemDb = @import("../item_db.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
@@ -56,20 +54,7 @@ pub fn onUseItem(session: *Session, packet: *const Packet, allocator: Allocator)
     rsp.use_item_count = req.use_item_count;
     rsp.retcode = 0;
 
-    // naive consumption: only adjusts persistent inventory when a player state exists
-    if (session.player_state) |*state| {
-        const tid: u32 = @intCast(req.use_item_id);
-        const count: u32 = @intCast(req.use_item_count);
-        const ok = state.inventory.removeMaterial(tid, count);
-        if (!ok) {
-            rsp.retcode = 1;
-        } else {
-            try PlayerStateMod.save(state);
-            try syncBag(session, allocator);
-        }
-    } else {
-        rsp.retcode = 1;
-    }
+    rsp.retcode = 0;
 
     // maintain legacy behavior: also sync lineup notify
     var sync = protocol.SyncLineupNotify.init(allocator);
@@ -101,35 +86,34 @@ fn mergePileItems(allocator: Allocator, items: []const protocol.PileItem) !std.A
 }
 
 pub fn grantItems(session: *Session, allocator: Allocator, items: []const protocol.PileItem) !void {
+    var merged = try mergePileItems(allocator, items);
+    defer merged.deinit();
+
     if (session.player_state) |*state| {
-        var merged = try mergePileItems(allocator, items);
-        defer merged.deinit();
-
+        var dirty = false;
         for (merged.items) |it| {
-            const tid: u32 = it.item_id;
-            const count: u32 = it.item_num;
-
-            if (ItemDb.findById(tid)) |cfg| {
-                switch (cfg.item_type) {
-                    .Currency => switch (tid) {
-                        2 => state.scoin += count,
-                        1 => state.mcoin += count,
-                        else => try state.inventory.addMaterial(tid, count),
-                    },
-                    else => try state.inventory.addMaterial(tid, count),
-                }
-            } else {
-                switch (tid) {
-                    2 => state.scoin += count,
-                    1 => state.mcoin += count,
-                    else => try state.inventory.addMaterial(tid, count),
-                }
+            switch (it.item_id) {
+                1 => {
+                    state.mcoin += it.item_num;
+                    dirty = true;
+                },
+                2 => {
+                    state.scoin += it.item_num;
+                    dirty = true;
+                },
+                else => {},
             }
         }
-        try PlayerStateMod.save(state);
-        const notify = protocol.PlayerSyncScNotify.init(allocator);
-        try session.send(CmdID.CmdPlayerSyncScNotify, notify);
+        if (dirty) {
+            const PlayerStateMod = @import("../player_state.zig");
+            try PlayerStateMod.save(state);
+        }
     }
 
+    var notify = protocol.PlayerSyncScNotify.init(allocator);
+    for (merged.items) |it| {
+        try notify.material_list.append(.{ .tid = it.item_id, .num = it.item_num });
+    }
+    try session.send(CmdID.CmdPlayerSyncScNotify, notify);
     try syncBag(session, allocator);
 }
