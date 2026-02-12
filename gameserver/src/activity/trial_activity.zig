@@ -3,9 +3,14 @@ const protocol = @import("protocol");
 const Session = @import("../Session.zig");
 const Packet = @import("../Packet.zig");
 const BattleManager = @import("../manager/battle_mgr.zig");
+const AvatarManager = @import("../manager/avatar_mgr.zig");
+const ConfigManager = @import("../manager/config_mgr.zig");
+const PlayerStateMod = @import("../player_state.zig");
+const Logic = @import("../utils/logic.zig");
 
 const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
+const MaxLineups = PlayerStateMod.MaxLineups;
 
 const TrialState = struct {
     current_stage_id: u32,
@@ -24,6 +29,31 @@ var trial_states = std.AutoHashMap(u32, TrialState).init(std.heap.page_allocator
 fn sessionUid(session: *Session) u32 {
     if (session.player_state) |state| return state.uid;
     return 1;
+}
+
+fn collectBattleAvatarIds(session: *Session, allocator: Allocator) !std.ArrayList(u32) {
+    var ids = std.ArrayList(u32).init(allocator);
+
+    if (Logic.FunMode().FunMode()) {
+        try ids.appendSlice(BattleManager.funmodeAvatarID.items);
+        if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
+        return ids;
+    }
+
+    if (session.player_state) |state| {
+        const idx: u32 = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
+        for (state.lineups[@intCast(idx)]) |id| {
+            if (id != 0) try ids.append(id);
+        }
+    }
+
+    if (ids.items.len == 0) {
+        for (ConfigManager.global_misc_defaults.player.lineup) |id| {
+            if (id != 0) try ids.append(id);
+        }
+    }
+    if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
+    return ids;
 }
 
 fn getState(uid: u32) !*TrialState {
@@ -121,8 +151,10 @@ pub fn onEnterTrialActivityStage(session: *Session, packet: *const Packet, alloc
     const state = try getState(uid);
     state.current_stage_id = req.stage_id;
 
+    var avatar_ids = try collectBattleAvatarIds(session, allocator);
+    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    const battle_info = try battle_manager.createBattle();
+    const battle_info = try battle_manager.createBattle(avatar_ids.items);
 
     try session.send(CmdID.CmdEnterTrialActivityStageScRsp, protocol.EnterTrialActivityStageScRsp{
         .retcode = 0,

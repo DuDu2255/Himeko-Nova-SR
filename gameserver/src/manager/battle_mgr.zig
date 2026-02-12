@@ -29,8 +29,7 @@ fn getAvatarElement(avatar_id: u32) AvatarConfig.Element {
     return .None;
 }
 
-fn getAttackerBuffId() u32 {
-    const list = if (!Logic.FunMode().FunMode()) selectedAvatarID.items else funmodeAvatarID.items;
+fn getAttackerBuffId(list: []const u32) u32 {
     if (list.len == 0) return 0;
     const slot = if (Lineup.leader_slot < list.len) Lineup.leader_slot else 0;
     const avatar_id = list[slot];
@@ -311,12 +310,12 @@ fn addGolbalPassive(allocator: Allocator, battle: *protocol.SceneBattleInfo) !vo
     }
 }
 
-fn addTriggerAttack(allocator: Allocator, battle: *protocol.SceneBattleInfo) !void {
+fn addTriggerAttack(allocator: Allocator, battle: *protocol.SceneBattleInfo, selected_avatar_ids: []const u32) !void {
     var targetIndexList = ArrayList(u32).init(allocator);
     errdefer targetIndexList.deinit();
     try targetIndexList.append(0);
     var attack = protocol.BattleBuff{
-        .id = getAttackerBuffId(),
+        .id = getAttackerBuffId(selected_avatar_ids),
         .level = 1,
         .owner_index = Lineup.leader_slot,
         .wave_flag = 0xFFFFFFFF,
@@ -465,7 +464,7 @@ fn commonBattleSetup(
     }
 
     try addMonsterWaves(allocator, battle, monster_wave_configs, monster_wave_detail_configs, monster_level);
-    try addTriggerAttack(allocator, battle);
+    try addTriggerAttack(allocator, battle, selected_avatar_ids);
     try addStageBlessings(allocator, battle, stage_blessings);
     try addGolbalPassive(allocator, battle);
     try addBattleTargets(allocator, battle);
@@ -477,7 +476,7 @@ pub const BattleManager = struct {
         return BattleManager{ .allocator = allocator };
     }
 
-    pub fn createBattle(self: *BattleManager) !protocol.SceneBattleInfo {
+    pub fn createBattle(self: *BattleManager, selected_avatar_ids: []const u32) !protocol.SceneBattleInfo {
         try ConfigManager.UpdateGameConfig();
         var battle = createBattleInfo(
             self.allocator,
@@ -490,7 +489,7 @@ pub const BattleManager = struct {
         try commonBattleSetup(
             self.allocator,
             &battle,
-            if (!Logic.FunMode().FunMode()) selectedAvatarID.items else funmodeAvatarID.items,
+            selected_avatar_ids,
             config.avatar_config.items,
             config.battle_config.monster_wave,
             &config.battle_config.monster_wave_detail,
@@ -514,7 +513,7 @@ pub const ChallegeStageManager = struct {
         };
     }
 
-    pub fn createChallegeStage(self: *ChallegeStageManager) !protocol.SceneBattleInfo {
+    pub fn createChallegeStage(self: *ChallegeStageManager, selected_avatar_ids: []const u32) !protocol.SceneBattleInfo {
         if (!Logic.Challenge().FoundStage()) {
             std.log.info("Challenge stage ID is 0, skipping challenge battle creation and returning an empty battle info.", .{});
             return protocol.SceneBattleInfo.init(self.allocator);
@@ -544,7 +543,7 @@ pub const ChallegeStageManager = struct {
                 try commonBattleSetup(
                     self.allocator,
                     &battle,
-                    if (!Logic.FunMode().FunMode()) selectedAvatarID.items else funmodeAvatarID.items,
+                    selected_avatar_ids,
                     config.avatar_config.items,
                     stageConf.monster_list,
                     null,
