@@ -77,8 +77,6 @@ pub fn buildLineup(
     lineup.max_mp = 5;
     if (extra_type) |t| {
         lineup.extra_lineup_type = t;
-    } else {
-        lineup.name = .{ .Const = "HyacineLover" };
     }
 
     for (ids, 0..) |id, idx| {

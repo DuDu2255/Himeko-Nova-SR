@@ -6,14 +6,6 @@ const Data = @import("../data.zig");
 const BattleManager = @import("../manager/battle_mgr.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
 const Logic = @import("../utils/logic.zig");
-const SceneManager = @import("../manager/scene_mgr.zig");
-const LineupManager = @import("../manager/lineup_mgr.zig");
-const ChallengeManager = @import("../manager/challenge_mgr.zig");
-const AvatarManager = @import("../manager/avatar_mgr.zig");
-const PlayerStateMod = @import("../player_state.zig");
-const LineupService = @import("lineup.zig");
-const terminal_commands = @import("terminal_commands");
-const trial_activity = @import("../activity/trial_activity.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
@@ -23,62 +15,18 @@ const log = std.log.scoped(.scene_service);
 
 pub var on_battle: bool = false;
 
-fn refreshBattleLineup(session: *Session, allocator: Allocator, send_sync: bool) !void {
-    var ids = ArrayList(u32).init(allocator);
-    defer ids.deinit();
-
-    if (Logic.Challenge().ChallengeMode() and Logic.Challenge().GetAvatarIDs().items.len != 0) {
-        for (Logic.Challenge().GetAvatarIDs().items) |id| if (id != 0) try ids.append(id);
-    } else if (session.player_state) |state| {
-        const safe_idx: u32 = if (state.cur_lineup_index < PlayerStateMod.MaxLineups) state.cur_lineup_index else 0;
-        const preset = state.lineups[@intCast(safe_idx)];
-        for (preset) |id| if (id != 0) try ids.append(id);
-    } else {
-        const misc_lineup = ConfigManager.global_misc_defaults.player.lineup;
-        for (misc_lineup) |id| if (id != 0) try ids.append(id);
-    }
-
-    if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
-
-    try LineupManager.getSelectedAvatarID(allocator, ids.items);
-    if (!send_sync) return;
-
-    var lineup = try LineupManager.buildLineup(allocator, ids.items, null);
-    lineup.leader_slot = LineupService.leader_slot;
-    var sync = protocol.SyncLineupNotify.init(allocator);
-    sync.lineup = lineup;
-    try session.send(CmdID.CmdSyncLineupNotify, sync);
-}
-
-fn isTechniqueEnabledForEntity(attacked_by_entity_id: u32) bool {
-    // In current client packets, avatar scene entity ids look like 100000 + avatar_id.
-    if (attacked_by_entity_id < 100000) return true;
-    const avatar_id = attacked_by_entity_id - 100000;
-
-    const cfg = &ConfigManager.global_game_config_cache.game_config;
-    for (cfg.avatar_config.items) |av| {
-        if (av.id == avatar_id) return av.use_technique;
-    }
-    // If not found in freesr-data, don't block to avoid breaking unknown entities.
-    return true;
-}
-
 pub fn forceFinishBattle(session: *Session, allocator: Allocator) !void {
-    var battle_result = protocol.PVEBattleResultScRsp.init(allocator);
-    battle_result.battle_id = 0;
-    battle_result.end_status = protocol.BattleEndStatus.BATTLE_END_WIN;
-    battle_result.retcode = 0;
-    battle_result.stage_id = 0;
-    try session.send(CmdID.CmdPVEBattleResultScRsp, battle_result);
-
-    const quit_notify = protocol.QuitBattleScNotify.init(allocator);
-    try session.send(CmdID.CmdQuitBattleScNotify, quit_notify);
+    var result = protocol.PVEBattleResultScRsp.init(allocator);
+    result.retcode = 0;
+    result.end_status = .BATTLE_END_WIN;
+    on_battle = false;
+    try session.send(CmdID.CmdPVEBattleResultScRsp, result);
+    try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
 }
 
 pub fn onStartCocoonStage(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.StartCocoonStageCsReq, allocator);
     defer req.deinit();
-    try refreshBattleLineup(session, allocator, true);
     var battle_manager = BattleManager.BattleManager.init(allocator);
     var battle = try battle_manager.createBattle();
     _ = &battle;
@@ -94,7 +42,6 @@ pub fn onStartCocoonStage(session: *Session, packet: *const Packet, allocator: A
 pub fn onQuickStartCocoonStage(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.QuickStartCocoonStageCsReq, allocator);
     defer req.deinit();
-    try refreshBattleLineup(session, allocator, true);
     var battle_manager = BattleManager.BattleManager.init(allocator);
     var battle = try battle_manager.createBattle();
     _ = &battle;
@@ -109,7 +56,6 @@ pub fn onQuickStartCocoonStage(session: *Session, packet: *const Packet, allocat
 pub fn onQuickStartFarmElement(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.QuickStartFarmElementCsReq, allocator);
     defer req.deinit();
-    try refreshBattleLineup(session, allocator, true);
     var battle_manager = BattleManager.BattleManager.init(allocator);
     var battle = try battle_manager.createBattle();
     _ = &battle;
@@ -124,7 +70,6 @@ pub fn onQuickStartFarmElement(session: *Session, packet: *const Packet, allocat
 pub fn onStartBattleCollege(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.StartBattleCollegeCsReq, allocator);
     defer req.deinit();
-    try refreshBattleLineup(session, allocator, true);
     var battle_manager = BattleManager.BattleManager.init(allocator);
     var battle = try battle_manager.createBattle();
     _ = &battle;
@@ -136,7 +81,6 @@ pub fn onStartBattleCollege(session: *Session, packet: *const Packet, allocator:
     });
 }
 pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    try refreshBattleLineup(session, allocator, false);
     var battle_manager = BattleManager.BattleManager.init(allocator);
     var battle = try battle_manager.createBattle();
     defer BattleManager.deinitSceneBattleInfo(&battle);
@@ -145,53 +89,10 @@ pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: All
     defer BattleManager.deinitSceneBattleInfo(&challenge);
     const req = try packet.getProto(protocol.SceneCastSkillCsReq, allocator);
     defer req.deinit();
-    if (terminal_commands.takeFinishBattle()) {
-        try forceFinishBattle(session, allocator);
-        return;
-    }
-
-    // Disable technique casts when freesr-data.json has an empty `techniques` list for the avatar.
-    // Convention in this project: skill_index==1 is treated as a normal attack; other values are treated as technique-trigger casts.
-    if (req.skill_index != 1 and !isTechniqueEnabledForEntity(req.attacked_by_entity_id)) {
-        var monster_battle_info_list = ArrayList(protocol.HitMonsterBattleInfo).init(allocator);
-        for (req.assist_monster_entity_id_list.items) |id| {
-            try monster_battle_info_list.append(.{
-                .target_monster_entity_id = id,
-                .monster_battle_type = protocol.MonsterBattleType.MONSTER_BATTLE_TYPE_NO_BATTLE,
-            });
-        }
-
-        // Restore technique points to max (we don't persist MP consumption yet).
-        var lineup_mgr = LineupManager.LineupManager.init(allocator);
-        var max_mp: u32 = 5;
-        const lineup_opt: ?protocol.LineupInfo = lineup_mgr.createLineup() catch null;
-        if (lineup_opt) |li| max_mp = li.max_mp;
-        try session.send(CmdID.CmdSceneCastSkillMpUpdateScNotify, protocol.SceneCastSkillMpUpdateScNotify{
-            .cast_entity_id = req.cast_entity_id,
-            .mp = max_mp,
-        });
-
-        try session.send(CmdID.CmdSceneCastSkillScRsp, protocol.SceneCastSkillScRsp{
-            .retcode = 0,
-            .cast_entity_id = req.cast_entity_id,
-            .monster_battle_info = monster_battle_info_list,
-            .battle_info = null,
-        });
-        return;
-    }
-
     var battle_info: ?protocol.SceneBattleInfo = null;
     var monster_battle_info_list = ArrayList(protocol.HitMonsterBattleInfo).init(allocator);
     Highlight("SKILL INDEX: {}", .{req.skill_index});
     Highlight("ATTACKED BY ENTITY ID: {}", .{req.attacked_by_entity_id});
-
-    // Technique animation: consume MP and notify client (best-effort; we don't persist MP yet).
-    if (req.skill_index > 0) {
-        try session.send(CmdID.CmdSceneCastSkillMpUpdateScNotify, protocol.SceneCastSkillMpUpdateScNotify{
-            .cast_entity_id = req.cast_entity_id,
-            .mp = 4,
-        });
-    }
     const is_challenge = Logic.Challenge().ChallengeMode();
     for (req.assist_monster_entity_id_list.items) |id| {
         const attacker_id = req.attacked_by_entity_id;
@@ -221,9 +122,6 @@ pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: All
                 }
             }
         }
-    }
-    if (battle_info != null) {
-        try refreshBattleLineup(session, allocator, true);
     }
     try session.send(CmdID.CmdSceneCastSkillScRsp, protocol.SceneCastSkillScRsp{
         .retcode = 0,
@@ -256,244 +154,6 @@ pub fn onPVEBattleResult(session: *Session, packet: *const Packet, allocator: Al
     rsp.stage_id = req.stage_id;
     on_battle = false;
     try session.send(CmdID.CmdPVEBattleResultScRsp, rsp);
-
-    // Trial Activity completion hook (stage finished -> history + status notify).
-    try trial_activity.onBattleFinished(session, req.end_status, req.stage_id, allocator);
-
-    // 多关卡高难度副本（MOC/PF/AS）：胜利后自动切到下一关
-    if (!Logic.Challenge().ChallengeMode()) return;
-
-    // ChallengePeak: client expects ChallengePeakSettleScNotify after battle; sending normal ChallengeSettleNotify
-    // will cause loading to hang.
-    if (Logic.Challenge().ChallengePeakMode()) {
-        var settle = protocol.ChallengePeakSettleScNotify.init(allocator);
-        settle.peak_id = Logic.Challenge().GetChallengePeakID();
-        settle.is_win = req.end_status == .BATTLE_END_WIN;
-        settle.hard_mode_has_passed = settle.is_win and Logic.Challenge().ChallengePeakHard();
-
-        try session.send(CmdID.CmdChallengePeakSettleScNotify, settle);
-        Logic.Challenge().resetChallengeState();
-        return;
-    }
-
-    if (req.end_status != .BATTLE_END_WIN) {
-        try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-        var lose_settle = protocol.ChallengeSettleNotify.init(allocator);
-        lose_settle.is_win = false;
-        lose_settle.challenge_id = Logic.Challenge().GetChallengeID();
-        lose_settle.star = 0;
-        lose_settle.challenge_score = Logic.Challenge().GetChallengeScoreTotal();
-        lose_settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
-        try session.send(CmdID.CmdChallengeSettleNotify, lose_settle);
-        Logic.Challenge().resetChallengeState();
-        return;
-    }
-
-    const phase_score = calcChallengeScore(&req);
-    const phase_star = calcChallengeStar(&req);
-    Logic.Challenge().SetChallengeScore(phase_score);
-    const settle_page_type: u32 = switch (Logic.Challenge().GetChallengeMode()) {
-        0 => 0, // MOC
-        1 => 1, // PF
-        else => 2, // AS
-    };
-
-    const challenge_id = Logic.Challenge().GetChallengeID();
-    const ids = Logic.Challenge().GetSceneIDs();
-    const cur_event_id = ids[5];
-
-    const challenge_cfg = &ConfigManager.global_game_config_cache.challenge_maze_config;
-    const entrance_cfg = &ConfigManager.global_game_config_cache.map_entrance_config;
-    const maze_cfg = &ConfigManager.global_game_config_cache.maze_config;
-
-    var next_event_id: ?u32 = null;
-    var next_monster_id: ?u32 = null;
-    var next_entry_id: ?u32 = null;
-    var next_plane_id: ?u32 = null;
-    var next_floor_id: ?u32 = null;
-    var next_world_id: ?u32 = null;
-    var next_group_id: ?u32 = null;
-    var next_maze_group_id: ?u32 = null;
-
-    var has_second_half_cfg: bool = false;
-
-    for (challenge_cfg.challenge_config.items) |challengeConf| {
-        if (challengeConf.id != challenge_id) continue;
-
-        const use_first = !Logic.Challenge().InSecondHalf();
-        has_second_half_cfg = challengeConf.event_id_list2.items.len != 0 and challengeConf.npc_monster_id_list2.items.len != 0 and challengeConf.maze_group_id2 != null;
-        const event_list = if (use_first) challengeConf.event_id_list1.items else challengeConf.event_id_list2.items;
-        const monster_list = if (use_first) challengeConf.npc_monster_id_list1.items else challengeConf.npc_monster_id_list2.items;
-
-        if (event_list.len == 0 or monster_list.len == 0) break;
-
-        var idx: ?usize = null;
-        for (event_list, 0..) |eid, i| {
-            if (eid == cur_event_id) {
-                idx = i;
-                break;
-            }
-        }
-        if (idx == null) break;
-        const i = idx.?;
-        // No more stages in this half.
-        if (i + 1 >= event_list.len or i + 1 >= monster_list.len) break;
-
-        next_event_id = event_list[i + 1];
-        next_monster_id = monster_list[i + 1];
-
-        const entrance_id = if (use_first) challengeConf.map_entrance_id else challengeConf.map_entrance_id2;
-        const maze_group_id_opt = if (use_first) challengeConf.maze_group_id1 else challengeConf.maze_group_id2 orelse challengeConf.maze_group_id1;
-        next_group_id = maze_group_id_opt;
-        next_maze_group_id = maze_group_id_opt;
-        next_entry_id = entrance_id;
-
-        for (entrance_cfg.map_entrance_config.items) |entrance| {
-            if (entrance.id != entrance_id) continue;
-            next_floor_id = entrance.floor_id;
-            for (maze_cfg.maze_plane_config.items) |maze| {
-                if (Logic.contains(&maze.floor_id_list, entrance.floor_id)) {
-                    next_world_id = maze.world_id;
-                    next_plane_id = maze.challenge_plane_id;
-                    break;
-                }
-            }
-            break;
-        }
-        break;
-    }
-
-    // No next stage in this half: either wait for EnterChallengeNextPhase (MOC/PF/AS 2nd half),
-    // or finish the whole challenge and send settle notify.
-    if (next_event_id == null or next_monster_id == null or next_entry_id == null or next_plane_id == null or next_floor_id == null or next_world_id == null or next_group_id == null or next_maze_group_id == null) {
-        if (!Logic.Challenge().InSecondHalf() and has_second_half_cfg and Logic.Challenge().HasSecondLineup()) {
-            // MOC uses a different settle flow than PF/AS: switch directly into 2nd half scene.
-            if (Logic.Challenge().GetChallengeMode() == 0) {
-                Logic.CustomMode().SelectCustomNode(2);
-                try Logic.Challenge().UseSecondLineup();
-                Logic.Challenge().SetChallengeBuffID(Logic.Challenge().GetChallengeBuffTwo());
-                try LineupManager.getSelectedAvatarID(allocator, Logic.Challenge().GetAvatarIDs().items);
-
-                var challenge_manager = ChallengeManager.ChallengeManager.init(allocator);
-                var cur_challenge_info = try challenge_manager.createChallenge(
-                    Logic.Challenge().GetChallengeID(),
-                    Logic.Challenge().GetChallengeBuffID(),
-                );
-                _ = &cur_challenge_info;
-
-                var lineup_manager_moc = LineupManager.ChallengeLineupManager.init(allocator);
-                const lineup_moc = try lineup_manager_moc.createLineup(Logic.Challenge().GetAvatarIDs());
-                var scene_manager_moc = SceneManager.ChallengeSceneManager.init(allocator);
-                const moc_ids = Logic.Challenge().GetSceneIDs();
-                const scene_moc = try scene_manager_moc.createScene(
-                    Logic.Challenge().GetAvatarIDs(),
-                    moc_ids[0],
-                    moc_ids[1],
-                    moc_ids[2],
-                    moc_ids[3],
-                    moc_ids[4],
-                    moc_ids[5],
-                    moc_ids[6],
-                    moc_ids[7],
-                );
-
-                try session.send(CmdID.CmdChallengeLineupNotify, protocol.ChallengeLineupNotify{
-                    .extra_lineup_type = protocol.ExtraLineupType.LINEUP_CHALLENGE_2,
-                });
-                try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-                try session.send(CmdID.CmdEnterSceneByServerScNotify, protocol.EnterSceneByServerScNotify{
-                    .reason = protocol.EnterSceneReason.ENTER_SCENE_REASON_NONE,
-                    .lineup = lineup_moc,
-                    .scene = scene_moc,
-                });
-                return;
-            }
-
-            // First half finished; send phase settle so client shows "next phase" and then
-            // client will send EnterChallengeNextPhaseCsReq.
-            try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-            var phase_settle = protocol.ChallengeBossPhaseSettleNotify.init(allocator);
-            phase_settle.is_win = true;
-            phase_settle.is_second_half = false;
-            phase_settle.phase = 1;
-            phase_settle.star = phase_star;
-            phase_settle.challenge_id = challenge_id;
-            phase_settle.challenge_score = phase_score;
-            phase_settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
-            phase_settle.page_type = settle_page_type;
-            phase_settle.is_reward = true;
-            try session.send(CmdID.CmdChallengeBossPhaseSettleNotify, phase_settle);
-            return;
-        }
-
-        try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-        var settle = protocol.ChallengeSettleNotify.init(allocator);
-        settle.is_win = true;
-        settle.challenge_id = challenge_id;
-        settle.star = phase_star;
-        settle.challenge_score = Logic.Challenge().GetChallengeScoreTotal();
-        settle.score_two = Logic.Challenge().GetChallengeScoreTwo();
-        try session.send(CmdID.CmdChallengeSettleNotify, settle);
-        Logic.Challenge().resetChallengeState();
-        return;
-    }
-
-    Logic.Challenge().SetChallengeInfo(
-        next_floor_id.?,
-        next_world_id.?,
-        next_monster_id.?,
-        next_event_id.?,
-        next_group_id.?,
-        next_maze_group_id.?,
-        next_plane_id.?,
-        next_entry_id.?,
-    );
-
-    var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
-    const lineup = try lineup_manager.createLineup(Logic.Challenge().GetAvatarIDs());
-    var scene_challenge_manager = SceneManager.ChallengeSceneManager.init(allocator);
-    const new_ids = Logic.Challenge().GetSceneIDs();
-    const scene_info = try scene_challenge_manager.createScene(
-        Logic.Challenge().GetAvatarIDs(),
-        new_ids[0],
-        new_ids[1],
-        new_ids[2],
-        new_ids[3],
-        new_ids[4],
-        new_ids[5],
-        new_ids[6],
-        new_ids[7],
-    );
-    try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-    try session.send(CmdID.CmdEnterSceneByServerScNotify, protocol.EnterSceneByServerScNotify{
-        .reason = protocol.EnterSceneReason.ENTER_SCENE_REASON_NONE,
-        .lineup = lineup,
-        .scene = scene_info,
-    });
-}
-
-fn calcChallengeScore(req: *const protocol.PVEBattleResultCsReq) u32 {
-    if (req.stt) |stt| {
-        if (stt.challenge_score != 0) return stt.challenge_score;
-        if (stt.round_cnt != 0) {
-            const penalty: u32 = stt.round_cnt * 100;
-            return if (penalty >= 10000) 1 else (10000 - penalty);
-        }
-    }
-    if (req.cost_time != 0) {
-        const penalty: u32 = @intCast(@min(req.cost_time / 10, 9000));
-        return 10000 - penalty;
-    }
-    return 1000;
-}
-
-fn calcChallengeStar(req: *const protocol.PVEBattleResultCsReq) u32 {
-    if (req.stt) |stt| {
-        if (stt.round_cnt <= 4) return 3;
-        if (stt.round_cnt <= 8) return 2;
-        return 1;
-    }
-    return 3;
 }
 
 pub fn onSceneCastSkillCostMp(session: *Session, packet: *const Packet, allocator: Allocator) !void {

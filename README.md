@@ -37,7 +37,7 @@ protocol/                # 协议文件
 - 发布构建：`zig build -Doptimize=ReleaseSafe`
 
 ## 获取游戏客户端
-[3.8.5X Client here](https://gofile.io/d/whpait)
+[4.0.5X Client here](https://gofile.io/d/whpait)
 
 ## 编译（Android）
 说明：这会生成 **Android ELF 可执行文件**（不是 APK）。
@@ -45,18 +45,10 @@ protocol/                # 协议文件
 - ARM64（推荐，大多数手机）：`zig build -Dtarget=aarch64-linux-android -Doptimize=ReleaseSafe`
 - ARMv7：`zig build -Dtarget=arm-linux-androideabi -Doptimize=ReleaseSafe`
 
-产物路径：
-- `zig-out/bin/CastoricePS`（在 Android 上运行的 ELF）
-
-在设备上运行（示例）：
-- `adb push zig-out/bin/CastoricePS /data/local/tmp/`
-- `adb shell chmod +x /data/local/tmp/CastoricePS`
-- `adb shell /data/local/tmp/CastoricePS`
-
 ## 开发提示
 - srtools 网页保存的数据会写入根目录 `freesr-data.json`，服务器侧会在 `/sync` 
 - 如果你需要更多的参考，请关注 `resources/` 目录。可以通过修改Resources的方式来修改buff和技能效果。
 
 ## 贡献
 欢迎提交PR和Issue.
-感谢[Reversed Rooms](discord.gg/reversedrooms)，以及[他们的开源服务器](https://git.xeondev.com/HonkaiSlopRail/yaoguang-sr)
+感谢[Reversed Rooms](https://discord.gg/reversedrooms)，以及[他们的开源服务器](https://git.xeondev.com/HonkaiSlopRail/yaoguang-sr)

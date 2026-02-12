@@ -228,7 +228,7 @@ pub fn onVerify(req: *httpz.Request, res: *httpz.Response) !void {
                 .mid = "1337",
                 .area_code = "**",
                 .country = "RU",
-                .email = "ReversedRoooms@StarRail.com",
+                .email = "HyacineLover@StarRail.com",
                 .is_email_verify = "1",
                 .is_adult = "1",
             },
