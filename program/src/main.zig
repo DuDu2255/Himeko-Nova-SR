@@ -69,6 +69,21 @@ fn enableUtf8ConsoleOnWindows() void {
     _ = SetConsoleCP(65001);
 }
 
+pub fn enableVT100Terminal() void {
+    if (builtin.os.tag != .windows)
+        return;
+    const stdOutHandle = std.os.windows.GetStdHandle(std.os.windows.STD_OUTPUT_HANDLE) catch return;
+
+    var mode: std.os.windows.DWORD = 0;
+    const ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004;
+    _ = std.os.windows.kernel32.GetConsoleMode(stdOutHandle, &mode);
+    _ = std.os.windows.kernel32.SetConsoleMode(stdOutHandle, mode | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
+
+    const stdErrHandle = std.os.windows.GetStdHandle(std.os.windows.STD_ERROR_HANDLE) catch return;
+    _ = std.os.windows.kernel32.GetConsoleMode(stdErrHandle, &mode);
+    _ = std.os.windows.kernel32.SetConsoleMode(stdErrHandle, mode | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
+}
+
 fn runDispatch() void {
     if (dispatch_main.main()) |_| {
         std.log.info("{s}[Dispatch]{s} stopped gracefully", .{ color.blue, color.reset });
@@ -142,6 +157,7 @@ pub fn main() !void {
     var stdout = std.io.getStdOut().writer();
 
     enableUtf8ConsoleOnWindows();
+    enableVT100Terminal();
 
     // Ensure working directory is the executable's directory so relative resources resolve.
     var workdir: []const u8 = ".";
