@@ -1,0 +1,175 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_target:
+        description: '选择构建目标'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - windows
+          - android-arm64
+          - android-armv7
+          - all
+
+env:
+  ZIG_VERSION: 0.14.1
+
+jobs:
+  build-windows:
+    if: |
+      github.event.inputs.build_target == 'windows' || 
+      github.event.inputs.build_target == 'all'
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Zig (Windows)
+        shell: pwsh
+        run: |
+          $ZIG_URL = "https://ziglang.org/download/$env:ZIG_VERSION/zig-x86_64-windows-$env:ZIG_VERSION.zip"
+          $ZIP_PATH = "$env:RUNNER_TEMP\zig.zip"
+          $EXTRACT_PATH = "$env:RUNNER_TEMP\zig"
+
+          Write-Host "Downloading Zig from $ZIG_URL"
+          Invoke-WebRequest -Uri $ZIG_URL -OutFile $ZIP_PATH
+
+          Expand-Archive -Path $ZIP_PATH -DestinationPath $EXTRACT_PATH -Force
+          
+          $ZIG_DIR = Get-ChildItem -Path $EXTRACT_PATH -Directory | Select-Object -First 1 -ExpandProperty FullName
+          Write-Host "Found Zig directory: $ZIG_DIR"
+          
+          echo "$ZIG_DIR" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          
+          & "$ZIG_DIR\zig.exe" version
+
+      - name: 临时修复 build.zig (Windows)
+        shell: pwsh
+        run: |
+          # 检查并修复 artifact 名称
+          if (Select-String -Path "build.zig" -Pattern "castoriceps") {
+            Write-Host "找到需要修复的 'castoriceps'，正在替换为 'CastoricePS'..."
+            (Get-Content "build.zig") -replace "castoriceps", "CastoricePS" | Set-Content "build.zig"
+            Write-Host "修复完成"
+          } else {
+            Write-Host "未找到需要修复的文本"
+          }
+
+      - name: Build Windows
+        shell: pwsh
+        run: |
+          Write-Host "执行: zig build -Doptimize=ReleaseSafe"
+          zig build -Doptimize=ReleaseSafe
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-executable
+          path: zig-out/bin/
+
+  build-android-arm64:
+    if: |
+      github.event.inputs.build_target == 'android-arm64' || 
+      github.event.inputs.build_target == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Zig (Linux)
+        run: |
+          wget -q "https://ziglang.org/download/${{ env.ZIG_VERSION }}/zig-x86_64-linux-${{ env.ZIG_VERSION }}.tar.xz"
+          tar -xf "zig-x86_64-linux-${{ env.ZIG_VERSION }}.tar.xz"
+          
+          ZIG_DIR=$(find $(pwd) -maxdepth 1 -type d -name "zig-*" | head -n1)
+          echo "Found Zig directory: $ZIG_DIR"
+          
+          echo "$ZIG_DIR" >> $GITHUB_PATH
+          $ZIG_DIR/zig version
+
+      - name: 临时修复 build.zig (Linux)
+        run: |
+          # 检查并修复 artifact 名称
+          if grep -q "castoriceps" build.zig; then
+            echo "找到需要修复的 'castoriceps'，正在替换为 'CastoricePS'..."
+            sed -i 's/castoriceps/CastoricePS/g' build.zig
+            echo "修复完成"
+          else
+            echo "未找到需要修复的文本"
+          fi
+
+      - name: Build Android ARM64
+        run: |
+          echo "执行: zig build -Dtarget=aarch64-linux-android -Doptimize=ReleaseSafe"
+          zig build -Dtarget=aarch64-linux-android -Doptimize=ReleaseSafe
+
+      - name: Upload Android ARM64 artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-arm64-executable
+          path: zig-out/bin/
+
+  build-android-armv7:
+    if: |
+      github.event.inputs.build_target == 'android-armv7' || 
+      github.event.inputs.build_target == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Zig (Linux)
+        run: |
+          wget -q "https://ziglang.org/download/${{ env.ZIG_VERSION }}/zig-x86_64-linux-${{ env.ZIG_VERSION }}.tar.xz"
+          tar -xf "zig-x86_64-linux-${{ env.ZIG_VERSION }}.tar.xz"
+          
+          ZIG_DIR=$(find $(pwd) -maxdepth 1 -type d -name "zig-*" | head -n1)
+          echo "Found Zig directory: $ZIG_DIR"
+          
+          echo "$ZIG_DIR" >> $GITHUB_PATH
+          $ZIG_DIR/zig version
+
+      - name: 临时修复 build.zig (Linux)
+        run: |
+          # 检查并修复 artifact 名称
+          if grep -q "castoriceps" build.zig; then
+            echo "找到需要修复的 'castoriceps'，正在替换为 'CastoricePS'..."
+            sed -i 's/castoriceps/CastoricePS/g' build.zig
+            echo "修复完成"
+          else
+            echo "未找到需要修复的文本"
+          fi
+
+      - name: 修复 ARMv7 类型不匹配问题
+        run: |
+          echo "查找所有包含 readToEndAlloc 的文件并添加 @intCast"
+          # 使用更精确的正则表达式匹配
+          find . -name "*.zig" -type f -exec grep -l "readToEndAlloc(allocator, [a-zA-Z0-9_]*)" {} \; | while read file; do
+            echo "处理文件: $file"
+            # 替换模式：readToEndAlloc(allocator, variable) -> readToEndAlloc(allocator, @intCast(variable))
+            sed -i 's/\(readToEndAlloc(allocator, \)\([a-zA-Z0-9_]\+\))/\1@intCast(\2))/g' "$file"
+          done
+          echo "所有文件处理完成"
+          
+          # 验证修改
+          echo "验证修改结果："
+          find . -name "*.zig" -type f -exec grep -l "@intCast" {} \; | while read file; do
+            echo "已修改文件: $file"
+          done
+
+      - name: Build Android ARMv7
+        run: |
+          echo "执行: zig build -Dtarget=arm-linux-androideabi -Doptimize=ReleaseSafe"
+          zig build -Dtarget=arm-linux-androideabi -Doptimize=ReleaseSafe
+
+      - name: Upload Android ARMv7 artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-armv7-executable
+          path: zig-out/bin/
