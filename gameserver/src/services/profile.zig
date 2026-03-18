@@ -24,9 +24,9 @@ pub fn onGetPhoneData(session: *Session, _: *const Packet, allocator: Allocator)
     rsp.cur_chat_bubble = 0;
     rsp.cur_phone_theme = 0;
     rsp.cur_phone_case = 254001;
-    try rsp.owned_chat_bubbles.appendSlice(&Data.OwnedChatBubbles);
-    try rsp.owned_phone_themes.appendSlice(&Data.OwnedPhoneThemes);
     try rsp.owned_phone_cases.appendSlice(&Data.OwnedPhoneCases);
+    try rsp.owned_phone_themes.appendSlice(&Data.OwnedPhoneThemes);
+    try rsp.owned_chat_bubbles.appendSlice(&Data.OwnedChatBubbles);
     try session.send(CmdID.CmdGetPhoneDataScRsp, rsp);
 }
 pub fn onSelectPhoneTheme(session: *Session, packet: *const Packet, allocator: Allocator) !void {
@@ -56,8 +56,6 @@ pub fn onGetPlayerBoardData(session: *Session, _: *const Packet, allocator: Allo
     rsp.retcode = 0;
     try rsp.unlocked_personal_card_list.appendSlice(&Data.OwnedPersonalCardSkin);
     rsp.current_personal_card_id = 253001;
-    // 默认玩家头像 id（当 player_state/用户没有自己选择头像时使用）
-    rsp.current_head_icon_id = 200139;
     rsp.head_frame_info = .{
         .head_frame_expire_time = 4294967295,
         .head_frame_item_id = 226004,
@@ -96,6 +94,7 @@ pub fn onSetDisplayAvatar(session: *Session, packet: *const Packet, allocator: A
     var rsp = protocol.SetDisplayAvatarScRsp.init(allocator);
     rsp.retcode = 0;
     rsp.display_avatar_list = req.display_avatar_list;
+
     try session.send(CmdID.CmdSetDisplayAvatarScRsp, rsp);
 }
 
@@ -157,8 +156,6 @@ pub fn onGetPlayerDetailInfo(session: *Session, packet: *const Packet, allocator
         .head_frame_expire_time = 4294967295,
         .head_frame_item_id = 226004,
     };
-    // 默认展示头像
-    detail.head_icon = 200139;
     detail.uid = req.uid;
     detail.world_level = 6;
     detail.level = 70;

@@ -5,6 +5,8 @@
       "EntranceType": "Town",
       "PlaneID": 10000,
       "FloorID": 10000000,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1000501
@@ -77,6 +79,8 @@
       "EntranceType": "Town",
       "PlaneID": 10000,
       "FloorID": 10000003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1000501
@@ -119,6 +123,28 @@
       "FinishSubMissionList": []
     },
     {
+      "ID": 100000305,
+      "EntranceType": "Town",
+      "PlaneID": 10000,
+      "FloorID": 10000003,
+      "StartGroupID": 242,
+      "StartAnchorID": 1,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 100000306,
+      "EntranceType": "Town",
+      "PlaneID": 10000,
+      "FloorID": 10000003,
+      "StartGroupID": 242,
+      "StartAnchorID": 2,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
       "ID": 100000351,
       "EntranceType": "Town",
       "PlaneID": 10000,
@@ -141,10 +167,45 @@
       "FinishSubMissionList": []
     },
     {
+      "ID": 100000353,
+      "EntranceType": "Town",
+      "PlaneID": 10000,
+      "FloorID": 10000003,
+      "StartGroupID": 232,
+      "StartAnchorID": 19,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 100000354,
+      "EntranceType": "Town",
+      "PlaneID": 10000,
+      "FloorID": 10000003,
+      "StartGroupID": 250,
+      "StartAnchorID": 1,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 100000399,
+      "EntranceType": "Town",
+      "PlaneID": 10000,
+      "FloorID": 10000003,
+      "StartGroupID": 3,
+      "StartAnchorID": 4,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
       "ID": 1000201,
       "EntranceType": "Town",
       "PlaneID": 10002,
       "FloorID": 10002001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -509,6 +570,8 @@
       "EntranceType": "Town",
       "PlaneID": 10102,
       "FloorID": 10102001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010302
@@ -788,6 +851,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20003,
       "FloorID": 20003001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1000401
@@ -812,6 +877,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20004,
       "FloorID": 20004001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": [
@@ -823,6 +890,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20004,
       "FloorID": 20004001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": [
@@ -856,6 +925,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20101,
       "FloorID": 20101001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010002
@@ -880,6 +951,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20101,
       "FloorID": 20101001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010002
@@ -893,6 +966,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20111,
       "FloorID": 20111001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010204
@@ -906,6 +981,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20111,
       "FloorID": 20111001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010204
@@ -919,6 +996,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20121,
       "FloorID": 20121001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010500
@@ -930,6 +1009,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20121,
       "FloorID": 20121001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010502
@@ -941,6 +1022,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20122,
       "FloorID": 20122001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010700
@@ -963,6 +1046,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20122,
       "FloorID": 20122001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010602
@@ -987,6 +1072,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20123,
       "FloorID": 20123001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010901
@@ -998,6 +1085,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20123,
       "FloorID": 20123001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1010901
@@ -1009,6 +1098,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20131,
       "FloorID": 20131001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1011100
@@ -1020,6 +1111,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20131,
       "FloorID": 20131001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1011002
@@ -1044,6 +1137,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20132,
       "FloorID": 20132001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1011202
@@ -1072,6 +1167,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20133,
       "FloorID": 20133001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1081,6 +1178,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20133,
       "FloorID": 20133002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1090,6 +1189,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20134,
       "FloorID": 20134001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1011400
@@ -1112,6 +1213,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20135,
       "FloorID": 20135001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         2010203
@@ -1125,6 +1228,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20136,
       "FloorID": 20136001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         2010203
@@ -1149,6 +1254,8 @@
       "EntranceType": "Town",
       "PlaneID": 10201,
       "FloorID": 10201001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020201
@@ -1246,6 +1353,8 @@
       "EntranceType": "Town",
       "PlaneID": 10202,
       "FloorID": 10202001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020601
@@ -1347,6 +1456,8 @@
       "EntranceType": "Town",
       "PlaneID": 10202,
       "FloorID": 10202004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": [
@@ -1391,6 +1502,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20223,
       "FloorID": 20223001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020701
@@ -1402,6 +1515,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20211,
       "FloorID": 20211001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020101
@@ -1430,6 +1545,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20212,
       "FloorID": 20212001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020501
@@ -1443,6 +1560,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20213,
       "FloorID": 20213001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1452,6 +1571,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20213,
       "FloorID": 20213002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1461,6 +1582,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20214,
       "FloorID": 20214001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1470,6 +1593,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20221,
       "FloorID": 20221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1020702
@@ -1481,6 +1606,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20221,
       "FloorID": 20221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1501,6 +1628,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20222,
       "FloorID": 20222001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1021001
@@ -1512,6 +1641,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20222,
       "FloorID": 20222001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1558,6 +1689,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20231,
       "FloorID": 20231001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1021201
@@ -1595,6 +1728,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20231,
       "FloorID": 20231001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1021101
@@ -1606,6 +1741,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20231,
       "FloorID": 20231002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1021201
@@ -1617,6 +1754,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20232,
       "FloorID": 20232001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1021201
@@ -1654,6 +1793,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20233,
       "FloorID": 20233001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1663,6 +1804,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20241,
       "FloorID": 20241001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         2022104
@@ -1676,6 +1819,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20242,
       "FloorID": 20242001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         2022305
@@ -1715,6 +1860,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20243,
       "FloorID": 20243001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -1724,6 +1871,8 @@
       "EntranceType": "Town",
       "PlaneID": 10301,
       "FloorID": 10301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030201
@@ -1833,6 +1982,8 @@
       "EntranceType": "Town",
       "PlaneID": 10304,
       "FloorID": 10304001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1032401
@@ -1883,6 +2034,8 @@
       "EntranceType": "Town",
       "PlaneID": 10305,
       "FloorID": 10305001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030101
@@ -1918,6 +2071,8 @@
       "EntranceType": "Town",
       "PlaneID": 10341,
       "FloorID": 10341001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1034107
@@ -1984,6 +2139,8 @@
       "EntranceType": "Town",
       "PlaneID": 10306,
       "FloorID": 10306001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1034201
@@ -2138,6 +2295,8 @@
       "EntranceType": "Town",
       "PlaneID": 10307,
       "FloorID": 10307001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2147,6 +2306,8 @@
       "EntranceType": "Town",
       "PlaneID": 10308,
       "FloorID": 10308001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2156,6 +2317,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20311,
       "FloorID": 20311001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030601
@@ -2217,6 +2380,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20312,
       "FloorID": 20312001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030501
@@ -2230,6 +2395,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20312,
       "FloorID": 20312001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030501
@@ -2243,6 +2410,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20313,
       "FloorID": 20313001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1030401
@@ -2282,6 +2451,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20321,
       "FloorID": 20321001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1031501
@@ -2310,6 +2481,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20322,
       "FloorID": 20322001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1031101
@@ -2347,6 +2520,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20323,
       "FloorID": 20323001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2356,6 +2531,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20331,
       "FloorID": 20331001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1032701
@@ -2369,6 +2546,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20331,
       "FloorID": 20331002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1032701
@@ -2393,6 +2572,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20332,
       "FloorID": 20332001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [
         1032901
@@ -2404,6 +2585,8 @@
       "EntranceType": "Town",
       "PlaneID": 10401,
       "FloorID": 10401001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2637,6 +2820,8 @@
       "EntranceType": "Town",
       "PlaneID": 10402,
       "FloorID": 10402001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2668,6 +2853,8 @@
       "EntranceType": "Town",
       "PlaneID": 10403,
       "FloorID": 10403001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2688,6 +2875,8 @@
       "EntranceType": "Town",
       "PlaneID": 10404,
       "FloorID": 10404001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2763,6 +2952,8 @@
       "EntranceType": "Town",
       "PlaneID": 10405,
       "FloorID": 10405001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2772,6 +2963,8 @@
       "EntranceType": "Town",
       "PlaneID": 10441,
       "FloorID": 10441001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2814,6 +3007,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20411,
       "FloorID": 20411001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2834,6 +3029,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20412,
       "FloorID": 20412001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2865,6 +3062,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20413,
       "FloorID": 20413001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2874,6 +3073,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20421,
       "FloorID": 20421001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2883,6 +3084,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20422,
       "FloorID": 20422001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2892,6 +3095,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20423,
       "FloorID": 20423001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2923,6 +3128,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20424,
       "FloorID": 20424001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2932,6 +3139,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20431,
       "FloorID": 20431001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2941,6 +3150,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20432,
       "FloorID": 20432001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2950,6 +3161,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20433,
       "FloorID": 20433001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2970,6 +3183,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20451,
       "FloorID": 20451001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2990,6 +3205,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20452,
       "FloorID": 20452001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -2999,6 +3216,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20461,
       "FloorID": 20461001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3019,6 +3238,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20462,
       "FloorID": 20462001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3028,6 +3249,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20481,
       "FloorID": 20481001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3070,6 +3293,8 @@
       "EntranceType": "Town",
       "PlaneID": 10501,
       "FloorID": 10501001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3108,10 +3333,23 @@
       "FinishSubMissionList": []
     },
     {
+      "ID": 1050107,
+      "EntranceType": "Town",
+      "PlaneID": 10501,
+      "FloorID": 10501001,
+      "StartGroupID": 1,
+      "StartAnchorID": 2,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
       "ID": 2050101,
       "EntranceType": "Mission",
       "PlaneID": 20501,
       "FloorID": 20501001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3143,6 +3381,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20502,
       "FloorID": 20502001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3174,6 +3414,8 @@
       "EntranceType": "Mission",
       "PlaneID": 20503,
       "FloorID": 20503001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3227,6 +3469,52 @@
       "EntranceType": "Town",
       "PlaneID": 10502,
       "FloorID": 10502001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 1052101,
+      "EntranceType": "Town",
+      "PlaneID": 10521,
+      "FloorID": 10521001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 1052102,
+      "EntranceType": "Town",
+      "PlaneID": 10521,
+      "FloorID": 10521001,
+      "StartGroupID": 6,
+      "StartAnchorID": 3,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 1052103,
+      "EntranceType": "Town",
+      "PlaneID": 10521,
+      "FloorID": 10521001,
+      "StartGroupID": 59,
+      "StartAnchorID": 1,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 2052101,
+      "EntranceType": "Town",
+      "PlaneID": 20521,
+      "FloorID": 20521001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3236,6 +3524,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30101,
       "FloorID": 30101001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3245,6 +3535,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3254,6 +3546,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3263,6 +3557,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3272,6 +3568,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3281,6 +3579,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3290,6 +3590,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30102,
       "FloorID": 30102006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3310,6 +3612,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30103,
       "FloorID": 30103001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3319,6 +3623,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30104,
       "FloorID": 30104001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3328,6 +3634,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30105,
       "FloorID": 30105001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3337,6 +3645,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30121,
       "FloorID": 30121001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3346,6 +3656,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30121,
       "FloorID": 30121002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3355,6 +3667,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30122,
       "FloorID": 30122001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3375,6 +3689,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30123,
       "FloorID": 30123001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3395,6 +3711,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30124,
       "FloorID": 30124001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3404,6 +3722,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30124,
       "FloorID": 30124002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3413,6 +3733,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30125,
       "FloorID": 30125001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3422,6 +3744,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30126,
       "FloorID": 30126001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3431,6 +3755,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30126,
       "FloorID": 30126002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3440,6 +3766,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30126,
       "FloorID": 30126003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3471,6 +3799,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30130,
       "FloorID": 30130001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3480,6 +3810,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30130,
       "FloorID": 30130002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3489,6 +3821,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30131,
       "FloorID": 30131001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3498,6 +3832,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30131,
       "FloorID": 30131002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3507,6 +3843,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30132,
       "FloorID": 30132001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3516,6 +3854,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30135,
       "FloorID": 30135001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3525,6 +3865,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30135,
       "FloorID": 30135002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3534,6 +3876,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30136,
       "FloorID": 30136001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3543,6 +3887,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30137,
       "FloorID": 30137001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3552,6 +3898,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30138,
       "FloorID": 30138001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3561,6 +3909,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30140,
       "FloorID": 30140001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3570,6 +3920,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30140,
       "FloorID": 30140002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3579,6 +3931,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30140,
       "FloorID": 30140003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3588,6 +3942,19 @@
       "EntranceType": "Explore",
       "PlaneID": 30141,
       "FloorID": 30141001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 3014201,
+      "EntranceType": "Explore",
+      "PlaneID": 30142,
+      "FloorID": 30142001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3597,6 +3964,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30120,
       "FloorID": 30120001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3606,6 +3975,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30201001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3615,6 +3986,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30202001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3624,6 +3997,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30203001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3633,6 +4008,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30204001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3642,6 +4019,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30205001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3651,6 +4030,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30201,
       "FloorID": 30206001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3660,6 +4041,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3669,6 +4052,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3678,6 +4063,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3687,6 +4074,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3696,6 +4085,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3705,6 +4096,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3714,6 +4107,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30301,
       "FloorID": 30301007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3723,6 +4118,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30401,
       "FloorID": 30401001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3732,6 +4129,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30401,
       "FloorID": 30401002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3741,6 +4140,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30401,
       "FloorID": 30401003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3750,6 +4151,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30401,
       "FloorID": 30401004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3759,6 +4162,8 @@
       "EntranceType": "Mission",
       "PlaneID": 30401,
       "FloorID": 30401005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3768,6 +4173,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30500,
       "FloorID": 30500001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3777,6 +4184,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30501,
       "FloorID": 30501001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3786,6 +4195,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30502,
       "FloorID": 30502001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3795,6 +4206,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30521,
       "FloorID": 30521001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3804,6 +4217,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30523,
       "FloorID": 30523001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3813,6 +4228,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30524,
       "FloorID": 30524001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3822,6 +4239,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30525,
       "FloorID": 30525001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3831,6 +4250,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30527,
       "FloorID": 30527001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3840,6 +4261,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30530,
       "FloorID": 30530001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3849,6 +4272,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30532,
       "FloorID": 30532001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3858,6 +4283,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30533,
       "FloorID": 30533001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3867,6 +4294,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30533,
       "FloorID": 30533002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3876,6 +4305,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30534,
       "FloorID": 30534001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3885,6 +4316,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30537,
       "FloorID": 30537001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3894,6 +4327,8 @@
       "EntranceType": "Explore",
       "PlaneID": 30537,
       "FloorID": 30537002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3903,6 +4338,19 @@
       "EntranceType": "Explore",
       "PlaneID": 30540,
       "FloorID": 30540001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 30542001,
+      "EntranceType": "Explore",
+      "PlaneID": 30542,
+      "FloorID": 30542001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3912,6 +4360,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40000,
       "FloorID": 40000001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3921,6 +4371,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3930,6 +4382,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3939,6 +4393,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3948,6 +4404,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3957,6 +4415,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002101,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3966,6 +4426,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002102,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3975,6 +4437,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002103,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3984,6 +4448,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40002,
       "FloorID": 40002104,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -3993,6 +4459,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40003,
       "FloorID": 40003001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4002,6 +4470,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40101,
       "FloorID": 40101001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4011,6 +4481,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40101,
       "FloorID": 40101002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4020,6 +4492,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40101,
       "FloorID": 40101003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4029,6 +4503,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40101,
       "FloorID": 40101004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4038,6 +4514,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40101,
       "FloorID": 40101006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4047,6 +4525,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40102,
       "FloorID": 40102001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4056,6 +4536,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40102,
       "FloorID": 40102002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4065,6 +4547,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40102,
       "FloorID": 40102003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4074,6 +4558,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40102,
       "FloorID": 40102004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4083,6 +4569,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40103,
       "FloorID": 40103001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4092,6 +4580,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4101,6 +4591,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4110,6 +4602,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4119,6 +4613,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4128,6 +4624,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4137,6 +4635,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4146,6 +4646,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4155,6 +4657,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4164,6 +4668,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4173,6 +4679,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4182,6 +4690,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104011,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4191,6 +4701,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104012,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4200,6 +4712,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104013,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4209,6 +4723,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104014,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4218,6 +4734,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104015,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4227,6 +4745,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104016,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4236,6 +4756,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104017,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4245,6 +4767,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104018,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4254,6 +4778,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104019,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4263,6 +4789,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104020,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4272,6 +4800,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104021,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4281,6 +4811,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104022,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4290,6 +4822,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104023,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4299,6 +4833,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40104,
       "FloorID": 40104024,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4308,6 +4844,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40105,
       "FloorID": 40105001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4317,6 +4855,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40105,
       "FloorID": 40105002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4326,6 +4866,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40105,
       "FloorID": 40105003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4335,6 +4877,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40105,
       "FloorID": 40105004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4344,6 +4888,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40106,
       "FloorID": 40106001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4353,6 +4899,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40107,
       "FloorID": 40107001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4362,6 +4910,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40107,
       "FloorID": 40107002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4371,6 +4921,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40111,
       "FloorID": 40111001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4380,6 +4932,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40122,
       "FloorID": 40122001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4389,6 +4943,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40123,
       "FloorID": 40123001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4398,6 +4954,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40211,
       "FloorID": 40211001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4407,6 +4965,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40211,
       "FloorID": 40211002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4416,6 +4976,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40211,
       "FloorID": 40211003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4425,6 +4987,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40212,
       "FloorID": 40212001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4434,6 +4998,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40212,
       "FloorID": 40212002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4443,6 +5009,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40212,
       "FloorID": 40212003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4452,6 +5020,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40221,
       "FloorID": 40221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4461,6 +5031,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40222,
       "FloorID": 40222001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4470,6 +5042,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40222,
       "FloorID": 40222002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4479,6 +5053,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40222,
       "FloorID": 40222003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4488,6 +5064,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40222,
       "FloorID": 40222004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4497,6 +5075,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40222,
       "FloorID": 40222005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4506,6 +5086,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40231,
       "FloorID": 40231001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4515,6 +5097,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40231,
       "FloorID": 40231003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4524,6 +5108,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40231,
       "FloorID": 40231004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4533,6 +5119,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40232,
       "FloorID": 40232001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4542,6 +5130,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40232,
       "FloorID": 40232002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4551,6 +5141,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40233,
       "FloorID": 40233001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4560,6 +5152,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40235,
       "FloorID": 40235001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4569,6 +5163,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40236,
       "FloorID": 40236001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4578,6 +5174,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40236,
       "FloorID": 40236002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4587,6 +5185,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4596,6 +5196,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4605,6 +5207,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4614,6 +5218,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4623,6 +5229,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4632,6 +5240,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40237,
       "FloorID": 40237006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4641,6 +5251,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40238,
       "FloorID": 40238001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4672,6 +5284,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40121,
       "FloorID": 40121001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4681,6 +5295,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40121,
       "FloorID": 40121002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4690,6 +5306,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40121,
       "FloorID": 40121003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4699,6 +5317,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40121,
       "FloorID": 40121005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4708,6 +5328,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40121,
       "FloorID": 40121006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4717,6 +5339,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40131,
       "FloorID": 40131001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4726,6 +5350,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40131,
       "FloorID": 40131002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4735,6 +5361,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40131,
       "FloorID": 40131003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4744,6 +5372,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40312,
       "FloorID": 40312001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4753,6 +5383,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40301,
       "FloorID": 40301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4762,6 +5394,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40301,
       "FloorID": 40301002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4771,6 +5405,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40302,
       "FloorID": 40302001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4780,6 +5416,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40401,
       "FloorID": 40401001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4789,6 +5427,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40401,
       "FloorID": 40401002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4798,6 +5438,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40401,
       "FloorID": 40401003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4807,6 +5449,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40402,
       "FloorID": 40402001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4816,6 +5460,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40402,
       "FloorID": 40402002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4825,6 +5471,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40403,
       "FloorID": 40403001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4834,6 +5482,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40403,
       "FloorID": 40403002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4843,6 +5493,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40403,
       "FloorID": 40403003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4852,6 +5504,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40403,
       "FloorID": 40403004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4861,6 +5515,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40404,
       "FloorID": 40404001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4870,6 +5526,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40411,
       "FloorID": 40411001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4879,6 +5537,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40412,
       "FloorID": 40412001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4888,6 +5548,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40413,
       "FloorID": 40413001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4897,6 +5559,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40414,
       "FloorID": 40414001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4906,6 +5570,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40416,
       "FloorID": 40416001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4915,6 +5581,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40431,
       "FloorID": 40431001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4924,6 +5592,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40431,
       "FloorID": 40431002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4933,6 +5603,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40432,
       "FloorID": 40432001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4942,6 +5614,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40433,
       "FloorID": 40433001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4951,6 +5625,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40434,
       "FloorID": 40434001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4960,6 +5636,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40435,
       "FloorID": 40435001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4969,6 +5647,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40441,
       "FloorID": 40441001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4978,6 +5658,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40451,
       "FloorID": 40451001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4987,6 +5669,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40451,
       "FloorID": 40451002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -4996,6 +5680,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40451,
       "FloorID": 40451003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5005,6 +5691,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40451,
       "FloorID": 40451004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5014,6 +5702,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40452,
       "FloorID": 40452001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5023,6 +5713,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40453,
       "FloorID": 40453001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5032,6 +5724,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40453,
       "FloorID": 40453002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5041,6 +5735,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40453,
       "FloorID": 40453003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5050,6 +5746,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40453,
       "FloorID": 40453004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5059,6 +5757,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40453,
       "FloorID": 40453005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5068,6 +5768,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40454,
       "FloorID": 40454001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5077,6 +5779,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40455,
       "FloorID": 40455001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5086,6 +5790,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40455,
       "FloorID": 40455002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5095,6 +5801,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40456,
       "FloorID": 40456001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5104,6 +5812,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40457,
       "FloorID": 40457001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5113,6 +5823,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40461,
       "FloorID": 40461001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5122,6 +5834,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40461,
       "FloorID": 40461002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5131,6 +5845,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40461,
       "FloorID": 40461003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5140,6 +5856,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40472,
       "FloorID": 40472001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5149,6 +5867,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40473,
       "FloorID": 40473001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5158,6 +5878,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40474,
       "FloorID": 40474001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5167,6 +5889,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40475,
       "FloorID": 40475001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5176,6 +5900,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40476,
       "FloorID": 40476001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5185,6 +5911,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40476,
       "FloorID": 40476002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5194,6 +5922,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40476,
       "FloorID": 40476003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5203,6 +5933,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40477,
       "FloorID": 40477001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5212,6 +5944,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40478,
       "FloorID": 40478001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5221,6 +5955,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40481,
       "FloorID": 40481001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5230,6 +5966,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40482,
       "FloorID": 40482001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5239,6 +5977,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40483,
       "FloorID": 40483001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5248,6 +5988,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40501,
       "FloorID": 40501001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5257,6 +5999,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40502,
       "FloorID": 40502001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5266,6 +6010,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40503,
       "FloorID": 40503001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5275,6 +6021,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40504,
       "FloorID": 40504001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5284,6 +6032,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40504,
       "FloorID": 40504002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5293,6 +6043,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40505,
       "FloorID": 40505001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5302,6 +6054,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40505,
       "FloorID": 40505002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5311,6 +6065,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5320,6 +6076,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5329,6 +6087,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5338,6 +6098,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5347,6 +6109,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5356,6 +6120,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5365,6 +6131,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40506,
       "FloorID": 40506005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5374,6 +6142,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40507,
       "FloorID": 40507001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5383,6 +6153,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40507,
       "FloorID": 40507002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5392,6 +6164,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40508,
       "FloorID": 40508001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5401,6 +6175,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40509,
       "FloorID": 40509001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5410,6 +6186,118 @@
       "EntranceType": "Explore",
       "PlaneID": 40511,
       "FloorID": 40511001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40521001,
+      "EntranceType": "Explore",
+      "PlaneID": 40521,
+      "FloorID": 40521001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40522001,
+      "EntranceType": "Explore",
+      "PlaneID": 40522,
+      "FloorID": 40522001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40523001,
+      "EntranceType": "Explore",
+      "PlaneID": 40523,
+      "FloorID": 40523001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40523002,
+      "EntranceType": "Explore",
+      "PlaneID": 40523,
+      "FloorID": 40523002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40524001,
+      "EntranceType": "Explore",
+      "PlaneID": 40524,
+      "FloorID": 40524001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40524002,
+      "EntranceType": "Explore",
+      "PlaneID": 40524,
+      "FloorID": 40524002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40524003,
+      "EntranceType": "Explore",
+      "PlaneID": 40524,
+      "FloorID": 40524003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40524004,
+      "EntranceType": "Explore",
+      "PlaneID": 40524,
+      "FloorID": 40524004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40525001,
+      "EntranceType": "Explore",
+      "PlaneID": 40525,
+      "FloorID": 40525001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40525002,
+      "EntranceType": "Explore",
+      "PlaneID": 40525,
+      "FloorID": 40525002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5419,6 +6307,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5428,6 +6318,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5437,6 +6329,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5446,6 +6340,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5455,6 +6351,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5464,6 +6362,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41000,
       "FloorID": 41000006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5473,6 +6373,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41007,
       "FloorID": 41000007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5482,6 +6384,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41008,
       "FloorID": 41000008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5491,6 +6395,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41009,
       "FloorID": 41000009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5500,6 +6406,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41010,
       "FloorID": 41000010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5509,6 +6417,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41011,
       "FloorID": 41000011,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5518,6 +6428,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41012,
       "FloorID": 41000012,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5527,6 +6439,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41221,
       "FloorID": 41221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5536,6 +6450,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41221,
       "FloorID": 41221002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5545,6 +6461,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41221,
       "FloorID": 41221003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5554,6 +6472,8 @@
       "EntranceType": "Explore",
       "PlaneID": 42221,
       "FloorID": 42221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5563,6 +6483,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41212,
       "FloorID": 41212001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5572,6 +6494,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40242,
       "FloorID": 40242001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5581,6 +6505,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40242,
       "FloorID": 40242002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5590,6 +6516,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40243,
       "FloorID": 40243001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5599,6 +6527,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40421,
       "FloorID": 40421001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5608,6 +6538,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40422,
       "FloorID": 40422001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5617,6 +6549,8 @@
       "EntranceType": "Explore",
       "PlaneID": 40424,
       "FloorID": 40424001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5626,6 +6560,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43001,
       "FloorID": 43001001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5635,6 +6571,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43001,
       "FloorID": 43001002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5644,6 +6582,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43002,
       "FloorID": 43002001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5653,6 +6593,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43002,
       "FloorID": 43002002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5684,6 +6626,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43003,
       "FloorID": 43003001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5693,6 +6637,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43004,
       "FloorID": 43004001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5702,6 +6648,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43101,
       "FloorID": 43101001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5711,6 +6659,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43101,
       "FloorID": 43101002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5720,6 +6670,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43102,
       "FloorID": 43102001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5729,6 +6681,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43102,
       "FloorID": 43102002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5738,6 +6692,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43102,
       "FloorID": 43102003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5747,6 +6703,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43103,
       "FloorID": 43103001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5756,6 +6714,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43103,
       "FloorID": 43103002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5765,6 +6725,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43103,
       "FloorID": 43103003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5774,6 +6736,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43103,
       "FloorID": 43103004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5783,6 +6747,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43103,
       "FloorID": 43103005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5792,6 +6758,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43104,
       "FloorID": 43104001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5801,6 +6769,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43201,
       "FloorID": 43201001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5810,6 +6780,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43201,
       "FloorID": 43201002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5819,6 +6791,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43201,
       "FloorID": 43201003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5828,6 +6802,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43201,
       "FloorID": 43201004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5837,6 +6813,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43201,
       "FloorID": 43201005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5846,6 +6824,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5855,6 +6835,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5864,6 +6846,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5873,6 +6857,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5882,6 +6868,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5891,6 +6879,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43202,
       "FloorID": 43202006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5900,6 +6890,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43203,
       "FloorID": 43203001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5909,6 +6901,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43204,
       "FloorID": 43204001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5918,6 +6912,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43205,
       "FloorID": 43205001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5927,6 +6923,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43206,
       "FloorID": 43206001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5936,6 +6934,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43207,
       "FloorID": 43207001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5945,6 +6945,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43207,
       "FloorID": 43207002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5954,6 +6956,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43207,
       "FloorID": 43207003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5963,6 +6967,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43208,
       "FloorID": 43208001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5972,6 +6978,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43209,
       "FloorID": 43209001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5981,6 +6989,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43210,
       "FloorID": 43210001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5990,6 +7000,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43210,
       "FloorID": 43210002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -5999,6 +7011,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43211,
       "FloorID": 43211001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6008,6 +7022,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43212,
       "FloorID": 43212001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6017,6 +7033,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43213,
       "FloorID": 43213001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6026,6 +7044,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43214,
       "FloorID": 43214001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6035,6 +7055,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43215,
       "FloorID": 43215001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6044,6 +7066,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43216,
       "FloorID": 43216001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6053,6 +7077,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43217,
       "FloorID": 43217001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6062,6 +7088,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43217,
       "FloorID": 43217002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6071,6 +7099,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43218,
       "FloorID": 43218001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6080,6 +7110,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43301,
       "FloorID": 43301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6089,6 +7121,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43311,
       "FloorID": 43301101,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6098,6 +7132,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43302,
       "FloorID": 43302001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6107,6 +7143,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43303,
       "FloorID": 43303001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6116,6 +7154,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43303,
       "FloorID": 43303002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6125,6 +7165,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43303,
       "FloorID": 43303003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6134,6 +7176,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43304,
       "FloorID": 43304001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6143,6 +7187,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43305,
       "FloorID": 43305001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6152,6 +7198,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43305,
       "FloorID": 43305002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6161,6 +7209,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43306,
       "FloorID": 43306001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6170,6 +7220,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43306,
       "FloorID": 43306002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6179,6 +7231,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43307,
       "FloorID": 43307001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6188,6 +7242,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43308,
       "FloorID": 43308001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6197,6 +7253,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43309,
       "FloorID": 43309001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6206,6 +7264,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43310,
       "FloorID": 43310001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6215,6 +7275,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43312,
       "FloorID": 43312001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6224,6 +7286,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43312,
       "FloorID": 43312002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6233,6 +7297,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43312,
       "FloorID": 43312003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6242,6 +7308,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43313,
       "FloorID": 43313001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6251,6 +7319,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43313,
       "FloorID": 43313002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6260,6 +7330,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43313,
       "FloorID": 43313003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6269,6 +7341,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43314,
       "FloorID": 43314001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6278,6 +7352,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43315,
       "FloorID": 43315001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6287,6 +7363,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43316,
       "FloorID": 43316001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6296,6 +7374,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43313,
       "FloorID": 43313004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6305,6 +7385,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43321,
       "FloorID": 43321001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6314,6 +7396,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43321,
       "FloorID": 43321002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6323,6 +7407,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44001,
       "FloorID": 44001001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6332,6 +7418,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44001,
       "FloorID": 44001002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6341,6 +7429,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44001,
       "FloorID": 44001003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6350,6 +7440,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44201,
       "FloorID": 44201001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6359,6 +7451,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44201,
       "FloorID": 44201002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6368,6 +7462,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44201,
       "FloorID": 44201003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6377,6 +7473,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44202,
       "FloorID": 44202001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6386,6 +7484,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44202,
       "FloorID": 44202002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6395,6 +7495,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44202,
       "FloorID": 44202003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6404,6 +7506,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44202,
       "FloorID": 44202004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6413,6 +7517,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6422,6 +7528,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6431,6 +7539,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6440,6 +7550,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6449,6 +7561,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6458,6 +7572,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6467,6 +7583,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6476,6 +7594,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6485,6 +7605,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6494,6 +7616,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6503,6 +7627,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301011,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6512,6 +7638,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301012,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6521,6 +7649,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301013,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6530,6 +7660,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301014,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6539,6 +7671,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301015,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6548,6 +7682,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301016,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6557,6 +7693,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301017,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6566,6 +7704,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301018,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6575,6 +7715,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301019,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6584,6 +7726,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301020,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6593,6 +7737,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301021,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6602,6 +7748,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44301,
       "FloorID": 44301022,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6611,6 +7759,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6620,6 +7770,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6629,6 +7781,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6638,6 +7792,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6647,6 +7803,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6656,6 +7814,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6665,6 +7825,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6674,6 +7836,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6683,6 +7847,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6692,6 +7858,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6701,6 +7869,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401011,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6710,6 +7880,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401012,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6719,6 +7891,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401013,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6728,6 +7902,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401014,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6737,6 +7913,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401015,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6746,6 +7924,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401016,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6755,6 +7935,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401017,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6764,6 +7946,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401018,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6773,6 +7957,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401019,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6782,6 +7968,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41401,
       "FloorID": 41401020,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6791,6 +7979,8 @@
       "EntranceType": "Explore",
       "PlaneID": 41402,
       "FloorID": 41402001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6800,6 +7990,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44302,
       "FloorID": 44302001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6809,6 +8001,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44302,
       "FloorID": 44302002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6818,6 +8012,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44302,
       "FloorID": 44302003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6827,6 +8023,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44302,
       "FloorID": 44302004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6836,6 +8034,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44303,
       "FloorID": 44303001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6845,6 +8045,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44303,
       "FloorID": 44303002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6854,6 +8056,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44303,
       "FloorID": 44303003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6863,6 +8067,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43322,
       "FloorID": 43322001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6872,6 +8078,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43322,
       "FloorID": 43322002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6881,6 +8089,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43322,
       "FloorID": 43322003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6890,6 +8100,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43322,
       "FloorID": 43322004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6899,6 +8111,8 @@
       "EntranceType": "Explore",
       "PlaneID": 43322,
       "FloorID": 43322005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6908,6 +8122,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44305,
       "FloorID": 44305001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6917,6 +8133,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44305,
       "FloorID": 44305002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6926,6 +8144,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44305,
       "FloorID": 44305003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6935,6 +8155,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44305,
       "FloorID": 44305004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6944,6 +8166,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44305,
       "FloorID": 44305005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6953,6 +8177,8 @@
       "EntranceType": "Explore",
       "PlaneID": 44306,
       "FloorID": 44306001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6962,6 +8188,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41440,
       "FloorID": 41440001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6971,6 +8199,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41440,
       "FloorID": 41440002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6980,6 +8210,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41440,
       "FloorID": 41440003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6989,6 +8221,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41441,
       "FloorID": 41441001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -6998,6 +8232,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7007,6 +8243,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7016,6 +8254,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7025,6 +8265,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7034,6 +8276,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7043,6 +8287,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7052,6 +8298,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7061,6 +8309,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41442,
       "FloorID": 41442008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7070,6 +8320,8 @@
       "EntranceType": "Mission",
       "PlaneID": 41471,
       "FloorID": 41471001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7079,6 +8331,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40462,
       "FloorID": 40462001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7088,6 +8342,8 @@
       "EntranceType": "Town",
       "PlaneID": 40462,
       "FloorID": 40462002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7097,6 +8353,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40462,
       "FloorID": 40462003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7106,6 +8364,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40462,
       "FloorID": 40462004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7115,6 +8375,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40463,
       "FloorID": 40463001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7124,6 +8386,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40465,
       "FloorID": 40465001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7133,6 +8397,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40465,
       "FloorID": 40465002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7142,6 +8408,8 @@
       "EntranceType": "Mission",
       "PlaneID": 40471,
       "FloorID": 40471001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7162,6 +8430,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80001,
       "FloorID": 80001001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7171,6 +8441,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80001,
       "FloorID": 80001002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7180,6 +8452,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80001,
       "FloorID": 80001003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7189,6 +8463,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81001,
       "FloorID": 81001001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7198,6 +8474,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81002,
       "FloorID": 81002001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7207,6 +8485,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81003,
       "FloorID": 81003001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7216,6 +8496,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81004,
       "FloorID": 81004001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7225,6 +8507,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81111,
       "FloorID": 81111001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7234,6 +8518,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81131,
       "FloorID": 81131001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7243,6 +8529,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81132,
       "FloorID": 81132001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7252,6 +8540,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81121,
       "FloorID": 81121001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7261,6 +8551,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81122,
       "FloorID": 81122001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7270,6 +8562,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81123,
       "FloorID": 81123001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7279,6 +8573,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81211,
       "FloorID": 81211001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7288,6 +8584,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81212,
       "FloorID": 81212001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7297,6 +8595,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81221,
       "FloorID": 81221001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7306,6 +8606,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81222,
       "FloorID": 81222001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7315,6 +8617,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81223,
       "FloorID": 81223001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7324,6 +8628,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81231,
       "FloorID": 81231001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7333,6 +8639,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81232,
       "FloorID": 81232001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7342,6 +8650,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81311,
       "FloorID": 81311001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7351,6 +8661,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81312,
       "FloorID": 81312001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7360,6 +8672,8 @@
       "EntranceType": "Explore",
       "PlaneID": 81313,
       "FloorID": 81313001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7369,6 +8683,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7378,6 +8694,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7387,6 +8705,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7396,6 +8716,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7405,6 +8727,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7414,6 +8738,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7423,6 +8749,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7432,6 +8760,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80200,
       "FloorID": 80200008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7441,6 +8771,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80201,
       "FloorID": 80201001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7450,6 +8782,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80202,
       "FloorID": 80202001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7459,6 +8793,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80203,
       "FloorID": 80203001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7468,6 +8804,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80204,
       "FloorID": 80204001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7477,6 +8815,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80205,
       "FloorID": 80205001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7486,6 +8826,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80206,
       "FloorID": 80206001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7495,6 +8837,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80207,
       "FloorID": 80207001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7504,6 +8848,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80208,
       "FloorID": 80208001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7513,6 +8859,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80209,
       "FloorID": 80209001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7522,6 +8870,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80210,
       "FloorID": 80210001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7531,6 +8881,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80211,
       "FloorID": 80211001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7551,6 +8903,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80301,
       "FloorID": 80301001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7560,6 +8914,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80301,
       "FloorID": 80301002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7569,6 +8925,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80303,
       "FloorID": 80303001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7578,6 +8936,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80305,
       "FloorID": 80305001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7587,6 +8947,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80302,
       "FloorID": 80302001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7596,6 +8958,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80302,
       "FloorID": 80302002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7605,6 +8969,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80304,
       "FloorID": 80304001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7614,6 +8980,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80400,
       "FloorID": 80400001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7623,6 +8991,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80401,
       "FloorID": 80401001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7632,6 +9002,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80402,
       "FloorID": 80402001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7641,6 +9013,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80403,
       "FloorID": 80403001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7650,6 +9024,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80404,
       "FloorID": 80404001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7659,6 +9035,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80405,
       "FloorID": 80405001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7668,6 +9046,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80406,
       "FloorID": 80406001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7677,6 +9057,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80407,
       "FloorID": 80407001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7686,6 +9068,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7695,6 +9079,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7704,6 +9090,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7713,6 +9101,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7722,6 +9112,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7731,6 +9123,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7740,6 +9134,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7749,6 +9145,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7758,6 +9156,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7767,6 +9167,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80408,
       "FloorID": 80408010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7776,6 +9178,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7785,6 +9189,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7794,6 +9200,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7803,6 +9211,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7812,6 +9222,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7821,6 +9233,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7830,6 +9244,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7839,6 +9255,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80409,
       "FloorID": 80409009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7848,6 +9266,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7857,6 +9277,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7866,6 +9288,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7875,6 +9299,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7884,6 +9310,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7893,6 +9321,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7902,6 +9332,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7911,6 +9343,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410008,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7920,6 +9354,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410009,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7929,6 +9365,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80410,
       "FloorID": 80410010,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7938,6 +9376,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80501,
       "FloorID": 80501001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7947,6 +9387,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80502,
       "FloorID": 80502001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7956,6 +9398,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80503,
       "FloorID": 80503001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7965,6 +9409,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80504,
       "FloorID": 80504001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7974,6 +9420,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80505,
       "FloorID": 80505001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7983,6 +9431,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80506,
       "FloorID": 80506001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -7992,6 +9442,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80507,
       "FloorID": 80507001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8001,6 +9453,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8010,6 +9464,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8019,6 +9475,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8028,6 +9486,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8037,6 +9497,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8046,6 +9508,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508006,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8055,6 +9519,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80508,
       "FloorID": 80508007,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8064,6 +9530,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80601,
       "FloorID": 80601001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8073,6 +9541,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80602,
       "FloorID": 80602001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8082,6 +9552,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80603,
       "FloorID": 80603001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8091,6 +9563,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80604,
       "FloorID": 80604001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8122,6 +9596,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80701,
       "FloorID": 80701001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8131,6 +9607,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80702,
       "FloorID": 80702001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8140,6 +9618,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80703,
       "FloorID": 80703001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8149,6 +9629,8 @@
       "EntranceType": "Explore",
       "PlaneID": 80704,
       "FloorID": 80704001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []
@@ -8169,6 +9651,151 @@
       "EntranceType": "Explore",
       "PlaneID": 40234,
       "FloorID": 40234001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40447001,
+      "EntranceType": "Explore",
+      "PlaneID": 40447,
+      "FloorID": 40447001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40447002,
+      "EntranceType": "Explore",
+      "PlaneID": 40447,
+      "FloorID": 40447002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40447003,
+      "EntranceType": "Explore",
+      "PlaneID": 40447,
+      "FloorID": 40447003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40447004,
+      "EntranceType": "Explore",
+      "PlaneID": 40447,
+      "FloorID": 40447004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40447005,
+      "EntranceType": "Explore",
+      "PlaneID": 40447,
+      "FloorID": 40447005,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40448001,
+      "EntranceType": "Explore",
+      "PlaneID": 40448,
+      "FloorID": 40448001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40448002,
+      "EntranceType": "Explore",
+      "PlaneID": 40448,
+      "FloorID": 40448002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40448003,
+      "EntranceType": "Explore",
+      "PlaneID": 40448,
+      "FloorID": 40448003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40449001,
+      "EntranceType": "Explore",
+      "PlaneID": 40449,
+      "FloorID": 40449001,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40449002,
+      "EntranceType": "Explore",
+      "PlaneID": 40449,
+      "FloorID": 40449002,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40449003,
+      "EntranceType": "Explore",
+      "PlaneID": 40449,
+      "FloorID": 40449003,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 40449004,
+      "EntranceType": "Explore",
+      "PlaneID": 40449,
+      "FloorID": 40449004,
+      "StartGroupID": 0,
+      "StartAnchorID": 0,
+      "BeginMainMissionList": [],
+      "FinishMainMissionList": [],
+      "FinishSubMissionList": []
+    },
+    {
+      "ID": 10341901,
+      "EntranceType": "Explore",
+      "PlaneID": 10341,
+      "FloorID": 10341001,
+      "StartGroupID": 367,
+      "StartAnchorID": 1,
       "BeginMainMissionList": [],
       "FinishMainMissionList": [],
       "FinishSubMissionList": []

@@ -1,6 +1,6 @@
 const std = @import("std");
 const protocol = @import("protocol");
-const Session = @import("../Session.zig");
+const Session = @import("../session.zig");
 const Packet = @import("../Packet.zig");
 const Config = @import("../data/game_config.zig");
 const Res_config = @import("../data/res_config.zig");
@@ -21,7 +21,7 @@ const anchors = &ConfigManager.global_game_config_cache.anchor_config;
 
 fn getBaseAvatarId(id: u32) u32 {
     return switch (id) {
-        8001...8008 => 8001,
+        8001...8010 => 8001,
         1224 => 1001,
         else => id,
     };
@@ -41,8 +41,6 @@ fn getOrCreateGroup(
     try group_map.put(group_id, new_group);
     return group_map.getPtr(group_id).?;
 }
-
-
 pub const SceneManager = struct {
     allocator: Allocator,
     pub fn init(allocator: Allocator) SceneManager {
@@ -120,32 +118,13 @@ pub const SceneManager = struct {
         entry_id: u32,
         teleport_id: u32,
     ) !protocol.SceneInfo {
-        return self.createSceneWithSpawn(plane_id, floor_id, entry_id, teleport_id, null, null);
-    }
-
-    pub fn createSceneWithSpawn(
-        self: *SceneManager,
-        plane_id: u32,
-        floor_id: u32,
-        entry_id: u32,
-        teleport_id: u32,
-        spawn_pos_override: ?protocol.Vector,
-        spawn_rot_override: ?protocol.Vector,
-    ) !protocol.SceneInfo {
         var generator = Uid.BaseUidGen().init();
         var scene_info = protocol.SceneInfo.init(self.allocator);
         scene_info.game_mode_type = 1;
         scene_info.plane_id = plane_id;
         scene_info.floor_id = floor_id;
         scene_info.entry_id = entry_id;
-
-        var main_mission = std.ArrayList(u32).init(self.allocator);
-        for (mission_config.main_mission_config.items) |id| {
-            try main_mission.append(id.main_mission_id);
-        }
-        var mission_status = protocol.MissionStatusBySceneInfo.init(self.allocator);
-        mission_status.finished_main_mission_id_list = main_mission;
-        scene_info.scene_mission_info = mission_status;
+        scene_info.scene_identifier = .{ .floor_id = floor_id };
 
         for (saved_values_config.floor_saved_values.items) |saved| {
             if (saved.floor_id == floor_id) {
@@ -158,79 +137,31 @@ pub const SceneManager = struct {
             }
         }
 
-        scene_info.leader_entity_id = if (config.avatar_config.items.len > 0)
-            @intCast(getBaseAvatarId(config.avatar_config.items[0].id) + 100000)
-        else
-            0;
+        scene_info.leader_entity_id = config.avatar_config.items[0].id + 100000;
         scene_info.world_id = 501;
         scene_info.client_pos_version = 1;
         var group_map = std.AutoHashMap(u32, protocol.SceneEntityGroupInfo).init(self.allocator);
         defer group_map.deinit();
-
-        // Resolve spawn transform for this (planeId, entryId):
-        // 1) teleportId match inside this scene
-        // 2) first teleport inside this scene
-        // 3) Anchor.json first anchor for this entry
-        // 4) default (0,0,0)
-        var spawn_pos: protocol.Vector = .{ .x = 0, .y = 0, .z = 0 };
-        var spawn_rot: protocol.Vector = .{ .x = 0, .y = 0, .z = 0 };
-        var have_spawn = false;
-
-        if (spawn_pos_override) |p| {
-            spawn_pos = p;
-            have_spawn = true;
-        }
-        if (spawn_rot_override) |r| {
-            spawn_rot = r;
-        }
-
         for (res_config.scene_config.items) |sceneConf| {
-            if (sceneConf.planeID != plane_id or sceneConf.entryID != entry_id) continue;
-
-            if (!have_spawn and teleport_id != 0) {
-                for (sceneConf.teleports.items) |teleConf| {
-                    if (teleConf.teleportId != teleport_id) continue;
-                    spawn_pos = toVector(teleConf.pos);
-                    spawn_rot = toVector(teleConf.rot);
-                    have_spawn = true;
-                    break;
-                }
-            }
-
-            if (!have_spawn and sceneConf.teleports.items.len > 0) {
-                const teleConf = sceneConf.teleports.items[0];
-                spawn_pos = toVector(teleConf.pos);
-                spawn_rot = toVector(teleConf.rot);
-                have_spawn = true;
-            }
-
-            try addPropEntities(self.allocator, &group_map, sceneConf.props.items, &generator);
-            try addMonsterEntities(self.allocator, &group_map, sceneConf.monsters.items, &generator);
-            break;
-        }
-
-        if (!have_spawn) {
-            for (anchors.anchor_config.items) |anchorConf| {
-                if (anchorConf.entryID != entry_id) continue;
-                if (anchorConf.anchor.items.len == 0) break;
-                const a = anchorConf.anchor.items[0];
-                spawn_pos = toVector(a.pos);
-                spawn_rot = toVector(a.rot);
-                have_spawn = true;
+            for (sceneConf.teleports.items) |teleConf| {
+                if (teleConf.teleportId != teleport_id) continue;
+                var scene_group = protocol.SceneEntityGroupInfo.init(self.allocator);
+                scene_group.state = 1;
+                try addAvatarEntities(&scene_group, config.avatar_config.items, toVector(teleConf.pos), toVector(teleConf.rot), 0);
+                try scene_info.entity_group_list.append(scene_group);
                 break;
             }
+            if (sceneConf.planeID == plane_id and sceneConf.entryID == entry_id) {
+                try addPropEntities(self.allocator, &group_map, sceneConf.props.items, &generator);
+                try addMonsterEntities(self.allocator, &group_map, sceneConf.monsters.items, &generator);
+            }
         }
-
-        // Always spawn avatar group so the client can enter the scene even if res.json lacks props/monsters.
-        var scene_group = protocol.SceneEntityGroupInfo.init(self.allocator);
-        scene_group.state = 1;
-        try addAvatarEntities(&scene_group, config.avatar_config.items, spawn_pos, spawn_rot, 1);
-        try scene_info.entity_group_list.append(scene_group);
         var iter = group_map.iterator();
         while (iter.next()) |entry| {
             const g = entry.value_ptr.*;
             try scene_info.entity_group_list.append(g);
             try scene_info.entity_list.appendSlice(g.entity_list.items);
+            try scene_info.opened_chests_list.append(g.group_id);
             try scene_info.custom_data_list.append(.{ .group_id = g.group_id });
             try scene_info.group_state_list.append(.{
                 .group_id = g.group_id,
@@ -274,6 +205,8 @@ pub const ChallengeSceneManager = struct {
         scene_info.plane_id = plane_id;
         scene_info.floor_id = floor_id;
         scene_info.entry_id = entry_id;
+        scene_info.scene_identifier = .{ .floor_id = floor_id };
+
         scene_info.leader_entity_id = avatar_list.items[0];
         if (world_id) |wid| scene_info.world_id = wid;
 
@@ -285,14 +218,6 @@ pub const ChallengeSceneManager = struct {
         var scene_group = protocol.SceneEntityGroupInfo.init(self.allocator);
         scene_group.state = 1;
         scene_group.group_id = 0;
-
-        var main_mission = std.ArrayList(u32).init(self.allocator);
-        for (mission_config.main_mission_config.items) |id| {
-            try main_mission.append(id.main_mission_id);
-        }
-        var mission_status = protocol.MissionStatusBySceneInfo.init(self.allocator);
-        mission_status.finished_main_mission_id_list = main_mission;
-        scene_info.scene_mission_info = mission_status;
 
         for (saved_values_config.floor_saved_values.items) |saved| {
             if (saved.floor_id == floor_id) {
@@ -429,7 +354,7 @@ pub const MazeMapManager = struct {
             if (!plane_ids_map.contains(sceneConf.planeID)) continue;
             for (sceneConf.props.items) |propConf| {
                 try map_info.maze_group_list.append(protocol.MazeGroup{
-                    .DDNOEGPCACF = ArrayList(u32).init(self.allocator),
+                    .destory_monster_config_id_list = ArrayList(u32).init(self.allocator),
                     .group_id = propConf.groupId,
                 });
                 try map_info.maze_prop_list.append(protocol.MazePropState{

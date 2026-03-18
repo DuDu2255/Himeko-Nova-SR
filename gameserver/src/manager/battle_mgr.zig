@@ -14,9 +14,9 @@ const CmdID = protocol.CmdID;
 const skill_config = &ConfigManager.global_game_config_cache.avatar_skill_config;
 const config = &ConfigManager.global_game_config_cache.game_config;
 
-// Will be filled from saved lineup or misc.json defaults; start empty to avoid config fallback.
+pub var selectedAvatarID = [_]u32{ 1304, 1313, 1406, 1004 };
+
 var gpa = std.heap.GeneralPurposeAllocator(.{}){};
-pub var selectedAvatarID = std.ArrayList(u32).init(gpa.allocator());
 pub var funmodeAvatarID = std.ArrayList(u32).init(gpa.allocator());
 
 fn getAvatarElement(avatar_id: u32) AvatarConfig.Element {
@@ -29,10 +29,8 @@ fn getAvatarElement(avatar_id: u32) AvatarConfig.Element {
     return .None;
 }
 
-fn getAttackerBuffId(list: []const u32) u32 {
-    if (list.len == 0) return 0;
-    const slot = if (Lineup.leader_slot < list.len) Lineup.leader_slot else 0;
-    const avatar_id = list[slot];
+fn getAttackerBuffId() u32 {
+    const avatar_id = if (!Logic.FunMode().FunMode()) selectedAvatarID[Lineup.leader_slot] else funmodeAvatarID.items[Lineup.leader_slot];
     const element = getAvatarElement(avatar_id);
     return switch (element) {
         .Physical => 1000111,
@@ -55,30 +53,11 @@ fn createBattleRelic(allocator: Allocator, id: u32, level: u32, main_affix_id: u
     return relic;
 }
 
-fn applyCustomStats(avatar: *protocol.BattleAvatar, custom_stats: []const Config.CustomStat) void {
-    if (avatar.sp_bar == null) {
-        avatar.sp_bar = .{ .cur_sp = 0, .max_sp = 10000 };
-    }
-    const sp = &avatar.sp_bar.?;
-
-    for (custom_stats) |cs| {
-        if (cs.value <= 0) continue;
-        if (std.mem.eql(u8, cs.key, "hp")) {
-            avatar.hp = @intCast(cs.value * 100);
-        } else if (std.mem.eql(u8, cs.key, "sp")) {
-            sp.cur_sp = @intCast(cs.value * 100);
-        } else if (std.mem.eql(u8, cs.key, "sp_max")) {
-            sp.max_sp = @intCast(cs.value * 100);
-        }
-    }
-    if (sp.cur_sp > sp.max_sp) sp.cur_sp = sp.max_sp;
-}
-
-fn createBattleAvatar(allocator: Allocator, avatarConf: Config.Avatar, custom_stats: []const Config.CustomStat) !protocol.BattleAvatar {
+fn createBattleAvatar(allocator: Allocator, avatarConf: Config.Avatar) !protocol.BattleAvatar {
     var avatar = protocol.BattleAvatar.init(allocator);
     avatar.id = avatarConf.id;
     avatar.hp = avatarConf.hp * 100;
-    avatar.sp_bar = .{ .cur_sp = avatarConf.sp * 100, .max_sp = avatarConf.sp_max * 100 };
+    avatar.sp_bar = .{ .cur_sp = avatarConf.sp * 100, .max_sp = 10000 };
     avatar.level = avatarConf.level;
     avatar.rank = avatarConf.rank;
     avatar.promotion = avatarConf.promotion;
@@ -108,7 +87,6 @@ fn createBattleAvatar(allocator: Allocator, avatarConf: Config.Avatar, custom_st
             }
         }
     }
-    applyCustomStats(&avatar, custom_stats);
     return avatar;
 }
 
@@ -241,6 +219,7 @@ fn addTechniqueBuffs(allocator: Allocator, battle: *protocol.SceneBattleInfo, av
         8004 => 8003,
         8006 => 8005,
         8008 => 8007,
+        8010 => 8009,
         else => avatar.id,
     };
 
@@ -291,7 +270,7 @@ fn addTechniqueBuffs(allocator: Allocator, battle: *protocol.SceneBattleInfo, av
     targetIndexList.deinit();
 }
 
-fn addGolbalPassive(allocator: Allocator, battle: *protocol.SceneBattleInfo) !void {
+fn addGlobalPassive(allocator: Allocator, battle: *protocol.SceneBattleInfo) !void {
     if (Logic.inlist(1407, Data.AllAvatars)) {
         var targetIndexList = ArrayList(u32).init(allocator);
         errdefer targetIndexList.deinit();
@@ -308,14 +287,30 @@ fn addGolbalPassive(allocator: Allocator, battle: *protocol.SceneBattleInfo) !vo
         try battle.buff_list.append(mazebuff_data);
         targetIndexList.deinit();
     }
+    if (Logic.inlist(1506, Data.AllAvatars)) {
+        var targetIndexList = ArrayList(u32).init(allocator);
+        errdefer targetIndexList.deinit();
+        try targetIndexList.append(0);
+        var mazebuff_data = protocol.BattleBuff{
+            .id = 150602,
+            .level = 1,
+            .owner_index = 1,
+            .wave_flag = 0xFFFFFFFF,
+            .target_index_list = try targetIndexList.clone(),
+            .dynamic_values = ArrayList(protocol.BattleBuff.DynamicValuesEntry).init(allocator),
+        };
+        try mazebuff_data.dynamic_values.append(.{ .key = .{ .Const = "SkillIndex" }, .value = 0 });
+        try battle.buff_list.append(mazebuff_data);
+        targetIndexList.deinit();
+    }
 }
 
-fn addTriggerAttack(allocator: Allocator, battle: *protocol.SceneBattleInfo, selected_avatar_ids: []const u32) !void {
+fn addTriggerAttack(allocator: Allocator, battle: *protocol.SceneBattleInfo) !void {
     var targetIndexList = ArrayList(u32).init(allocator);
     errdefer targetIndexList.deinit();
     try targetIndexList.append(0);
     var attack = protocol.BattleBuff{
-        .id = getAttackerBuffId(selected_avatar_ids),
+        .id = getAttackerBuffId(),
         .level = 1,
         .owner_index = Lineup.leader_slot,
         .wave_flag = 0xFFFFFFFF,
@@ -338,61 +333,24 @@ fn createBattleInfo(allocator: Allocator, game_config: *const Config.GameConfig,
     return battle;
 }
 
-fn addMonsterWaves(
-    allocator: Allocator,
-    battle: *protocol.SceneBattleInfo,
-    monster_wave_configs: std.ArrayList(std.ArrayList(u32)),
-    monster_wave_detail_configs: ?*const std.ArrayList(std.ArrayList(Config.MonsterDef)),
-    monster_level: u32,
-) !void {
-    for (monster_wave_configs.items, 0..) |wave, wave_idx| {
+fn addMonsterWaves(allocator: Allocator, battle: *protocol.SceneBattleInfo, monster_wave_configs: std.ArrayList(std.ArrayList(u32)), monster_level: u32) !void {
+    for (monster_wave_configs.items) |wave| {
         var monster_wave = protocol.SceneMonsterWave.init(allocator);
-
-        var wave_level = monster_level;
-        if (monster_wave_detail_configs) |details| {
-            if (wave_idx < details.items.len) {
-                for (details.items[wave_idx].items) |m| {
-                    if (m.level != 0) {
-                        wave_level = m.level;
-                        break;
-                    }
-                }
-            }
-        }
-        monster_wave.monster_param = protocol.SceneMonsterWaveParam{ .level = wave_level };
-
-        if (monster_wave_detail_configs) |details| detail_block: {
-            if (wave_idx >= details.items.len) break :detail_block;
-            const detail_wave = details.items[wave_idx];
-            if (detail_wave.items.len == 0) break :detail_block;
-
-            for (detail_wave.items) |m| {
-                const override_hp = Logic.FunMode().GetHp();
-                // If no explicit max_hp is provided, let client derive HP from its own data.
-                const mob_hp: u32 = if (override_hp != 0) override_hp else if (m.max_hp != 0) m.max_hp else 0;
-                var i: u32 = 0;
-                while (i < m.amount) : (i += 1) {
-                    try monster_wave.monster_list.append(.{ .monster_id = m.id, .max_hp = mob_hp });
-                }
-            }
-        } else {
-            const override_hp = Logic.FunMode().GetHp();
-            const mob_hp: u32 = if (override_hp != 0) override_hp else 0;
-            for (wave.items) |mob_id| {
-                try monster_wave.monster_list.append(.{ .monster_id = mob_id, .max_hp = mob_hp });
-            }
+        monster_wave.monster_param = protocol.SceneMonsterWaveParam{ .level = monster_level };
+        for (wave.items) |mob_id| {
+            try monster_wave.monster_list.append(.{ .monster_id = mob_id, .max_hp = Logic.FunMode().GetHp() });
         }
         try battle.monster_wave_list.append(monster_wave);
     }
 }
 
-fn addStageBlessings(allocator: Allocator, battle: *protocol.SceneBattleInfo, blessings: []const Config.Blessing) !void {
+fn addStageBlessings(allocator: Allocator, battle: *protocol.SceneBattleInfo, blessings: []const u32) !void {
     for (blessings) |blessing| {
         var targetIndexList = ArrayList(u32).init(allocator);
         errdefer targetIndexList.deinit();
         try targetIndexList.append(0);
         var buff = protocol.BattleBuff{
-            .id = blessing.id,
+            .id = blessing,
             .level = 1,
             .owner_index = 0xffffffff,
             .wave_flag = 0xffffffff,
@@ -427,7 +385,7 @@ fn addBattleTargets(allocator: Allocator, battle: *protocol.SceneBattleInfo) !vo
     try asTargetHead.battle_target_list.append(.{ .id = 90005, .progress = 2000, .total_progress = 0 });
 
     switch (battle.stage_id) {
-        30019000...30019100, 30021000...30021100, 30301000...30319900 => { // PF
+        30019000...30019100, 30021000...30021100, 30301000...30399900 => { // PF
             try battle.battle_target_info.append(.{ .key = 1, .value = pfTargetHead });
             for (2..4) |i| {
                 try battle.battle_target_info.append(.{ .key = @intCast(i), .value = protocol.BattleTargetList{ .battle_target_list = ArrayList(protocol.BattleTarget).init(allocator) } });
@@ -446,16 +404,14 @@ fn commonBattleSetup(
     selected_avatar_ids: []const u32,
     avatar_configs: []const Config.Avatar,
     monster_wave_configs: std.ArrayList(std.ArrayList(u32)),
-    monster_wave_detail_configs: ?*const std.ArrayList(std.ArrayList(Config.MonsterDef)),
     monster_level: u32,
-    stage_blessings: []const Config.Blessing,
-    custom_stats: []const Config.CustomStat,
+    stage_blessings: []const u32,
 ) !void {
     var avatarIndex: u32 = 0;
     for (selected_avatar_ids) |selected_id| {
         for (avatar_configs) |avatarConf| {
             if (avatarConf.id == selected_id) {
-                const avatar = try createBattleAvatar(allocator, avatarConf, custom_stats);
+                const avatar = try createBattleAvatar(allocator, avatarConf);
                 try addTechniqueBuffs(allocator, battle, avatar, avatarConf, avatarIndex);
                 try battle.battle_avatar_list.append(avatar);
                 avatarIndex += 1;
@@ -463,10 +419,10 @@ fn commonBattleSetup(
         }
     }
 
-    try addMonsterWaves(allocator, battle, monster_wave_configs, monster_wave_detail_configs, monster_level);
-    try addTriggerAttack(allocator, battle, selected_avatar_ids);
+    try addMonsterWaves(allocator, battle, monster_wave_configs, monster_level);
+    try addTriggerAttack(allocator, battle);
     try addStageBlessings(allocator, battle, stage_blessings);
-    try addGolbalPassive(allocator, battle);
+    try addGlobalPassive(allocator, battle);
     try addBattleTargets(allocator, battle);
 }
 pub const BattleManager = struct {
@@ -476,7 +432,7 @@ pub const BattleManager = struct {
         return BattleManager{ .allocator = allocator };
     }
 
-    pub fn createBattle(self: *BattleManager, selected_avatar_ids: []const u32) !protocol.SceneBattleInfo {
+    pub fn createBattle(self: *BattleManager) !protocol.SceneBattleInfo {
         try ConfigManager.UpdateGameConfig();
         var battle = createBattleInfo(
             self.allocator,
@@ -489,13 +445,11 @@ pub const BattleManager = struct {
         try commonBattleSetup(
             self.allocator,
             &battle,
-            selected_avatar_ids,
+            if (!Logic.FunMode().FunMode()) &selectedAvatarID else funmodeAvatarID.items,
             config.avatar_config.items,
             config.battle_config.monster_wave,
-            &config.battle_config.monster_wave_detail,
             config.battle_config.monster_level,
             config.battle_config.blessings.items,
-            config.battle_config.custom_stats.items,
         );
 
         return battle;
@@ -513,7 +467,7 @@ pub const ChallegeStageManager = struct {
         };
     }
 
-    pub fn createChallegeStage(self: *ChallegeStageManager, selected_avatar_ids: []const u32) !protocol.SceneBattleInfo {
+    pub fn createChallegeStage(self: *ChallegeStageManager) !protocol.SceneBattleInfo {
         if (!Logic.Challenge().FoundStage()) {
             std.log.info("Challenge stage ID is 0, skipping challenge battle creation and returning an empty battle info.", .{});
             return protocol.SceneBattleInfo.init(self.allocator);
@@ -534,22 +488,14 @@ pub const ChallegeStageManager = struct {
                     if (Logic.Challenge().GetChallengeMode() != 1) 30 else 4,
                 );
                 found_stage = true;
-                var chal_blessings = ArrayList(Config.Blessing).init(self.allocator);
-                defer chal_blessings.deinit();
-                for (Logic.Challenge().GetChallengeBlessingID()) |id| {
-                    try chal_blessings.append(.{ .id = id, .level = 1 });
-                }
-
                 try commonBattleSetup(
                     self.allocator,
                     &battle,
-                    selected_avatar_ids,
+                    if (!Logic.FunMode().FunMode()) &selectedAvatarID else funmodeAvatarID.items,
                     config.avatar_config.items,
                     stageConf.monster_list,
-                    null,
                     stageConf.level,
-                    chal_blessings.items,
-                    config.battle_config.custom_stats.items,
+                    Logic.Challenge().GetChallengeBlessingID(),
                 );
                 break;
             }

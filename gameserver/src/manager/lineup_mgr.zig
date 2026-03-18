@@ -19,33 +19,29 @@ pub const LineupManager = struct {
         return LineupManager{ .allocator = allocator };
     }
     pub fn createLineup(self: *LineupManager) !protocol.LineupInfo {
-        var ids = ArrayList(u32).init(self.allocator);
-        defer ids.deinit();
-
-        // 1) Fun mode uses its own lineup.
-        if (Logic.FunMode().FunMode()) {
-            try ids.appendSlice(BattleManager.funmodeAvatarID.items);
-        } else {
-            // 2) Use current selected lineup if it has any non-zero entries.
-            if (BattleManager.selectedAvatarID.items.len > 0) {
-                for (BattleManager.selectedAvatarID.items) |id| {
-                    if (id != 0) try ids.append(id);
-                }
-            } else if (config.loadout.items.len > 0) {
-                // 3) Use freesr-data loadout if provided.
-                try ids.appendSlice(config.loadout.items);
-            } else {
-                // 4) Fallback to misc.json defaults (global single source of truth).
-                const misc_lineup = ConfigManager.global_misc_defaults.player.lineup;
-                if (misc_lineup.len > 0) {
-                    try ids.appendSlice(misc_lineup);
-                }
-            }
+        if (ConfigManager.global_misc_defaults.avatar.lineup.len != 0) {
+            return try buildLineup(self.allocator, ConfigManager.global_misc_defaults.avatar.lineup, null);
         }
 
-        // 5) If still empty, at least ensure MC exists to avoid empty lineup crashes.
-        if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
-
+        var ids = ArrayList(u32).init(self.allocator);
+        defer ids.deinit();
+        var picked_mc = false;
+        var picked_m7th = false;
+        for (config.avatar_config.items) |avatarConf| {
+            if (ids.items.len >= 4) break;
+            const id = switch (avatarConf.id) {
+                8001...8010 => if (!picked_mc) blk: {
+                    picked_mc = true;
+                    break :blk AvatarManager.currentMcId();
+                } else continue,
+                1224, 1001 => if (!picked_m7th) blk: {
+                    picked_m7th = true;
+                    break :blk AvatarManager.currentM7th();
+                } else continue,
+                else => avatarConf.id,
+            };
+            try ids.append(id);
+        }
         return try buildLineup(self.allocator, ids.items, null);
     }
 };
@@ -77,6 +73,8 @@ pub fn buildLineup(
     lineup.max_mp = 5;
     if (extra_type) |t| {
         lineup.extra_lineup_type = t;
+    } else {
+        lineup.name = .{ .Const = "CastoricePS" };
     }
 
     for (ids, 0..) |id, idx| {
@@ -88,31 +86,17 @@ pub fn buildLineup(
         }
         avatar.slot = @intCast(idx);
         avatar.satiety = 0;
-
-        // HP comes from freesr-data.json avatar config when available.
-        var hp: u32 = 10000;
-        for (config.avatar_config.items) |av| {
-            if (av.id == id) {
-                hp = av.hp;
-                break;
-            }
-        }
-        avatar.hp = hp;
-
-        // Ultimate energy (sp_bar) comes from freesr-data.json avatar config when available.
-        var sp_cur: u32 = 100;
-        var sp_max: u32 = 100;
-        for (config.avatar_config.items) |av| {
-            if (av.id == id) {
-                sp_cur = av.sp;
-                sp_max = av.sp_max;
-                break;
-            }
-        }
-        avatar.sp_bar = .{ .cur_sp = sp_cur * 100, .max_sp = sp_max * 100 };
+        avatar.hp = 10000;
+        avatar.sp_bar = .{ .cur_sp = 10000, .max_sp = 10000 };
         avatar.avatar_type = protocol.AvatarType.AVATAR_FORMAL_TYPE;
         try lineup.avatar_list.append(avatar);
     }
+    var id_list = try allocator.alloc(u32, lineup.avatar_list.items.len);
+    defer allocator.free(id_list);
+    for (lineup.avatar_list.items, 0..) |ava, idx| {
+        id_list[idx] = ava.id;
+    }
+    try getSelectedAvatarID(allocator, id_list);
     return lineup;
 }
 
@@ -124,12 +108,20 @@ pub fn deinitChallengeLineupInfo(lineup: *protocol.LineupInfo) void {
     lineup.avatar_list.deinit();
 }
 
-pub fn getSelectedAvatarID(_: Allocator, input: []const u32) !void {
-    BattleManager.selectedAvatarID.clearRetainingCapacity();
-    try BattleManager.selectedAvatarID.appendSlice(input);
-    for (BattleManager.selectedAvatarID.items) |*item| {
-        if (item.* == 8001) item.* = AvatarManager.getMcId();
-        if (item.* == 1001) item.* = AvatarManager.getM7thId();
+pub fn getSelectedAvatarID(allocator: Allocator, input: []const u32) !void {
+    var tempList = ArrayList(u32).init(allocator);
+    defer tempList.deinit();
+    try tempList.appendSlice(input);
+    for (tempList.items) |*item| {
+        if (item.* >= 8001 and item.* <= 8010) item.* = AvatarManager.currentMcId();
+        if (item.* == 1001 or item.* == 1224) item.* = AvatarManager.currentM7th();
+    }
+    var i: usize = 0;
+    while (i < BattleManager.selectedAvatarID.len and i < tempList.items.len) : (i += 1) {
+        BattleManager.selectedAvatarID[i] = tempList.items[i];
+    }
+    while (i < BattleManager.selectedAvatarID.len) : (i += 1) {
+        BattleManager.selectedAvatarID[i] = 0;
     }
 }
 pub fn getFunModeAvatarID(input: []const u32) !void {

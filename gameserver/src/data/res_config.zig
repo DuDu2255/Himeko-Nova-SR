@@ -121,20 +121,9 @@ pub fn parseAnchor(root: std.json.Value, allocator: Allocator) anyerror!SceneCon
             .teleports = ArrayList(Teleports).init(allocator),
         };
         for (res_json.object.get("props").?.array.items) |scene_prop| {
-            const group_node = scene_prop.object.get("groupId");
-            const inst_node = scene_prop.object.get("instId");
-            const group_id: u32 = if (group_node) |n|
-                @intCast(n.integer)
-            else
-                return error.MissingGroupId;
-            const inst_id: u32 = if (inst_node) |n|
-                @intCast(n.integer)
-            else
-                return error.MissingInstId;
-
             var prop = Props{
-                .groupId = group_id,
-                .instId = inst_id,
+                .groupId = @intCast(scene_prop.object.get("groupId").?.integer),
+                .instId = @intCast(scene_prop.object.get("instId").?.integer),
                 .propState = @intCast(scene_prop.object.get("propState").?.integer),
                 .pos = undefined,
                 .rot = undefined,

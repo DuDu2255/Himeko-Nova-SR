@@ -2,8 +2,10 @@ const std = @import("std");
 const protocol = @import("protocol");
 const Session = @import("../Session.zig");
 const Packet = @import("../Packet.zig");
+const Data = @import("../data.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
 
+const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
 
@@ -28,15 +30,10 @@ pub fn onGetTutorialGuideStatus(session: *Session, _: *const Packet, allocator: 
     var rsp = protocol.GetTutorialGuideScRsp.init(allocator);
     const tutorial_guide_config = &ConfigManager.global_game_config_cache.tutorial_guide_config;
     rsp.retcode = 0;
-    var seen = std.AutoHashMap(u32, void).init(allocator);
-    defer seen.deinit();
     for (tutorial_guide_config.tutorial_guide_config.items) |guideConf| {
-        const id = guideConf.guide_group_id;
-        if (!seen.contains(id)) {
-            try seen.put(id, {});
-            try rsp.tutorial_guide_list.append(protocol.TutorialGuide{ .id = id, .status = protocol.TutorialStatus.TUTORIAL_FINISH });
-        }
+        try rsp.tutorial_guide_list.append(protocol.TutorialGuide{ .id = guideConf.guide_group_id, .status = protocol.TutorialStatus.TUTORIAL_FINISH });
     }
+
     try session.send(CmdID.CmdGetTutorialGuideScRsp, rsp);
 }
 
@@ -78,9 +75,12 @@ pub fn onGetQuestData(session: *Session, _: *const Packet, allocator: Allocator)
 }
 // added this to auto detect new tutorial guide id
 pub fn onUnlockTutorialGuide(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    _ = packet;
+    const req = try packet.getProto(protocol.UnlockTutorialGuideCsReq, allocator);
+    defer req.deinit();
+
     var rsp = protocol.UnlockTutorialGuideScRsp.init(allocator);
     rsp.retcode = 0;
+    std.debug.print("UNLOCK TUTORIAL GUIDE ID: {}\n", .{req.group_id});
     try session.send(CmdID.CmdUnlockTutorialGuideScRsp, rsp);
 }
 // added this to auto detect new tutorial id
@@ -92,14 +92,4 @@ pub fn onUnlockTutorial(session: *Session, packet: *const Packet, allocator: All
     rsp.retcode = 0;
     std.debug.print("UNLOCK TUTORIAL ID: {}\n", .{req.tutorial_id});
     try session.send(CmdID.CmdUnlockTutorialScRsp, rsp);
-}
-pub fn onFinishTutorialGuide(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    const req = try packet.getProto(protocol.FinishTutorialGuideCsReq, allocator);
-    defer req.deinit();
-
-    std.debug.print("FINISH TUTORIAL GUIDE TYPE={}: group={} \n", .{req.type, req.group_id});
-
-    var rsp = protocol.FinishTutorialGuideScRsp.init(allocator);
-    rsp.retcode = 0;
-    try session.send(CmdID.CmdFinishTutorialGuideScRsp, rsp);
 }

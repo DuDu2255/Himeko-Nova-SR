@@ -65,6 +65,7 @@ pub fn parseAvatarSkillTreeConfig(
     allocator: Allocator,
 ) anyerror!AvatarSkillTreeConfig {
     var avatar_skill_tree = ArrayList(AvatarSkillTree).init(allocator);
+
     for (root.object.get("avatar_skill_tree").?.array.items) |skill_json| {
         const skill = AvatarSkillTree{
             .point_id = @intCast(skill_json.object.get("PointID").?.integer),
@@ -73,6 +74,7 @@ pub fn parseAvatarSkillTreeConfig(
             .level = @intCast(skill_json.object.get("Level").?.integer),
             .max_level = @intCast(skill_json.object.get("MaxLevel").?.integer),
         };
+
         try avatar_skill_tree.append(skill);
     }
 
@@ -90,6 +92,7 @@ fn parseAnchorTypeToPointId(anchor: []const u8) !u32 {
     const number_part = anchor[idx..];
     return try std.fmt.parseInt(u32, number_part, 10);
 }
+
 pub fn parseElement(str: []const u8) Element {
     if (std.mem.eql(u8, str, "Physical")) return .Physical;
     if (std.mem.eql(u8, str, "Fire")) return .Fire;

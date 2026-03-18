@@ -225,6 +225,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 299,
       "TriggerParams": [
         {
@@ -269,6 +270,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 175,
       "TriggerParams": [
         {
@@ -295,7 +297,9 @@
         111902
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -311,6 +315,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 299,
       "TriggerParams": [
         {
@@ -336,6 +341,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 298,
       "TriggerParams": [
         {
@@ -362,6 +368,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 297,
       "TriggerParams": [
         {
@@ -384,6 +391,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 398,
       "TriggerParams": [
         {
@@ -675,6 +683,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 191,
       "TriggerParams": [
         {
@@ -702,6 +711,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 192,
       "TriggerParams": [
         {
@@ -966,6 +976,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 398,
       "TriggerParams": [
         {
@@ -992,6 +1003,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 399,
       "TriggerParams": [
         {
@@ -1041,6 +1053,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 400,
       "TriggerParams": [
         {
@@ -1299,6 +1312,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 421,
       "TriggerParams": [
         {
@@ -1325,6 +1339,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 422,
       "TriggerParams": [
         {
@@ -1375,6 +1390,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 424,
       "TriggerParams": [
         {
@@ -1490,6 +1506,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 431,
       "TriggerParams": [
         {
@@ -1516,6 +1533,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 432,
       "TriggerParams": [
         {
@@ -1544,6 +1562,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 433,
       "TriggerParams": [
         {
@@ -1640,6 +1659,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 397,
       "TriggerParams": [
         {
@@ -1668,6 +1688,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 439,
       "TriggerParams": [
         {
@@ -1688,6 +1709,35 @@
       "RewardID": 201
     },
     {
+      "GroupID": 2253,
+      "TutorialGuideIDList": [
+        225301,
+        225302,
+        225303
+      ],
+      "TutorialType": 1,
+      "CanReview": true,
+      "TutorialShowType": "Hide",
+      "Order": 440,
+      "TriggerParams": [
+        {
+          "TriggerType": "EnterBattle",
+          "TriggerParam": "20511080"
+        }
+      ],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "105410126"
+        }
+      ],
+      "MessageText": {
+        "Hash": 2096650913,
+        "Hash64": 2071585691878114467
+      },
+      "RewardID": 201
+    },
+    {
       "GroupID": 2260,
       "TutorialGuideIDList": [
         226001,
@@ -1698,6 +1748,7 @@
       ],
       "TutorialType": 1,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 439,
       "TriggerParams": [
         {
@@ -1719,6 +1770,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 296,
       "TriggerParams": [
         {
@@ -1745,6 +1797,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 397,
       "TriggerParams": [
         {
@@ -1766,6 +1819,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -1792,6 +1846,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 392,
       "TriggerParams": [
         {
@@ -1813,6 +1868,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 391,
       "TriggerParams": [
         {
@@ -1834,6 +1890,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 393,
       "TriggerParams": [
         {
@@ -1857,6 +1914,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -1906,6 +1964,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -1933,6 +1992,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -1977,6 +2037,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -1998,6 +2059,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -2020,6 +2082,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -2064,6 +2127,7 @@
         320902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 396,
       "TriggerParams": [],
@@ -2107,6 +2171,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -2163,6 +2228,7 @@
         321308
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 396,
       "TriggerParams": [],
@@ -2203,6 +2269,7 @@
         321602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 396,
       "TriggerParams": [
@@ -2225,6 +2292,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 397,
       "TriggerParams": [
         {
@@ -2269,7 +2337,9 @@
         321802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2285,7 +2355,9 @@
         322102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2302,6 +2374,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 501,
       "TriggerParams": [],
       "FinishTriggerParams": [],
@@ -2317,7 +2390,9 @@
         322301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2333,7 +2408,9 @@
         322502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2348,7 +2425,9 @@
         322701
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2366,7 +2445,9 @@
         322804
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2382,6 +2463,7 @@
         322902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 202,
       "TriggerParams": [],
@@ -2398,6 +2480,7 @@
         322902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 202,
       "TriggerParams": [],
@@ -2438,7 +2521,9 @@
         323102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2455,6 +2540,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 394,
       "TriggerParams": [
         {
@@ -2481,6 +2567,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 395,
       "TriggerParams": [
         {
@@ -2506,7 +2593,9 @@
         410201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -2531,7 +2620,9 @@
         410301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -2556,7 +2647,9 @@
         410401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -2573,6 +2666,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 396,
       "TriggerParams": [
         {
@@ -2598,6 +2692,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 390,
       "TriggerParams": [
         {
@@ -2649,6 +2744,7 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 389,
       "TriggerParams": [],
       "FinishTriggerParams": [],
@@ -2687,6 +2783,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 295,
       "TriggerParams": [
         {
@@ -2712,6 +2809,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 294,
       "TriggerParams": [
         {
@@ -2733,6 +2831,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 293,
       "TriggerParams": [
         {
@@ -2754,6 +2853,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 292,
       "TriggerParams": [
         {
@@ -2775,6 +2875,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 291,
       "TriggerParams": [
         {
@@ -2855,6 +2956,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 288,
       "TriggerParams": [
         {
@@ -2915,6 +3017,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 290,
       "TriggerParams": [
         {
@@ -2994,6 +3097,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3086,6 +3190,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 287,
       "TriggerParams": [
         {
@@ -3134,6 +3239,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3244,6 +3350,8 @@
         602601
       ],
       "TutorialType": 2,
+      "CanReview": false,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3297,6 +3405,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -3341,6 +3450,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3363,6 +3473,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3385,6 +3496,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -3400,6 +3512,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3421,6 +3534,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3468,6 +3582,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -3491,6 +3606,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -3713,6 +3829,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -3734,7 +3851,9 @@
         604702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TakeSubMission",
@@ -3755,7 +3874,9 @@
         604802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TakeSubMission",
@@ -3776,7 +3897,9 @@
         604902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TakeSubMission",
@@ -4231,6 +4354,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -4252,6 +4376,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -4274,6 +4399,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -4412,6 +4538,7 @@
         607602
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [],
@@ -4431,6 +4558,7 @@
         605104
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4454,6 +4582,7 @@
         605703
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [
@@ -4475,6 +4604,7 @@
         605801
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [
@@ -4496,6 +4626,7 @@
         605901
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [
@@ -4517,6 +4648,7 @@
         606001
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [
@@ -4538,6 +4670,7 @@
         606101
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
       "Order": 285,
       "TriggerParams": [
@@ -4562,6 +4695,7 @@
         606404
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4583,6 +4717,7 @@
         606601
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4605,6 +4740,7 @@
         606603
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4626,6 +4762,7 @@
         606604
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4647,6 +4784,7 @@
         606605
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4694,7 +4832,9 @@
         606605
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -4713,7 +4853,9 @@
         605204
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -4731,7 +4873,9 @@
         605501
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -4750,7 +4894,9 @@
         605404
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -4768,7 +4914,9 @@
         610401
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -4784,6 +4932,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -4943,6 +5092,7 @@
         605404
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4964,6 +5114,7 @@
         610301
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -4985,6 +5136,7 @@
         610401
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -5081,7 +5233,9 @@
         610503
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -5261,6 +5415,7 @@
         611705
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -5284,6 +5439,7 @@
         611803
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -5436,6 +5592,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5457,6 +5614,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5478,6 +5636,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5505,6 +5664,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5531,6 +5691,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5580,6 +5741,7 @@
         630203
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 285,
       "TriggerParams": [
@@ -5648,6 +5810,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -5970,6 +6133,7 @@
         630101
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -5993,6 +6157,7 @@
         630202
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 285,
       "TriggerParams": [
@@ -6015,6 +6180,7 @@
         630302
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6058,6 +6224,7 @@
         630102
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6101,6 +6268,7 @@
         630202
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6146,6 +6314,7 @@
         630203
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6191,6 +6360,7 @@
         633002
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 285,
       "TriggerParams": [],
@@ -6207,6 +6377,7 @@
         630701
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6295,6 +6466,7 @@
         633502
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -6317,6 +6489,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -6338,6 +6511,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -6358,6 +6532,7 @@
         633801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 285,
       "TriggerParams": [],
@@ -6376,6 +6551,7 @@
         633903
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
       "Order": 285,
       "TriggerParams": [],
@@ -6416,6 +6592,8 @@
         630103
       ],
       "TutorialType": 2,
+      "CanReview": false,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -6437,6 +6615,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 285,
       "TriggerParams": [
         {
@@ -6720,6 +6899,7 @@
         635104
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 285,
       "TriggerParams": [
@@ -6833,6 +7013,7 @@
         636101
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -6856,6 +7037,7 @@
         636301
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -6878,6 +7060,7 @@
         636302
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -6901,6 +7084,7 @@
         636501
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -6923,6 +7107,7 @@
         636502
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
       "Order": 285,
       "TriggerParams": [
@@ -7184,6 +7369,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 290,
       "TriggerParams": [
         {
@@ -7207,6 +7393,7 @@
       ],
       "TutorialType": 2,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 290,
       "TriggerParams": [
         {
@@ -7295,7 +7482,9 @@
         710001
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7310,7 +7499,9 @@
         710101
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7325,7 +7516,9 @@
         750101
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7341,7 +7534,9 @@
         750202
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7357,7 +7552,9 @@
         750303
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7373,7 +7570,9 @@
         750501
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7389,7 +7588,9 @@
         750602
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7404,7 +7605,9 @@
         750701
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7419,7 +7622,9 @@
         750801
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7434,7 +7639,9 @@
         750901
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7449,7 +7656,9 @@
         751101
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7465,7 +7674,9 @@
         751402
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7480,7 +7691,9 @@
         751501
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7497,7 +7710,9 @@
         800501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7515,7 +7730,9 @@
         800204
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -7536,7 +7753,9 @@
         800302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7553,7 +7772,9 @@
         800401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7573,7 +7794,9 @@
         800202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7594,7 +7817,9 @@
         800205
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7615,7 +7840,9 @@
         800801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7636,7 +7863,9 @@
         801004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7651,7 +7880,9 @@
         801006
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7671,7 +7902,9 @@
         801007
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7692,7 +7925,9 @@
         801026
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7712,7 +7947,9 @@
         801009
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7732,7 +7969,9 @@
         801010
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7752,7 +7991,9 @@
         801011
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7768,7 +8009,9 @@
         801024
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7783,7 +8026,9 @@
         801013
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7799,7 +8044,9 @@
         801023
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7815,7 +8062,9 @@
         801021
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7830,7 +8079,9 @@
         801016
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7845,7 +8096,9 @@
         801017
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7860,7 +8113,9 @@
         801018
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7880,7 +8135,9 @@
         801019
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7900,7 +8157,9 @@
         801005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7922,7 +8181,9 @@
         801103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -7943,7 +8204,9 @@
         801106
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -7963,7 +8226,9 @@
         801103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7979,7 +8244,9 @@
         801203
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -7994,7 +8261,9 @@
         801205
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8010,7 +8279,9 @@
         801208
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TakeSubMission",
@@ -8030,7 +8301,9 @@
         801022
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8045,7 +8318,9 @@
         801025
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8061,7 +8336,9 @@
         801020
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -8083,7 +8360,9 @@
         805503
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8101,7 +8380,9 @@
         805507
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8117,7 +8398,9 @@
         801102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8135,7 +8418,9 @@
         801108
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8150,7 +8435,9 @@
         801119
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8166,6 +8453,7 @@
         801110
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 288,
       "TriggerParams": [
@@ -8212,7 +8500,9 @@
         806302
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8227,7 +8517,9 @@
         801107
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -8247,7 +8539,9 @@
         801108
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishQuest",
@@ -8271,7 +8565,9 @@
         801120
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8286,7 +8582,9 @@
         801121
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -8327,7 +8625,9 @@
         806902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8345,7 +8645,9 @@
         807004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8360,7 +8662,9 @@
         807201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -8383,7 +8687,9 @@
         807303
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByChallengeType",
@@ -8409,7 +8715,9 @@
         807403
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -8430,7 +8738,9 @@
         807502
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8446,7 +8756,9 @@
         807602
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8462,7 +8774,9 @@
         807802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8478,7 +8792,9 @@
         807902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -8498,7 +8814,9 @@
         808001
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -8519,7 +8837,9 @@
         809002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8536,7 +8856,9 @@
         809103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -8557,7 +8879,9 @@
         809202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -8579,7 +8903,9 @@
         809303
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -8601,7 +8927,9 @@
         809403
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -8621,9 +8949,15 @@
         809501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -8633,7 +8967,9 @@
         809602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8650,7 +8986,9 @@
         810003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -8671,7 +9009,9 @@
         810102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8696,7 +9036,9 @@
         810202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8721,7 +9063,9 @@
         810302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8746,7 +9090,9 @@
         810402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8771,7 +9117,9 @@
         810502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8796,7 +9144,9 @@
         810602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8821,7 +9171,9 @@
         810702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -8842,7 +9194,9 @@
         810802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8867,7 +9221,9 @@
         810902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8892,7 +9248,9 @@
         811003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8908,7 +9266,9 @@
         811102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8933,7 +9293,9 @@
         811202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattleByStageType",
@@ -8958,7 +9320,9 @@
         811302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8975,7 +9339,9 @@
         812203
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -8990,7 +9356,9 @@
         812204
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9007,7 +9375,9 @@
         610603
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9026,9 +9396,15 @@
         813605
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -9037,7 +9413,9 @@
         813101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9052,7 +9430,9 @@
         813201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9067,7 +9447,9 @@
         813301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9082,7 +9464,9 @@
         813401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9097,7 +9481,9 @@
         813501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9113,7 +9499,9 @@
         813602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9131,7 +9519,9 @@
         813605
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9149,7 +9539,9 @@
         813803
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9167,7 +9559,9 @@
         813605
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9185,7 +9579,9 @@
         814004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9201,7 +9597,9 @@
         814102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9217,7 +9615,9 @@
         814202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9238,7 +9638,9 @@
         814302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9259,7 +9661,9 @@
         814502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9280,7 +9684,9 @@
         814502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9301,7 +9707,9 @@
         814602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9323,7 +9731,9 @@
         814703
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9340,7 +9750,9 @@
         814803
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9356,7 +9768,9 @@
         814902
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9372,7 +9786,9 @@
         815002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9393,7 +9809,9 @@
         815102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9414,7 +9832,9 @@
         815502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9435,7 +9855,9 @@
         815302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9456,7 +9878,9 @@
         815402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9476,7 +9900,9 @@
         815501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9497,7 +9923,9 @@
         815602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9518,7 +9946,9 @@
         815702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9540,7 +9970,9 @@
         815803
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9555,7 +9987,9 @@
         816001
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9571,7 +10005,9 @@
         816101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9587,7 +10023,9 @@
         816202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9602,7 +10040,9 @@
         816301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9619,7 +10059,9 @@
         816403
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9634,7 +10076,9 @@
         816501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9649,7 +10093,9 @@
         816601
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9664,7 +10110,9 @@
         816101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9681,7 +10129,9 @@
         816703
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9697,7 +10147,9 @@
         817002
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9719,7 +10171,9 @@
         817103
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9741,7 +10195,9 @@
         817203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9762,7 +10218,9 @@
         817302
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9783,7 +10241,9 @@
         817402
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9806,7 +10266,9 @@
         817504
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9822,7 +10284,9 @@
         817602
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9840,7 +10304,9 @@
         818003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -9856,7 +10322,9 @@
         818102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -9878,7 +10346,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9900,7 +10370,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9923,7 +10395,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9945,7 +10419,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9967,7 +10443,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -9989,7 +10467,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10011,7 +10491,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10032,7 +10514,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10054,7 +10538,9 @@
         819003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10071,7 +10557,9 @@
         819103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10089,7 +10577,9 @@
         819204
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10105,7 +10595,9 @@
         819302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10123,7 +10615,9 @@
         819404
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10141,7 +10635,9 @@
         819504
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10157,7 +10653,9 @@
         819602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10173,7 +10671,9 @@
         819702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10188,7 +10688,9 @@
         819801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10203,7 +10705,9 @@
         819901
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10220,7 +10724,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10242,7 +10748,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10263,7 +10771,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10285,7 +10795,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10306,7 +10818,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10327,7 +10841,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10348,7 +10864,9 @@
         818203
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10370,7 +10888,9 @@
         820703
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10385,7 +10905,9 @@
         820801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10400,7 +10922,9 @@
         820901
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10417,6 +10941,7 @@
       "TutorialType": 1,
       "CanReview": true,
       "TutorialShowType": "Hide",
+      "Order": 439,
       "TriggerParams": [],
       "FinishTriggerParams": [
         {
@@ -10431,6 +10956,49 @@
       "RewardID": 201
     },
     {
+      "GroupID": 8212,
+      "TutorialGuideIDList": [
+        821201,
+        821202,
+        821203,
+        821204
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -1284342564,
+        "Hash64": 18381165854988071473
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 8213,
+      "TutorialGuideIDList": [
+        821301,
+        821302
+      ],
+      "TutorialType": 3,
+      "CanReview": true,
+      "TutorialShowType": "Normal",
+      "Order": 0,
+      "TriggerParams": [
+        {
+          "TriggerType": "PlayerLevel",
+          "TriggerParam": "21"
+        }
+      ],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -1284342565,
+        "Hash64": 1860990408115629793
+      },
+      "RewardID": 201
+    },
+    {
       "GroupID": 8301,
       "TutorialGuideIDList": [
         830101,
@@ -10440,7 +11008,9 @@
         807303
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -10464,7 +11034,9 @@
         830203
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -10508,7 +11080,9 @@
         830104
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -10531,7 +11105,9 @@
         830104
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10549,7 +11125,9 @@
         830206
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10566,6 +11144,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -10588,7 +11167,9 @@
         834004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10604,7 +11185,9 @@
         834102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10621,7 +11204,9 @@
         834203
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10642,7 +11227,9 @@
         834302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10663,7 +11250,9 @@
         834402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10685,7 +11274,9 @@
         834503
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -10707,7 +11298,9 @@
         834603
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10724,7 +11317,9 @@
         870103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10741,7 +11336,9 @@
         870203
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10758,7 +11355,9 @@
         870303
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10774,7 +11373,9 @@
         870402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10791,7 +11392,9 @@
         880203
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10807,7 +11410,9 @@
         880302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10822,7 +11427,9 @@
         880401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10841,7 +11448,9 @@
         930605
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -10857,6 +11466,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 499,
       "TriggerParams": [
         {
@@ -10878,6 +11488,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 498,
       "TriggerParams": [
         {
@@ -10899,6 +11510,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 497,
       "TriggerParams": [
         {
@@ -10920,6 +11532,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 496,
       "TriggerParams": [
         {
@@ -10949,6 +11562,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 495,
       "TriggerParams": [
         {
@@ -10970,6 +11584,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 494,
       "TriggerParams": [
         {
@@ -10991,6 +11606,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 493,
       "TriggerParams": [
         {
@@ -11078,6 +11694,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 489,
       "TriggerParams": [
         {
@@ -11127,6 +11744,7 @@
       ],
       "TutorialType": 4,
       "CanReview": true,
+      "TutorialShowType": "Normal",
       "Order": 487,
       "TriggerParams": [
         {
@@ -11317,7 +11935,9 @@
         920102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -11338,7 +11958,9 @@
         920202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -11359,7 +11981,9 @@
         920302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -11380,7 +12004,9 @@
         920402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -11400,7 +12026,9 @@
         920501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishMainMission",
@@ -11422,7 +12050,9 @@
         920603
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -11439,7 +12069,9 @@
         920703
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -11460,7 +12092,9 @@
         920802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -11481,7 +12115,9 @@
         920902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -11502,7 +12138,9 @@
         921002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -11522,7 +12160,9 @@
         921101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -11543,7 +12183,9 @@
         921202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShowInMaze",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -11772,6 +12414,7 @@
         931204
       ],
       "TutorialType": 4,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
       "Order": 474,
       "TriggerParams": [],
@@ -11983,6 +12626,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TutorialFinish",
@@ -12058,7 +12702,9 @@
         932501
       ],
       "TutorialType": 4,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12075,6 +12721,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -12097,6 +12744,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -12120,6 +12768,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TutorialFinish",
@@ -12146,6 +12795,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TutorialFinish",
@@ -12172,6 +12822,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIDialog",
@@ -12186,62 +12837,6 @@
       "RewardID": 201
     },
     {
-      "GroupID": 9333,
-      "TutorialGuideIDList": [
-        933301,
-        933302,
-        933303
-      ],
-      "TutorialType": 4,
-      "CanReview": true,
-      "TutorialShowType": "AutoShow",
-      "TriggerParams": [
-        {
-          "TriggerType": "TutorialFinish",
-          "TriggerParam": "9113"
-        }
-      ],
-      "FinishTriggerParams": [
-        {
-          "TriggerType": "FinishSubMission",
-          "TriggerParam": "803130106"
-        }
-      ],
-      "MessageText": {
-        "Hash": 1706662849,
-        "Hash64": 14093886631815319262
-      },
-      "RewardID": 201
-    },
-    {
-      "GroupID": 9334,
-      "TutorialGuideIDList": [
-        933401,
-        933402,
-        933403
-      ],
-      "TutorialType": 4,
-      "CanReview": true,
-      "TutorialShowType": "AutoShow",
-      "TriggerParams": [
-        {
-          "TriggerType": "TutorialFinish",
-          "TriggerParam": "9092"
-        }
-      ],
-      "FinishTriggerParams": [
-        {
-          "TriggerType": "FinishSubMission",
-          "TriggerParam": "803130106"
-        }
-      ],
-      "MessageText": {
-        "Hash": 1706662842,
-        "Hash64": 16126772318617236278
-      },
-      "RewardID": 201
-    },
-    {
       "GroupID": 9335,
       "TutorialGuideIDList": [
         933502,
@@ -12251,6 +12846,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TutorialFinish",
@@ -12275,6 +12871,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12297,6 +12894,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12318,8 +12916,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 1706662854,
         "Hash64": 15965337876039965195
@@ -12336,8 +12940,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 1706662855,
         "Hash64": 3054216689357113803
@@ -12352,8 +12962,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 2109947373,
         "Hash64": 2769072517605909278
@@ -12368,8 +12984,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 2109947374,
         "Hash64": 6260201970125409281
@@ -12386,8 +13008,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 2109947375,
         "Hash64": 5574487596861589952
@@ -12403,8 +13031,14 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [],
-      "FinishTriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "FinishSubMission",
+          "TriggerParam": "804150002"
+        }
+      ],
       "MessageText": {
         "Hash": 2109947376,
         "Hash64": 18353810990777296394
@@ -12422,6 +13056,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12443,6 +13078,7 @@
       "TutorialType": 4,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12465,7 +13101,9 @@
         960104
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12480,7 +13118,9 @@
         960201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -12501,7 +13141,9 @@
         960102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12517,7 +13159,9 @@
         960104
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12532,7 +13176,9 @@
         960501
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12548,7 +13194,9 @@
         970102
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12563,7 +13211,9 @@
         970201
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12579,7 +13229,9 @@
         980102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12600,7 +13252,9 @@
         980202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12623,7 +13277,9 @@
         980202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12638,7 +13294,9 @@
         980401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12659,7 +13317,9 @@
         981102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12679,7 +13339,9 @@
         981201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12699,7 +13361,9 @@
         981301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12719,7 +13383,9 @@
         981401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12740,7 +13406,9 @@
         981502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIPage",
@@ -12764,7 +13432,9 @@
         981601
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12780,7 +13450,9 @@
         981502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12795,7 +13467,9 @@
         981801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -12815,7 +13489,9 @@
         981901
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12832,7 +13508,9 @@
         982003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -12848,7 +13526,9 @@
         982101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12869,7 +13549,9 @@
         982202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12889,7 +13571,9 @@
         982301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12910,7 +13594,9 @@
         982401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12931,7 +13617,9 @@
         982502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12952,7 +13640,9 @@
         982602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12973,7 +13663,9 @@
         982702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -12993,7 +13685,9 @@
         982004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13008,7 +13702,9 @@
         982006
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13023,7 +13719,9 @@
         982007
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13038,7 +13736,9 @@
         982008
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13053,7 +13753,9 @@
         982009
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13068,7 +13770,9 @@
         982010
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13084,7 +13788,9 @@
         982007
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13100,7 +13806,9 @@
         982006
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13116,7 +13824,9 @@
         982007
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13134,7 +13844,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13153,7 +13865,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13172,7 +13886,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13191,7 +13907,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13211,7 +13929,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13230,7 +13950,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13249,7 +13971,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13269,7 +13993,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13288,7 +14014,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13307,7 +14035,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13326,7 +14056,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13346,7 +14078,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13366,7 +14100,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13385,7 +14121,9 @@
         982005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13401,7 +14139,9 @@
         986102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13416,7 +14156,9 @@
         986201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13432,7 +14174,9 @@
         986302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13448,7 +14192,9 @@
         986402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13464,7 +14210,9 @@
         990102
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13482,7 +14230,9 @@
         611304
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13498,7 +14248,9 @@
         990302
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13520,7 +14272,9 @@
         990403
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13536,7 +14290,9 @@
         990502
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13557,7 +14313,9 @@
         990102
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13573,7 +14331,9 @@
         990302
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13589,7 +14349,9 @@
         990502
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13607,7 +14369,9 @@
         992003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -13629,7 +14393,9 @@
         992103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -13651,7 +14417,9 @@
         992202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -13673,7 +14441,9 @@
         992303
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -13694,7 +14464,9 @@
         992502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13710,7 +14482,9 @@
         992602
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13727,7 +14501,9 @@
         612503
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13750,7 +14526,9 @@
         611403
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13774,7 +14552,9 @@
         631702
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13794,7 +14574,9 @@
         611408
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13814,7 +14596,9 @@
         611405
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13834,7 +14618,9 @@
         611407
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13858,7 +14644,9 @@
         631702
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -13880,7 +14668,9 @@
         612503
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13898,7 +14688,9 @@
         611403
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13916,7 +14708,9 @@
         631701
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13937,7 +14731,9 @@
         632902
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13956,7 +14752,9 @@
         611408
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13974,7 +14772,9 @@
         631701
       ],
       "TutorialType": 2,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -13990,7 +14790,9 @@
         994702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "ShowUIDialog",
@@ -14012,7 +14814,9 @@
         995103
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14028,7 +14832,9 @@
         995202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14045,7 +14851,9 @@
         995303
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14062,7 +14870,9 @@
         995403
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14080,7 +14890,9 @@
         995504
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14097,7 +14909,9 @@
         995603
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14113,7 +14927,9 @@
         995702
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14155,7 +14971,9 @@
         995903
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14172,7 +14990,9 @@
         996003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14188,7 +15008,9 @@
         996005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14204,7 +15026,9 @@
         996007
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14220,7 +15044,9 @@
         996009
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14235,7 +15061,9 @@
         996010
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14251,7 +15079,9 @@
         996012
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14267,7 +15097,9 @@
         996015
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14282,7 +15114,9 @@
         996016
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14298,7 +15132,9 @@
         996018
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14313,7 +15149,9 @@
         997001
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14328,7 +15166,9 @@
         997101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14343,7 +15183,9 @@
         997301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14358,7 +15200,9 @@
         997401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14373,7 +15217,9 @@
         997501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14388,7 +15234,9 @@
         997601
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14404,7 +15252,9 @@
         997802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14419,7 +15269,9 @@
         997901
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14434,7 +15286,9 @@
         998001
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14449,7 +15303,9 @@
         998101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14464,7 +15320,9 @@
         998201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -14484,7 +15342,9 @@
         998301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -14505,7 +15365,9 @@
         998402
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -14530,7 +15392,9 @@
         998506
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14546,7 +15410,9 @@
         998502
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14564,7 +15430,9 @@
         998704
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14582,7 +15450,9 @@
         998804
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14599,7 +15469,9 @@
         998903
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14619,7 +15491,9 @@
         999006
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14637,7 +15511,9 @@
         999104
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14652,7 +15528,9 @@
         999201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14667,7 +15545,9 @@
         999301
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14682,7 +15562,9 @@
         999401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14697,7 +15579,9 @@
         999501
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14713,7 +15597,9 @@
         1000002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14728,7 +15614,9 @@
         1000101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14746,6 +15634,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -14767,6 +15656,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -14788,7 +15678,9 @@
         1000101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14805,7 +15697,9 @@
         1001003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14818,7 +15712,9 @@
       "GroupID": 10011,
       "TutorialGuideIDList": [],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14834,7 +15730,9 @@
         1001012
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14855,7 +15753,9 @@
         1001022
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14876,7 +15776,9 @@
         1001032
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14897,7 +15799,9 @@
         1001042
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14917,7 +15821,9 @@
         1001051
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14937,7 +15843,9 @@
         1001061
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -14959,7 +15867,9 @@
         1002003
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14974,7 +15884,9 @@
         1002101
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -14993,6 +15905,7 @@
       "TutorialType": 2,
       "CanReview": true,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -15013,7 +15926,9 @@
         223902
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -15034,7 +15949,9 @@
         224002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -15055,7 +15972,9 @@
         224102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -15076,7 +15995,9 @@
         224802
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -15097,7 +16018,9 @@
         225002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "BattleStart",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "EnterBattle",
@@ -15121,7 +16044,9 @@
         1004005
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15137,7 +16062,9 @@
         1004102
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15153,7 +16080,9 @@
         1004202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15169,7 +16098,9 @@
         1004302
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15184,7 +16115,9 @@
         1004401
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15206,7 +16139,9 @@
         1004508
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15224,7 +16159,9 @@
         1005004
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15243,6 +16180,8 @@
       ],
       "TutorialType": 3,
       "CanReview": true,
+      "TutorialShowType": "Normal",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "FinishSubMission",
@@ -15263,7 +16202,9 @@
         1005202
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15280,7 +16221,9 @@
         1005303
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15298,7 +16241,9 @@
         1005404
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15313,7 +16258,9 @@
         1005405
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15329,7 +16276,9 @@
         1006002
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15347,7 +16296,9 @@
         1006104
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15362,7 +16313,9 @@
         1006201
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15379,7 +16332,9 @@
         1650503
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15394,7 +16349,9 @@
         1650601
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15409,7 +16366,9 @@
         1650701
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15424,7 +16383,9 @@
         1650801
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15439,7 +16400,9 @@
         1650901
       ],
       "TutorialType": 3,
+      "CanReview": false,
       "TutorialShowType": "AutoShow",
+      "Order": 0,
       "TriggerParams": [
         {
           "TriggerType": "TaskUnlock",
@@ -15459,9 +16422,15 @@
         3100101
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15470,9 +16439,15 @@
         3110201
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15481,9 +16456,15 @@
         3110301
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15492,9 +16473,15 @@
         3110501
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15503,9 +16490,15 @@
         3110601
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15514,9 +16507,15 @@
         3110901
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15525,9 +16524,15 @@
         3120401
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15536,9 +16541,15 @@
         3120601
       ],
       "TutorialType": 1,
+      "CanReview": false,
       "TutorialShowType": "NonTutorial",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 0,
+        "Hash64": 0
+      },
       "RewardID": 100
     },
     {
@@ -15549,7 +16560,9 @@
         10000103
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15565,7 +16578,9 @@
         10000202
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15582,7 +16597,9 @@
         10000303
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15598,7 +16615,9 @@
         10000402
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15615,7 +16634,9 @@
         10000503
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15630,7 +16651,9 @@
         10000601
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15646,7 +16669,9 @@
         10000702
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15663,7 +16688,9 @@
         10000803
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15679,7 +16706,9 @@
         10000902
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15695,7 +16724,9 @@
         10001002
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15714,7 +16745,9 @@
         10001105
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15730,7 +16763,9 @@
         10001202
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15746,7 +16781,9 @@
         10001302
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15762,7 +16799,9 @@
         10001402
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15778,7 +16817,9 @@
         10001502
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15795,7 +16836,9 @@
         10001603
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -15812,7 +16855,9 @@
         10001703
       ],
       "TutorialType": 5,
+      "CanReview": false,
       "TutorialShowType": "Hide",
+      "Order": 0,
       "TriggerParams": [],
       "FinishTriggerParams": [],
       "MessageText": {
@@ -16904,6 +17949,332 @@
         "Hash64": 9302820748877487942
       },
       "RewardID": 201
+    },
+    {
+      "GroupID": 100069,
+      "TutorialGuideIDList": [
+        10006901,
+        10006902,
+        10006903
+      ],
+      "TutorialType": 5,
+      "CanReview": true,
+      "TutorialShowType": "Hide",
+      "Order": 651,
+      "TriggerParams": [],
+      "FinishTriggerParams": [
+        {
+          "TriggerType": "TutorialFinish",
+          "TriggerParam": "10032"
+        }
+      ],
+      "MessageText": {
+        "Hash": 1900283529,
+        "Hash64": 11545664387084700895
+      },
+      "RewardID": 201
+    },
+    {
+      "GroupID": 10070,
+      "TutorialGuideIDList": [
+        1007001,
+        1007002,
+        1007005
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 1750421837,
+        "Hash64": 9216765912815994602
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10071,
+      "TutorialGuideIDList": [
+        1007003
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 184337896,
+        "Hash64": 9504985459814901053
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10072,
+      "TutorialGuideIDList": [
+        1007007,
+        1007004,
+        1007006
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 587622423,
+        "Hash64": 12096424543931515684
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10073,
+      "TutorialGuideIDList": [
+        1007001,
+        1007002,
+        1007005,
+        1007003,
+        1007007,
+        1007004,
+        1007006
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -978461518,
+        "Hash64": 18427299264837289223
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10080,
+      "TutorialGuideIDList": [
+        1008001,
+        1008002,
+        1008003,
+        1008004
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 1750421852,
+        "Hash64": 5421175683232815842
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10081,
+      "TutorialGuideIDList": [
+        1008101,
+        1008102,
+        1008103
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 184337911,
+        "Hash64": 17930865302641816619
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10082,
+      "TutorialGuideIDList": [
+        1008201,
+        1008202,
+        1008203,
+        1008204
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 587622438,
+        "Hash64": 11088624721740686811
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10083,
+      "TutorialGuideIDList": [
+        1008301
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -978461503,
+        "Hash64": 15265899636709885863
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10084,
+      "TutorialGuideIDList": [
+        1008401,
+        1008402,
+        1008403
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -575176976,
+        "Hash64": 8825414958666395723
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10085,
+      "TutorialGuideIDList": [
+        1008501,
+        1008502,
+        1008503
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -2141260917,
+        "Hash64": 11536716212075840460
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10086,
+      "TutorialGuideIDList": [
+        1008601,
+        1008602,
+        1008603,
+        1008604
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": -1737976390,
+        "Hash64": 1341841846792501002
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10087,
+      "TutorialGuideIDList": [
+        1008701
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 990906965,
+        "Hash64": 4810261180622439694
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10088,
+      "TutorialGuideIDList": [
+        1008801,
+        1008802
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 2106652212,
+        "Hash64": 9649854196763204854
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10090,
+      "TutorialGuideIDList": [
+        1009001,
+        1009002
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 1750421851,
+        "Hash64": 12787701324817447096
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10091,
+      "TutorialGuideIDList": [
+        1009101,
+        1009102
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 184337910,
+        "Hash64": 2329701636933876249
+      },
+      "RewardID": 100
+    },
+    {
+      "GroupID": 10092,
+      "TutorialGuideIDList": [
+        1009201,
+        1009202,
+        1009203
+      ],
+      "TutorialType": 3,
+      "CanReview": false,
+      "TutorialShowType": "NonTutorial",
+      "Order": 0,
+      "TriggerParams": [],
+      "FinishTriggerParams": [],
+      "MessageText": {
+        "Hash": 587622437,
+        "Hash64": 8888103950348432705
+      },
+      "RewardID": 100
     }
   ]
 }

@@ -48,7 +48,7 @@ pub const ChallengeManager = struct {
                                         try story_buff.buff_list.append(buff_id);
                                         try Logic.Challenge().AddBlessing(story_buff.buff_list.items);
                                         cur_challenge_info.stage_info = .{
-                                            .OKAIINGCACL = .{
+                                            .BPIHFAJCLOC = .{
                                                 .cur_story_buffs = story_buff,
                                             },
                                         };
@@ -62,7 +62,7 @@ pub const ChallengeManager = struct {
                                         try boss_buff.buff_list.append(buff_id);
                                         try Logic.Challenge().AddBlessing(boss_buff.buff_list.items);
                                         cur_challenge_info.stage_info = .{
-                                            .OKAIINGCACL = .{
+                                            .BPIHFAJCLOC = .{
                                                 .cur_boss_buffs = boss_buff,
                                             },
                                         };
@@ -101,7 +101,7 @@ pub const ChallengeManager = struct {
                                             try story_buff.buff_list.append(buff_id);
                                             try Logic.Challenge().AddBlessing(story_buff.buff_list.items);
                                             cur_challenge_info.stage_info = .{
-                                                .OKAIINGCACL = .{
+                                                .BPIHFAJCLOC = .{
                                                     .cur_story_buffs = story_buff,
                                                 },
                                             };
@@ -115,7 +115,7 @@ pub const ChallengeManager = struct {
                                             try boss_buff.buff_list.append(buff_id);
                                             try Logic.Challenge().AddBlessing(boss_buff.buff_list.items);
                                             cur_challenge_info.stage_info = .{
-                                                .OKAIINGCACL = .{
+                                                .BPIHFAJCLOC = .{
                                                     .cur_boss_buffs = boss_buff,
                                                 },
                                             };
@@ -178,7 +178,7 @@ pub const ChallengeManager = struct {
 
 pub fn deinitCurChallenge(challenge: *protocol.CurChallenge) void {
     if (challenge.stage_info) |*stage_info| {
-        if (stage_info.OKAIINGCACL) |*union_val| {
+        if (stage_info.BPIHFAJCLOC) |*union_val| {
             switch (union_val.*) {
                 .cur_story_buffs => |*story_buffs| {
                     story_buffs.buff_list.deinit();

@@ -140,15 +140,15 @@ pub fn onStartChallenge(session: *Session, packet: *const Packet, allocator: All
         if (Logic.CustomMode().FirstNode()) {
             try Logic.Challenge().AddAvatar(req.first_lineup.items);
             if (Logic.Challenge().GameModePF())
-                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.OKAIINGCACL.?.story_info.buff_one);
+                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.BPIHFAJCLOC.?.story_info.buff_one);
             if (Logic.Challenge().GameModeAS())
-                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.OKAIINGCACL.?.boss_info.buff_one);
+                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.BPIHFAJCLOC.?.boss_info.buff_one);
         } else {
             try Logic.Challenge().AddAvatar(req.second_lineup.items);
             if (Logic.Challenge().GameModePF())
-                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.OKAIINGCACL.?.story_info.buff_two);
+                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.BPIHFAJCLOC.?.story_info.buff_two);
             if (Logic.Challenge().GameModeAS())
-                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.OKAIINGCACL.?.boss_info.buff_two);
+                Logic.Challenge().SetChallengeBuffID(req.stage_info.?.BPIHFAJCLOC.?.boss_info.buff_two);
         }
     }
     var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
@@ -203,37 +203,6 @@ pub fn onStartChallenge(session: *Session, packet: *const Packet, allocator: All
         }
     }
 }
-
-pub fn onEnterChallengeNextPhase(session: *Session, _: *const Packet, allocator: Allocator) !void {
-    if (!Logic.Challenge().InSecondHalf() and Logic.Challenge().HasSecondLineup()) {
-        try Logic.Challenge().UseSecondLineup();
-        Logic.Challenge().SetChallengeBuffID(Logic.Challenge().GetChallengeBuffTwo());
-    }
-
-    var lineup_manager = LineupManager.ChallengeLineupManager.init(allocator);
-    const lineup_info = try lineup_manager.createLineup(Logic.Challenge().GetAvatarIDs());
-    _ = lineup_info;
-
-    const ids = Logic.Challenge().GetSceneIDs();
-    var scene_challenge_manager = SceneManager.ChallengeSceneManager.init(allocator);
-    const scene_info = try scene_challenge_manager.createScene(
-        Logic.Challenge().GetAvatarIDs(),
-        ids[0],
-        ids[1],
-        ids[2],
-        ids[3],
-        ids[4],
-        ids[5],
-        ids[6],
-        ids[7],
-    );
-
-    try session.send(CmdID.CmdEnterChallengeNextPhaseScRsp, protocol.EnterChallengeNextPhaseScRsp{
-        .retcode = 0,
-        .scene = scene_info,
-    });
-}
-
 pub fn onTakeChallengeReward(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.TakeChallengeRewardCsReq, allocator);
     defer req.deinit();
@@ -260,7 +229,7 @@ pub fn onGetChallengePeakData(session: *Session, _: *const Packet, allocator: Al
         try reward.append(@intCast(i));
     }
     var ava = ArrayList(u32).init(allocator);
-    try ava.appendSlice(&[_]u32{1502});
+    try ava.appendSlice(&[_]u32{1505});
 
     const BossType = @TypeOf(peak_boss.challenge_peak_boss_config.items[0]);
     var boss_map = std.AutoHashMap(u32, *const BossType).init(allocator);
@@ -271,7 +240,8 @@ pub fn onGetChallengePeakData(session: *Session, _: *const Packet, allocator: Al
     for (peak_group.challenge_peak_group.items) |id| {
         if (boss_map.get(id.boss_level_id)) |boss| {
             var data = protocol.ChallengePeakGroup.init(allocator);
-            const unk = ArrayList(protocol.BJLELIKLMED).init(allocator);
+            const unk = ArrayList(protocol.DGOLJHDBJKC).init(allocator);
+            const unk2 = ArrayList(protocol.EEBPHJCNBFO).init(allocator);
             data.peak_group_id = id.id;
             data.taken_star_rewards = reward;
             data.count_of_peaks = 3;
@@ -288,8 +258,9 @@ pub fn onGetChallengePeakData(session: *Session, _: *const Packet, allocator: Al
                     .best_cycle_count = 0,
                     .buff_id = boss.buff_list.items[0],
                     .peak_avatar_id_list = ava,
-                    .DFDHNOCJNBG = ava,
-                    .NNILMPMMFAB = unk,
+                    .OHOMDMEJLFK = ava,
+                    .CGDMCHDOALC = unk,
+                    .FMFGOJHCCNL = unk2,
                 },
             };
             try rsp.challenge_peak_groups.append(data);
@@ -393,18 +364,6 @@ pub fn onSetChallengePeakBossHardMode(session: *Session, packet: *const Packet, 
     Logic.Challenge().SetChallengePeakHard(req.is_hard_mode);
     try session.send(CmdID.CmdSetChallengePeakBossHardModeScRsp, rsp);
 }
-
-pub fn onConfirmChallengePeakSettle(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    const req = try packet.getProto(protocol.ConfirmChallengePeakSettleCsReq, allocator);
-    defer req.deinit();
-
-    try session.send(CmdID.CmdConfirmChallengePeakSettleScRsp, protocol.ConfirmChallengePeakSettleScRsp{
-        .retcode = 0,
-        .peak_id = req.peak_id,
-        .JBJKIALGDOI = req.JBJKIALGDOI,
-    });
-}
-
 pub fn onGetFriendBattleRecordDetail(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.GetFriendBattleRecordDetailCsReq, allocator);
     defer req.deinit();
@@ -414,7 +373,7 @@ pub fn onGetFriendBattleRecordDetail(session: *Session, packet: *const Packet, a
     rsp.uid = req.uid;
     var record_list = ArrayList(protocol.ChallengeAvatarInfo).init(allocator);
     try record_list.appendSlice(&[_]protocol.ChallengeAvatarInfo{
-        .{ .level = 80, .index = 0, .id = 1502, .avatar_type = protocol.AvatarType.AVATAR_UPGRADE_AVAILABLE_TYPE },
+        .{ .level = 80, .index = 0, .id = 1505, .avatar_type = protocol.AvatarType.AVATAR_UPGRADE_AVAILABLE_TYPE },
     });
 
     const BossType = @TypeOf(peak_boss.challenge_peak_boss_config.items[0]);
@@ -426,17 +385,17 @@ pub fn onGetFriendBattleRecordDetail(session: *Session, packet: *const Packet, a
 
     for (peak_group.challenge_peak_group.items) |group| {
         if (boss_map.get(group.boss_level_id)) |boss| {
-            var peak_record = protocol.EPPJDDLEKDG.init(allocator);
+            var peak_record = protocol.NCLCIIMIHDH.init(allocator);
             peak_record.group_id = group.id;
-            peak_record.ALFHGCNFHMK = .{
+            peak_record.NFCLJMBLFMK = .{
                 .buff_id = boss.buff_list.items[0],
                 .peak_id = group.boss_level_id,
-                .NPAKDLMGFGP = true,
-                .MIDGODLHCAG = true,
-                .FKIOCBGHLEG = std.ArrayList(u32).init(allocator),
+                .AFFIKAAMEJE = true,
+                .EPCMADFOACA = true,
+                .OBPDENLMNII = std.ArrayList(u32).init(allocator),
                 .lineup = .{ .avatar_list = record_list },
             };
-            try rsp.IOFODMLEBLC.append(peak_record);
+            try rsp.PAEEBAGOEDJ.append(peak_record);
         }
     }
     try session.send(CmdID.CmdGetFriendBattleRecordDetailScRsp, rsp);

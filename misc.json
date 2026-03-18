@@ -1,52 +1,20 @@
 {
-  "leader": 0,
-  "lineup": {
-    "current_index": 2,
-    "presets": [[1501, 0, 0, 0], [1408, 1412, 1415, 1414], [1502, 1501, 1306, 1409], [1321, 1310, 1225, 1222], [0, 0, 0, 0], [0, 0, 0, 0]]
+  "avatar": {
+    "tb_gender": "Female",
+    "tb_path": "Elation",
+    "march_path": "Preservation",
+    "lineup": [
+      1407,
+      1409,
+      1413,
+      1415
+    ],
+    "leader": 0
   },
-  "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "rot_y": 0,
-    "use_coordinates": false
-  },
-  "scene": {
-    "plane_id": 20502,
-    "floor_id": 20502001,
-    "entry_id": 2050201,
-    "teleport_id": 1031
-  },
-  "player_outfit": [227003, 227002, 227001],
-  "char_path": {
-    "main": 8008,
-    "march_7": 1224
-  },
-  "paths": {
-    "trailblazer": "Remembrance",
-    "march_7": "The Hunt"
-  },
-  "enhanced": {
-    "1005": true,
-    "1006": true,
-    "1205": true,
-    "1212": true,
-    "1306": true,
-    "1307": true
-  },
-  "costom_battlemode": {
-    "enabled": false,
-    "enemy_max_hp_override": 0,
-    "stage_id": 0,
-    "cycle_count": 0
-  },
-  "uid": 1,
-  "level": 70,
-  "world_level": 6,
-  "stamina": 300,
-  "mcoin": 10000,
-  "hcoin": 10000,
-  "scoin": 10000,
-  "funmode_lineup": [1408, 1412, 1414, 1415, 1313, 1309, 1306, 1303, 1101],
-  "skins": [1100101, 1131001, 1141501]
+  "funmode_lineup": [
+    1407,
+    1409,
+    1413,
+    1415
+  ]
 }

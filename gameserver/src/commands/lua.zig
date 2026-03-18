@@ -7,7 +7,7 @@ const Allocator = std.mem.Allocator;
 fn isUnsafePath(p: []const u8) bool {
     if (p.len == 0) return true;
     if (std.fs.path.isAbsolute(p)) return true;
-    if (std.mem.indexOf(u8, p, ":")) |_| return true; // prevent drive letters on Windows
+    if (std.mem.indexOf(u8, p, ":")) |_| return true;
 
     var it = std.mem.tokenizeScalar(u8, p, std.fs.path.sep);
     while (it.next()) |seg| {
@@ -22,7 +22,7 @@ fn readLuaFile(allocator: Allocator, rel_path: []const u8) ![]u8 {
     const path = if (std.mem.startsWith(u8, rel_path, "lua/") or std.mem.startsWith(u8, rel_path, "lua\\"))
         rel_path
     else
-        try std.fs.path.join(allocator, &[_][]const u8{ "lua", rel_path });
+        try std.fs.path.join(allocator, &[_][]const u8{ "gameserver", "src", "lua", rel_path });
     defer if (path.ptr != rel_path.ptr) allocator.free(path);
 
     var file = try std.fs.cwd().openFile(path, .{});
@@ -35,14 +35,14 @@ fn readLuaFile(allocator: Allocator, rel_path: []const u8) ![]u8 {
 pub fn handle(session: *Session, args: []const u8, allocator: Allocator) !void {
     const trimmed = std.mem.trim(u8, args, " \r\n\t");
     if (trimmed.len == 0) {
-        try commandhandler.sendMessage(session, "Usage: /lua <file.lua>  (reads from lua/ and executes on next heartbeat)", allocator);
+        try commandhandler.sendMessage(session, "Usage: /lua <file.lua> (from gameserver/src/lua)", allocator);
         try commandhandler.sendMessage(session, "Example: /lua heartbeat.lua", allocator);
         return;
     }
 
     const content = readLuaFile(allocator, trimmed) catch |err| {
         const msg = switch (err) {
-            error.InvalidPath => "Invalid path. Only files under lua/ are allowed.",
+            error.InvalidPath => "Invalid path. Only files under gameserver/src/lua are allowed.",
             error.FileTooBig => "Lua file too big (max 512KB).",
             error.FileNotFound => "Lua file not found.",
             else => "Failed to read lua file.",
@@ -50,11 +50,7 @@ pub fn handle(session: *Session, args: []const u8, allocator: Allocator) !void {
         return commandhandler.sendMessage(session, msg, allocator);
     };
 
-    // IMPORTANT: `allocator` here is per-packet arena allocator. We must copy into the session
-    // allocator so the buffer outlives the handler call.
     const owned = try session.allocator.dupe(u8, content);
-
-    // Transfer ownership to session; it will be sent once on the next PlayerHeartBeat.
     session.setPendingLuaScript(owned);
-    try commandhandler.sendMessage(session, "Lua queued. It will be sent/executed on the next heartbeat.", allocator);
+    try commandhandler.sendMessage(session, "Lua queued. It will be sent on the next heartbeat.", allocator);
 }

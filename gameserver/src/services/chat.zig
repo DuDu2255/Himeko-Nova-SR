@@ -11,7 +11,6 @@ const CmdID = protocol.CmdID;
 const B64Decoder = std.base64.standard.Decoder;
 
 const EmojiList = [_]u32{};
-const log = std.log.scoped(.chat);
 
 pub fn onGetFriendListInfo(session: *Session, _: *const Packet, allocator: Allocator) !void {
     var rsp = protocol.GetFriendListInfoScRsp.init(allocator);
@@ -19,21 +18,21 @@ pub fn onGetFriendListInfo(session: *Session, _: *const Packet, allocator: Alloc
 
     var assist_list = ArrayList(protocol.AssistSimpleInfo).init(allocator);
     try assist_list.appendSlice(&[_]protocol.AssistSimpleInfo{
-        .{ .pos = 0, .level = 80, .avatar_id = 1409, .dressed_skin_id = 0 },
-        .{ .pos = 1, .level = 80, .avatar_id = 1415, .dressed_skin_id = 0 },
-        .{ .pos = 2, .level = 80, .avatar_id = 1407, .dressed_skin_id = 0 },
+        .{ .pos = 0, .level = 80, .avatar_id = 1505, .dressed_skin_id = 0 },
+        .{ .pos = 1, .level = 80, .avatar_id = 1502, .dressed_skin_id = 0 },
+        .{ .pos = 2, .level = 80, .avatar_id = 1506, .dressed_skin_id = 0 },
     });
 
     var friend = protocol.FriendSimpleInfo.init(allocator);
     friend.playing_state = .PLAYING_CHALLENGE_PEAK;
     friend.create_time = 0; //timestamp
-    friend.remark_name = .{ .Const = "HyacineLover" }; //friend_custom_nickname
+    friend.remark_name = .{ .Const = "CastoricePS" }; //friend_custom_nickname
     friend.is_marked = true;
     friend.player_info = protocol.PlayerSimpleInfo{
         .personal_card = 253001,
-        .signature = .{ .Const = "这一定是个不同以往的浪漫故事，你说对吧？" },
+        .signature = .{ .Const = "https://discord.gg/CastoricePS" },
         .nickname = .{ .Const = "CastoricePS" },
-        .level = 99,
+        .level = 70,
         .uid = 2000,
         .head_icon = 200139,
         .head_frame_info = .{
@@ -76,8 +75,8 @@ pub fn onGetAiPamChatHistory(session: *Session, _: *const Packet, allocator: All
 
     rsp.retcode = 0;
     rsp.target_side = 1;
-    try rsp.LOGPAINLECC.appendSlice(&[_]protocol.ChatMessageData{
-        try makeTextChat(allocator, 2000, "Kill all nantong :Đ"),
+    try rsp.BAPMDIEFDOJ.appendSlice(&[_]protocol.ChatMessageData{
+        try makeTextChat(allocator, 2000, "Nothing here yet"),
     });
 
     try session.send(CmdID.CmdGetAiPamChatHistoryScRsp, rsp);
@@ -92,7 +91,7 @@ fn makeTextChat(
     try datas.append(.{
         .message_type = .MSG_TYPE_CUSTOM_TEXT,
         .chat_data = .{
-            .FPMABADPBPO = .{
+            .extend_type = .{
                 .message_text = .{ .Const = text },
             },
         },
@@ -101,7 +100,7 @@ fn makeTextChat(
     return .{
         .message_datas = datas,
         .AEELKNKIICI = .{
-            .MHHBNFFOPOJ = .{ .uid = uid },
+            .FPCDPDPHKJJ = .{ .uid = uid },
         },
     };
 }
@@ -114,11 +113,9 @@ pub fn onSendMsg(session: *Session, packet: *const Packet, allocator: Allocator)
     std.debug.print("Decoded request: {any}\n", .{req});
     std.debug.print("Raw packet body: {any}\n", .{packet.body});
     var msg_text: []const u8 = "";
-    if (packet.body.len > 9 and packet.body[15] == 47) {
-        msg_text = packet.body[15..packet.body.len];
+    if (packet.body.len > 9 and packet.body[9] == 47) {
+        msg_text = packet.body[9 .. packet.body.len - 6];
     }
-    std.debug.print("Manually extracted message text: '{s}'\n", .{msg_text});
-
     std.debug.print("Manually extracted message text: '{s}'\n", .{msg_text});
 
     if (msg_text.len > 0) {
@@ -142,7 +139,7 @@ pub fn onTriggerAiPamSpeak(session: *Session, packet: *const Packet, allocator: 
     const req = try packet.getProto(protocol.TriggerAiPamSpeakCsReq, allocator);
     defer req.deinit();
     try session.send(CmdID.CmdTriggerAiPamSpeakScRsp, protocol.TriggerAiPamSpeakScRsp{
-        .KJPAOFNJKDA = req.KJPAOFNJKDA,
+        .CEHJJGEIMCL = req.CEHJJGEIMCL,
         .retcode = 0,
     });
 }

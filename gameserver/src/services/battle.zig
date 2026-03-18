@@ -4,9 +4,7 @@ const Session = @import("../Session.zig");
 const Packet = @import("../Packet.zig");
 const Data = @import("../data.zig");
 const BattleManager = @import("../manager/battle_mgr.zig");
-const AvatarManager = @import("../manager/avatar_mgr.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
-const PlayerStateMod = @import("../player_state.zig");
 const Logic = @import("../utils/logic.zig");
 
 const ArrayList = std.ArrayList;
@@ -14,51 +12,14 @@ const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
 
 const log = std.log.scoped(.scene_service);
-const MaxLineups = PlayerStateMod.MaxLineups;
 
 pub var on_battle: bool = false;
-
-fn collectBattleAvatarIds(session: *Session, allocator: Allocator) !ArrayList(u32) {
-    var ids = ArrayList(u32).init(allocator);
-
-    if (Logic.FunMode().FunMode()) {
-        try ids.appendSlice(BattleManager.funmodeAvatarID.items);
-        if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
-        return ids;
-    }
-
-    if (session.player_state) |state| {
-        const idx: u32 = if (state.cur_lineup_index < MaxLineups) state.cur_lineup_index else 0;
-        for (state.lineups[@intCast(idx)]) |id| {
-            if (id != 0) try ids.append(id);
-        }
-    }
-
-    if (ids.items.len == 0) {
-        for (ConfigManager.global_misc_defaults.player.lineup) |id| {
-            if (id != 0) try ids.append(id);
-        }
-    }
-    if (ids.items.len == 0) try ids.append(AvatarManager.getMcId());
-    return ids;
-}
-
-pub fn forceFinishBattle(session: *Session, allocator: Allocator) !void {
-    var result = protocol.PVEBattleResultScRsp.init(allocator);
-    result.retcode = 0;
-    result.end_status = .BATTLE_END_WIN;
-    on_battle = false;
-    try session.send(CmdID.CmdPVEBattleResultScRsp, result);
-    try session.send(CmdID.CmdQuitBattleScNotify, protocol.QuitBattleScNotify{});
-}
 
 pub fn onStartCocoonStage(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.StartCocoonStageCsReq, allocator);
     defer req.deinit();
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     _ = &battle;
     on_battle = true;
     try session.send(CmdID.CmdStartCocoonStageScRsp, protocol.StartCocoonStageScRsp{
@@ -72,10 +33,8 @@ pub fn onStartCocoonStage(session: *Session, packet: *const Packet, allocator: A
 pub fn onQuickStartCocoonStage(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.QuickStartCocoonStageCsReq, allocator);
     defer req.deinit();
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     _ = &battle;
     on_battle = true;
     try session.send(CmdID.CmdQuickStartCocoonStageScRsp, protocol.QuickStartCocoonStageScRsp{
@@ -88,26 +47,22 @@ pub fn onQuickStartCocoonStage(session: *Session, packet: *const Packet, allocat
 pub fn onQuickStartFarmElement(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.QuickStartFarmElementCsReq, allocator);
     defer req.deinit();
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     _ = &battle;
     on_battle = true;
     try session.send(CmdID.CmdQuickStartFarmElementScRsp, protocol.QuickStartFarmElementScRsp{
         .retcode = 0,
         .world_level = req.world_level,
-        .CMFPEABAKPB = req.CMFPEABAKPB,
+        .JIABAGAFEEA = req.JIABAGAFEEA,
         .battle_info = battle,
     });
 }
 pub fn onStartBattleCollege(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.StartBattleCollegeCsReq, allocator);
     defer req.deinit();
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     _ = &battle;
     on_battle = true;
     try session.send(CmdID.CmdStartBattleCollegeScRsp, protocol.StartBattleCollegeScRsp{
@@ -117,13 +72,11 @@ pub fn onStartBattleCollege(session: *Session, packet: *const Packet, allocator:
     });
 }
 pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     defer BattleManager.deinitSceneBattleInfo(&battle);
     var challenge_manager = BattleManager.ChallegeStageManager.init(allocator, &ConfigManager.global_game_config_cache);
-    var challenge = try challenge_manager.createChallegeStage(avatar_ids.items);
+    var challenge = try challenge_manager.createChallegeStage();
     defer BattleManager.deinitSceneBattleInfo(&challenge);
     const req = try packet.getProto(protocol.SceneCastSkillCsReq, allocator);
     defer req.deinit();
@@ -161,6 +114,7 @@ pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: All
             }
         }
     }
+
     try session.send(CmdID.CmdSceneCastSkillScRsp, protocol.SceneCastSkillScRsp{
         .retcode = 0,
         .cast_entity_id = req.cast_entity_id,
@@ -170,13 +124,11 @@ pub fn onSceneCastSkill(session: *Session, packet: *const Packet, allocator: All
 }
 
 pub fn onGetCurBattleInfo(session: *Session, _: *const Packet, allocator: Allocator) !void {
-    var avatar_ids = try collectBattleAvatarIds(session, allocator);
-    defer avatar_ids.deinit();
     var battle_manager = BattleManager.BattleManager.init(allocator);
-    var battle = try battle_manager.createBattle(avatar_ids.items);
+    var battle = try battle_manager.createBattle();
     defer BattleManager.deinitSceneBattleInfo(&battle);
     var challenge_manager = BattleManager.ChallegeStageManager.init(allocator, &ConfigManager.global_game_config_cache);
-    var challenge = try challenge_manager.createChallegeStage(avatar_ids.items);
+    var challenge = try challenge_manager.createChallegeStage();
     defer BattleManager.deinitSceneBattleInfo(&challenge);
 
     var rsp = protocol.GetCurBattleInfoScRsp.init(allocator);

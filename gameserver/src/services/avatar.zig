@@ -8,7 +8,6 @@ const Uid = @import("../utils/uid.zig");
 const AvatarManager = @import("../manager/avatar_mgr.zig");
 const LineupManager = @import("../manager/lineup_mgr.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
-const PlayerStateMod = @import("../player_state.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
@@ -23,8 +22,7 @@ pub fn onGetAvatarData(session: *Session, packet: *const Packet, allocator: Allo
     defer req.deinit();
 
     var rsp = protocol.GetAvatarDataScRsp.init(allocator);
-    const selection = AvatarManager.getMultiPathSelection(config);
-    try rsp.skin_list.appendSlice(Data.SkinList);
+    try rsp.skin_list.appendSlice(&Data.SkinList);
     rsp.is_get_all = req.is_get_all;
     for (Data.AllAvatars) |id| {
         const avatar = try AvatarManager.createAllAvatar(allocator, id);
@@ -35,7 +33,6 @@ pub fn onGetAvatarData(session: *Session, packet: *const Packet, allocator: Allo
         try rsp.avatar_path_data_info_list.append(avatar);
     }
     for (config.avatar_config.items) |avatarConf| {
-        if (!AvatarManager.shouldIncludeAvatarInList(avatarConf.id, selection)) continue;
         const avatar = try AvatarManager.createAvatar(allocator, avatarConf);
         try rsp.avatar_list.append(avatar);
     }
@@ -43,14 +40,12 @@ pub fn onGetAvatarData(session: *Session, packet: *const Packet, allocator: Allo
         const avatar = try AvatarManager.createAvatarPathData(allocator, avatarConf);
         try rsp.avatar_path_data_info_list.append(avatar);
     }
-    //try rsp.basic_type_id_list.appendSlice(&Data.MultiAvatar);
-
     try session.send(CmdID.CmdGetAvatarDataScRsp, rsp);
 }
 
 pub fn onGetBasicInfo(session: *Session, _: *const Packet, allocator: Allocator) !void {
     var rsp = protocol.GetBasicInfoScRsp.init(allocator);
-    rsp.gender = if (ConfigManager.global_misc_defaults.mc_gender == .male) 1 else 2;
+    rsp.gender = if (ConfigManager.global_misc_defaults.avatar.tb_gender == .female) 2 else 1;
     rsp.is_gender_set = true;
     rsp.player_setting_info = .{};
     try session.send(CmdID.CmdGetBasicInfoScRsp, rsp);
@@ -62,10 +57,9 @@ pub fn onSetAvatarPath(session: *Session, packet: *const Packet, allocator: Allo
     defer req.deinit();
     rsp.avatar_id = req.avatar_id;
     switch (rsp.avatar_id) {
-        protocol.MultiPathAvatarType.Mar_7thKnightType,
-        protocol.MultiPathAvatarType.Mar_7thRogueType,
-        => AvatarManager.setM7thFromMultiPath(req.avatar_id),
-        else => AvatarManager.setMcFromMultiPath(req.avatar_id),
+        protocol.MultiPathAvatarType.Mar_7thKnightType => AvatarManager.setM7th(1001),
+        protocol.MultiPathAvatarType.Mar_7thRogueType => AvatarManager.setM7th(1224),
+        else => AvatarManager.setMcId(@intCast(@intFromEnum(rsp.avatar_id))),
     }
     var change = protocol.AvatarPathChangedNotify.init(allocator);
     switch (req.avatar_id) {
@@ -81,14 +75,13 @@ pub fn onSetAvatarPath(session: *Session, packet: *const Packet, allocator: Allo
     const refresh = try lineup_mgr.createLineup();
     lineup.lineup = refresh;
     try session.send(CmdID.CmdSyncLineupNotify, lineup);
-    if (session.player_state) |*state| try PlayerStateMod.save(state);
     try session.send(CmdID.CmdSetAvatarPathScRsp, rsp);
 }
 pub fn onSetPlayerOutfit(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.SetPlayerOutfitCsReq, allocator);
     defer req.deinit();
     var sync = protocol.PlayerSyncScNotify.init(allocator);
-    sync.EPCDLPBGOJD = req.EPCDLPBGOJD;
+    sync.HPHOEDAGBOB = req.HPHOEDAGBOB;
     try session.send(CmdID.CmdPlayerSyncScNotify, sync);
     try session.send(CmdID.CmdSetPlayerOutfitScRsp, protocol.SetPlayerOutfitScRsp{
         .retcode = 0,

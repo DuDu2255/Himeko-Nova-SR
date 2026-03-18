@@ -1,8 +1,7 @@
 const std = @import("std");
 const protocol = @import("protocol");
-const Session = @import("../Session.zig");
+const Session = @import("../session.zig");
 const Packet = @import("../Packet.zig");
-const MiscDefaults = @import("../data/misc_defaults.zig");
 
 pub const GameConfig = @import("../data/game_config.zig");
 pub const StageConfig = @import("../data/stage_config.zig");
@@ -10,24 +9,27 @@ pub const ChallengeConfig = @import("../data/challenge_config.zig");
 pub const MiscConfig = @import("../data/misc_config.zig");
 pub const ResConfig = @import("../data/res_config.zig");
 pub const AvatarConfig = @import("../data/avatar_config.zig");
+pub const FreesrAdapter = @import("../data/freesr_adapter.zig");
+pub const MiscDefaults = @import("../data/misc_defaults.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
 
 const Data = @import("../data.zig");
-const Logic = @import("../utils/logic.zig");
 
-fn updateGameConfigMtime() !void {
-    const stat = try std.fs.cwd().statFile("freesr-data.json");
-    game_config_mtime = stat.mtime;
+fn gameConfigFilePath() []const u8 {
+    std.fs.cwd().access("config.json", .{}) catch return "freesr-data.json";
+    return "config.json";
 }
 
-pub fn loadGameConfigFromFreesr(allocator: Allocator) !GameConfig.GameConfig {
-    const cfg = try loadConfig(GameConfig.GameConfig, GameConfig.parseConfig, allocator, "freesr-data.json");
-    try updateGameConfigMtime();
-    std.log.info("Loaded freesr-data.json", .{});
-    return cfg;
+fn loadGameConfig(allocator: Allocator) !GameConfig.GameConfig {
+    const filename = gameConfigFilePath();
+    if (std.mem.eql(u8, filename, "freesr-data.json")) {
+        return FreesrAdapter.loadFromFreesr(allocator);
+    }
+    return loadConfig(GameConfig.GameConfig, GameConfig.parseConfig, allocator, filename);
 }
+
 pub const GameConfigCache = struct {
     allocator: Allocator,
     game_config: GameConfig.GameConfig,
@@ -49,12 +51,10 @@ pub const GameConfigCache = struct {
     tutorial_guide_config: MiscConfig.TutorialGuideConfig,
     tutorial_config: MiscConfig.TutorialConfig,
     player_icon_config: MiscConfig.PlayerIconConfig,
-    interact_config: MiscConfig.InteractConfig,
     buff_info_config: MiscConfig.TextMapConfig,
 
     pub fn init(allocator: Allocator) !GameConfigCache {
-        var game_cfg = try loadGameConfigFromFreesr(allocator);
-
+        var game_cfg = try loadGameConfig(allocator);
         errdefer game_cfg.deinit();
 
         var res_cfg = try loadConfig(ResConfig.SceneConfig, ResConfig.parseAnchor, allocator, "resources/res.json");
@@ -111,9 +111,6 @@ pub const GameConfigCache = struct {
         var player_icon_cfg = try loadConfig(MiscConfig.PlayerIconConfig, MiscConfig.parsePlayerIconConfig, allocator, "resources/AvatarPlayerIcon.json");
         errdefer player_icon_cfg.deinit();
 
-        var interact_cfg = try loadConfig(MiscConfig.InteractConfig, MiscConfig.parseInteractConfig, allocator, "resources/InteractConfig.json");
-        errdefer interact_cfg.deinit(allocator);
-
         var buff_info_cfg = try loadConfig(MiscConfig.TextMapConfig, MiscConfig.parseTextMapConfig, allocator, "resources/BuffInfoConfig.json");
         errdefer buff_info_cfg.deinit(allocator);
         return .{
@@ -137,7 +134,6 @@ pub const GameConfigCache = struct {
             .tutorial_guide_config = tutorial_guide_cfg,
             .tutorial_config = tutorial_cfg,
             .player_icon_config = player_icon_cfg,
-            .interact_config = interact_cfg,
             .buff_info_config = buff_info_cfg,
         };
     }
@@ -161,7 +157,6 @@ pub const GameConfigCache = struct {
         self.tutorial_guide_config.deinit();
         self.tutorial_config.deinit();
         self.player_icon_config.deinit();
-        self.interact_config.deinit(global_main_allocator);
         self.buff_info_config.deinit(global_main_allocator);
     }
 };
@@ -170,28 +165,13 @@ pub var global_main_allocator: Allocator = undefined;
 pub var global_misc_defaults: MiscDefaults.MiscDefaults = undefined;
 pub fn initGameGlobals(main_allocator: Allocator) !void {
     global_main_allocator = main_allocator;
-    global_misc_defaults = try MiscDefaults.loadFromFile(main_allocator, "misc.json");
-    // propagate misc data to shared globals
-    Data.SkinList = global_misc_defaults.player.skins;
-    Data.PlayerOutfitList = global_misc_defaults.player.player_outfits;
-    // Inventory is intentionally disabled in this server flavor.
-    Data.ItemList = &.{};
-
-    // Apply misc-level enhanced avatar flags (if provided) to runtime list.
-    if (global_misc_defaults.enhanced_ids.len > 0) {
-        @memset(&Data.EnhanceAvatarID, 0);
-        var i: usize = 0;
-        for (global_misc_defaults.enhanced_ids) |id| {
-            if (i >= Data.EnhanceAvatarID.len) break;
-            Data.EnhanceAvatarID[i] = id;
-            i += 1;
-        }
-    }
-
-    // Apply theory craft settings: explicit max HP override for enemies.
-    Logic.FunMode().SetFunMode(global_misc_defaults.costom_battlemode.enabled);
-    Logic.FunMode().SetHp(global_misc_defaults.costom_battlemode.enemy_max_hp_override);
-
+    global_misc_defaults = MiscDefaults.loadFromFile(main_allocator, "misc.json") catch |err| switch (err) {
+        error.FileNotFound => try MiscDefaults.defaults(main_allocator),
+        else => blk: {
+            std.log.warn("failed to load misc.json ({s}), using defaults", .{@errorName(err)});
+            break :blk try MiscDefaults.defaults(main_allocator);
+        },
+    };
     global_game_config_cache = try GameConfigCache.init(main_allocator);
 
     const avatars = &global_game_config_cache.avatar_config.avatar_config.items;
@@ -213,10 +193,10 @@ pub fn deinitGameGlobals() void {
 }
 var game_config_mtime: i128 = 0;
 pub fn UpdateGameConfig() !void {
-    const stat = try std.fs.cwd().statFile("freesr-data.json");
+    const stat = try std.fs.cwd().statFile(gameConfigFilePath());
     if (stat.mtime > game_config_mtime) {
         global_game_config_cache.game_config.deinit();
-        global_game_config_cache.game_config = try loadGameConfigFromFreesr(global_main_allocator);
+        global_game_config_cache.game_config = try loadGameConfig(global_main_allocator);
         game_config_mtime = stat.mtime;
     }
 }
@@ -238,12 +218,4 @@ pub fn loadConfig(
 
     const root = json_tree.value;
     return try parseFn(root, allocator);
-}
-pub fn reloadGameConfig() !void {
-    // 先释放旧的 game_config
-    global_game_config_cache.game_config.deinit();
-
-    // 再重新加载 freesr-data
-    global_game_config_cache.game_config =
-        try loadGameConfigFromFreesr(global_main_allocator);
 }

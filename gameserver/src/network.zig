@@ -44,8 +44,8 @@ fn runSession(
     defer session_allocator.destroy(session);
 
     if (session.*.run()) |_| {
-        std.log.info("[GameServer] client from {} disconnected - server closing session", .{address});
+        std.log.info("client from {} disconnected", .{address});
     } else |err| {
-        std.log.err("[GameServer] session disconnected with an error: {}", .{err});
+        std.log.err("session disconnected with an error: {}", .{err});
     }
 }

@@ -103,7 +103,7 @@ pub fn onQueryGateway(req: *httpz.Request, res: *httpz.Response) !void {
 
     // Step 3: If still no URLs, show error message
     if (asset_bundle_url.len == 0) {
-        std.log.err("No suitable hotfix found for version: {s}. Please check your client version or contact https://discord.gg/reversedrooms", .{version});
+        std.log.err("No suitable hotfix found for version: {s}. Please check your client version or contact https://discord.gg/CastoricePS", .{version});
         // Use placeholder URLs to avoid crashes
         asset_bundle_url = "UNSUPPORTED_VERSION";
         ex_resource_url = "UNSUPPORTED_VERSION";

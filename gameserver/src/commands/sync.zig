@@ -13,9 +13,6 @@ const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
 
 pub fn syncItems(session: *Session, allocator: Allocator, equip_avatar: bool) !void {
-    ConfigManager.UpdateGameConfig() catch |err| {
-        std.log.err("Failed to reload freesr-data.json before sync: {any}", .{err});
-    };
     Uid.resetGlobalUidGens();
     var sync = protocol.PlayerSyncScNotify.init(allocator);
     const config = &ConfigManager.global_game_config_cache.game_config;
@@ -25,9 +22,9 @@ pub fn syncItems(session: *Session, allocator: Allocator, equip_avatar: bool) !v
             const lc = try AvatarManager.createEquipment(avatarConf.lightcone, dress_avatar_id);
             try sync.equipment_list.append(lc);
         }
-        for (avatarConf.relics.items, 0..) |input, slot| {
+        for (avatarConf.relics.items, 0..) |input, relic_idx| {
             if (input.id == 0) continue;
-            const r = try AvatarManager.createRelic(allocator, input, dress_avatar_id, @intCast(slot));
+            const r = try AvatarManager.createRelic(allocator, input, dress_avatar_id, relic_idx);
             try sync.relic_list.append(r);
         }
     }
@@ -41,7 +38,6 @@ pub fn onSyncAvatar(session: *Session, _: []const u8, allocator: Allocator) !voi
     Uid.resetGlobalUidGens();
     var sync = protocol.PlayerSyncScNotify.init(allocator);
     const config = &ConfigManager.global_game_config_cache.game_config;
-    const selection = AvatarManager.getMultiPathSelection(config);
     var char = protocol.AvatarSync.init(allocator);
     for (Data.AllAvatars) |id| {
         const avatar = try AvatarManager.createAllAvatar(allocator, id);
@@ -52,7 +48,6 @@ pub fn onSyncAvatar(session: *Session, _: []const u8, allocator: Allocator) !voi
         try char.avatar_path_data_info_list.append(avatar);
     }
     for (config.avatar_config.items) |avatarConf| {
-        if (!AvatarManager.shouldIncludeAvatarInList(avatarConf.id, selection)) continue;
         const avatar = try AvatarManager.createAvatar(allocator, avatarConf);
         try char.avatar_list.append(avatar);
     }
@@ -64,22 +59,9 @@ pub fn onSyncAvatar(session: *Session, _: []const u8, allocator: Allocator) !voi
     try session.send(CmdID.CmdPlayerSyncScNotify, sync);
 }
 
-//pub fn onSyncMultiPath(session: *Session, _: []const u8, allocator: Allocator) !void {
-//    var sync = protocol.PlayerSyncScNotify.init(allocator);
-//    const config = &ConfigManager.global_game_config_cache.game_config;
-//    const multis = try AvatarManager.createAllMultiPath(allocator, config);
-//    try sync.multi_path_avatar_info_list.appendSlice(multis.items);
-//    try session.send(CmdID.CmdPlayerSyncScNotify, sync);
-//}
-
 pub fn onGenerateAndSync(session: *Session, placeholder: []const u8, allocator: Allocator) !void {
     try commandhandler.sendMessage(session, "Sync items with config\n", allocator);
-
-    try ConfigManager.UpdateGameConfig();
     try syncItems(session, allocator, false);
     try syncItems(session, allocator, true);
     try onSyncAvatar(session, placeholder, allocator);
-    //try onSyncMultiPath(session, placeholder, allocator);
-
-    try commandhandler.sendMessage(session, "Sync completed. Reconnect if needed to fully refresh client state.", allocator);
 }

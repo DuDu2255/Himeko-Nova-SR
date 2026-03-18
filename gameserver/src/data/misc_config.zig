@@ -62,27 +62,6 @@ pub const PlayerIconConfig = struct {
     }
 };
 
-pub const InteractEntry = struct {
-    interact_id: u32,
-    src_state: ?[]u8 = null,
-    target_state: ?[]u8 = null,
-    pub fn deinit(self: *InteractEntry, allocator: Allocator) void {
-        if (self.src_state) |s| allocator.free(s);
-        if (self.target_state) |t| allocator.free(t);
-    }
-};
-
-pub const InteractConfig = struct {
-    interact_config: ArrayList(InteractEntry),
-    pub fn deinit(self: *InteractConfig, allocator: Allocator) void {
-        // free each inner string then deinit list
-        for (self.interact_config.items) |*e| {
-            e.deinit(allocator);
-        }
-        self.interact_config.deinit();
-    }
-};
-
 pub const MainMissionConfig = struct {
     main_mission_config: ArrayList(MainMission),
     pub fn deinit(self: *MainMissionConfig) void {
@@ -172,34 +151,6 @@ pub fn parsePlayerIconConfig(root: std.json.Value, allocator: Allocator) anyerro
     return PlayerIconConfig{
         .player_icon_config = player_icon_config,
     };
-}
-
-pub fn parseInteractConfig(root: std.json.Value, allocator: Allocator) anyerror!InteractConfig {
-    var interact_config = ArrayList(InteractEntry).init(allocator);
-    // InteractConfig.json is an array at root
-    for (root.array.items) |entry| {
-        const id_val = entry.object.get("InteractID") orelse continue;
-        const interact_id: u32 = @intCast(id_val.integer);
-
-        var src: ?[]u8 = null;
-        if (entry.object.get("SrcState")) |v| {
-            if (v != .null) {
-                const s = v.string;
-                src = try allocator.dupe(u8, s);
-            }
-        }
-
-        var tgt: ?[]u8 = null;
-        if (entry.object.get("TargetState")) |v| {
-            if (v != .null) {
-                const s = v.string;
-                tgt = try allocator.dupe(u8, s);
-            }
-        }
-
-        try interact_config.append(InteractEntry{ .interact_id = interact_id, .src_state = src, .target_state = tgt });
-    }
-    return InteractConfig{ .interact_config = interact_config };
 }
 
 pub fn parseMainMissionConfig(root: std.json.Value, allocator: Allocator) anyerror!MainMissionConfig {
