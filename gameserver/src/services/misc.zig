@@ -2,6 +2,8 @@ const std = @import("std");
 const protocol = @import("protocol");
 const Session = @import("../Session.zig");
 const Packet = @import("../Packet.zig");
+const SyncCommand = @import("../commands/sync.zig");
+const ConfigManager = @import("../manager/config_mgr.zig");
 
 const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
@@ -43,6 +45,13 @@ fn buildLuaPayload(allocator: Allocator, pending_opt: ?[]const u8, include_starl
 pub fn onPlayerHeartBeat(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.PlayerHeartBeatCsReq, allocator);
     defer req.deinit();
+
+    try ConfigManager.UpdateGameConfig();
+    const current_mtime = ConfigManager.getGameConfigMtime();
+    if (current_mtime > session.last_seen_game_config_mtime) {
+        session.last_seen_game_config_mtime = current_mtime;
+        try SyncCommand.syncFromConfigUpdate(session, allocator);
+    }
 
     const now_ms: u64 = @intCast(std.time.milliTimestamp());
     const include_starlite = (session.last_starlite_sent_ms == 0) or (now_ms - session.last_starlite_sent_ms >= starlite_interval_ms);

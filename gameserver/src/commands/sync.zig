@@ -12,7 +12,7 @@ const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
 
-pub fn syncItems(session: *Session, allocator: Allocator, equip_avatar: bool) !void {
+fn syncItemsInternal(session: *Session, allocator: Allocator, equip_avatar: bool) !void {
     Uid.resetGlobalUidGens();
     var sync = protocol.PlayerSyncScNotify.init(allocator);
     const config = &ConfigManager.global_game_config_cache.game_config;
@@ -29,12 +29,17 @@ pub fn syncItems(session: *Session, allocator: Allocator, equip_avatar: bool) !v
         }
     }
     if (!equip_avatar) {
-        try ConfigManager.UpdateGameConfig();
         Uid.updateInitialUid();
     }
     try session.send(CmdID.CmdPlayerSyncScNotify, sync);
 }
+
+pub fn syncItems(session: *Session, allocator: Allocator, equip_avatar: bool) !void {
+    try ConfigManager.UpdateGameConfig();
+    try syncItemsInternal(session, allocator, equip_avatar);
+}
 pub fn onSyncAvatar(session: *Session, _: []const u8, allocator: Allocator) !void {
+    try ConfigManager.UpdateGameConfig();
     Uid.resetGlobalUidGens();
     var sync = protocol.PlayerSyncScNotify.init(allocator);
     const config = &ConfigManager.global_game_config_cache.game_config;
@@ -59,9 +64,15 @@ pub fn onSyncAvatar(session: *Session, _: []const u8, allocator: Allocator) !voi
     try session.send(CmdID.CmdPlayerSyncScNotify, sync);
 }
 
+pub fn syncFromConfigUpdate(session: *Session, allocator: Allocator) !void {
+    try ConfigManager.UpdateGameConfig();
+    try syncItemsInternal(session, allocator, false);
+    try syncItemsInternal(session, allocator, true);
+    try onSyncAvatar(session, "", allocator);
+}
+
 pub fn onGenerateAndSync(session: *Session, placeholder: []const u8, allocator: Allocator) !void {
     try commandhandler.sendMessage(session, "Sync items with config\n", allocator);
-    try syncItems(session, allocator, false);
-    try syncItems(session, allocator, true);
-    try onSyncAvatar(session, placeholder, allocator);
+    _ = placeholder;
+    try syncFromConfigUpdate(session, allocator);
 }

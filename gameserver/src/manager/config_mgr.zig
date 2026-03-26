@@ -172,7 +172,9 @@ pub fn initGameGlobals(main_allocator: Allocator) !void {
             break :blk try MiscDefaults.defaults(main_allocator);
         },
     };
+    errdefer global_misc_defaults.deinit(main_allocator);
     global_game_config_cache = try GameConfigCache.init(main_allocator);
+    game_config_mtime = (try std.fs.cwd().statFile(gameConfigFilePath())).mtime;
 
     const avatars = &global_game_config_cache.avatar_config.avatar_config.items;
     var all = ArrayList(u32).init(main_allocator);
@@ -192,6 +194,11 @@ pub fn deinitGameGlobals() void {
     global_game_config_cache.deinit();
 }
 var game_config_mtime: i128 = 0;
+
+pub fn getGameConfigMtime() i128 {
+    return game_config_mtime;
+}
+
 pub fn UpdateGameConfig() !void {
     const stat = try std.fs.cwd().statFile(gameConfigFilePath());
     if (stat.mtime > game_config_mtime) {

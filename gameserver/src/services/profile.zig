@@ -9,6 +9,7 @@ const Uid = @import("../utils/uid.zig");
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
 const CmdID = protocol.CmdID;
+const DefaultHeadIconId: u32 = 200139;
 
 // can change these id here for initial display
 const SupportAvatar = [_]u32{
@@ -56,6 +57,7 @@ pub fn onGetPlayerBoardData(session: *Session, _: *const Packet, allocator: Allo
     rsp.retcode = 0;
     try rsp.unlocked_personal_card_list.appendSlice(&Data.OwnedPersonalCardSkin);
     rsp.current_personal_card_id = 253001;
+    rsp.current_head_icon_id = DefaultHeadIconId;
     rsp.head_frame_info = .{
         .head_frame_expire_time = 4294967295,
         .head_frame_item_id = 226004,
@@ -159,6 +161,7 @@ pub fn onGetPlayerDetailInfo(session: *Session, packet: *const Packet, allocator
     detail.uid = req.uid;
     detail.world_level = 6;
     detail.level = 70;
+    detail.head_icon = DefaultHeadIconId;
     rsp.detail_info = detail;
     try session.send(CmdID.CmdGetPlayerDetailInfoScRsp, rsp);
 }
