@@ -22,7 +22,9 @@ protocol/                # 协议文件 (Proto)
 - 发布构建：`zig build -Doptimize=ReleaseSafe`
 
 ## 获取游戏客户端
-[4.1.5X 客户端下载链接](https://gofile.io/d/whpait)
+Get 4.1.5X client:
+[Gofile 1](https://gofile.io/d/gx33Tr), [Gofile 2](https://gofile.io/d/BBWioN),
+[MEGA](https://mega.nz/file/rQ9AkTyQ#B3xGf5Jnh0UVIMFkoLlXAPxKq7M1KIgG3sQykEKgpz0), [Filen](https://app.filen.io/#/d/4531a66b-ae21-4101-8ba9-8f4a79d6253f%2377714c6738454c506e4370394f6e744b314e52706844414133774a5055694d79) 
 
 ## 使用指南（Android）
 注意：此操作将生成 **Android ELF** 可执行文件
