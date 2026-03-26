@@ -1,5 +1,5 @@
 # CastoricePS
-
+[CN](README_CN.md)
 - Discord：`Discord.gg/CastoricePS`
 - Srtools：`https://srtools.neonteam.dev/`
 
