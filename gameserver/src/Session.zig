@@ -3,6 +3,7 @@ const protocol = @import("protocol");
 const handlers = @import("handlers.zig");
 const Packet = @import("Packet.zig");
 const ConfigManager = @import("../src/manager/config_mgr.zig");
+const PlayerState = @import("player_state.zig").PlayerState;
 
 const Allocator = std.mem.Allocator;
 const Stream = std.net.Stream;
@@ -11,6 +12,7 @@ const Address = std.net.Address;
 const Self = @This();
 const log = std.log.scoped(.session);
 
+player_state: ?PlayerState = null,
 address: Address,
 stream: Stream,
 allocator: Allocator,
@@ -27,6 +29,7 @@ pub fn init(
     game_config_cache: *ConfigManager.GameConfigCache,
 ) Self {
     return .{
+        .player_state = null,
         .address = address,
         .stream = stream,
         .allocator = session_allocator,
@@ -40,6 +43,10 @@ pub fn init(
 pub fn run(self: *Self) !void {
     defer self.stream.close();
     defer {
+        if (self.player_state) |*state| {
+            state.deinit();
+            self.player_state = null;
+        }
         if (self.pending_lua_script) |buf| {
             self.allocator.free(buf);
             self.pending_lua_script = null;

@@ -61,6 +61,7 @@ pub fn loadFromFreesr(allocator: Allocator) !GameConfig {
                 .id = avatar_id,
                 .hp = hp_val,
                 .sp = sp_cur_val,
+                .sp_max = sp_max_val,
                 .level = level,
                 .promotion = promotion,
                 .rank = rank,

@@ -17,5 +17,5 @@ setTextComponent(
 
 setTextComponent(
     "VersionText",
-    "<color=#A675FF>HyacineLover | CastoricePS</color>"
+    "<color=#A675FF>HyacineLover | Based On Evanescia-sr</color>"
 )

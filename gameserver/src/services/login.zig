@@ -3,6 +3,7 @@ const protocol = @import("protocol");
 const Session = @import("../Session.zig");
 const Packet = @import("../Packet.zig");
 const Data = @import("../data.zig");
+const PlayerStateMod = @import("../player_state.zig");
 const LineupService = @import("./lineup.zig");
 const LineupManager = @import("../manager/lineup_mgr.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
@@ -32,24 +33,27 @@ pub fn onPlayerGetToken(session: *Session, _: *const Packet, allocator: Allocato
 pub fn onPlayerLogin(session: *Session, packet: *const Packet, allocator: Allocator) !void {
     const req = try packet.getProto(protocol.PlayerLoginCsReq, allocator);
     defer req.deinit();
+    const uid: u32 = 1;
+
+    session.player_state = try PlayerStateMod.loadOrCreate(session.allocator, uid);
     LineupService.ensureLeaderDefault();
     if (ConfigManager.global_misc_defaults.avatar.lineup.len != 0) {
         try LineupManager.getSelectedAvatarID(allocator, ConfigManager.global_misc_defaults.avatar.lineup);
     }
 
     var basic_info = protocol.PlayerBasicInfo.init(allocator);
-    basic_info.stamina = 300;
-    basic_info.level = 70;
+    basic_info.stamina = session.player_state.?.stamina;
+    basic_info.level = session.player_state.?.level;
     basic_info.nickname = .{ .Const = "CastoricePS" };
-    basic_info.world_level = 6;
-    basic_info.mcoin = 99999990;
-    basic_info.hcoin = 99999990; //Jade
-    basic_info.scoin = 99999990; //Money
+    basic_info.world_level = session.player_state.?.world_level;
+    basic_info.mcoin = session.player_state.?.mcoin;
+    basic_info.hcoin = session.player_state.?.hcoin;
+    basic_info.scoin = session.player_state.?.scoin;
 
     var rsp = protocol.PlayerLoginScRsp.init(allocator);
     rsp.retcode = 0;
     rsp.login_random = req.login_random;
-    rsp.stamina = 300;
+    rsp.stamina = session.player_state.?.stamina;
     rsp.basic_info = basic_info;
 
     try session.send(CmdID.CmdPlayerLoginScRsp, rsp);
