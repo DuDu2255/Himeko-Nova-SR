@@ -204,22 +204,13 @@ pub fn ReplaceGameConfig(next: GameConfig.GameConfig) void {
     global_game_config_cache.game_config = next;
 }
 
-/// `freesr-data.json` wins when present; otherwise fall back to the server's
-/// own `config.json`. Both lower into the same `GameConfig`.
 pub fn loadGameConfig(allocator: Allocator) !GameConfig.GameConfig {
-    if (std.fs.cwd().access(FreesrConfig.FILENAME, .{})) |_| {
-        return loadConfig(
-            GameConfig.GameConfig,
-            FreesrConfig.parseConfig,
-            allocator,
-            FreesrConfig.FILENAME,
-        ) catch |err| {
-            std.log.err("failed to parse {s}: {}; falling back to config.json", .{ FreesrConfig.FILENAME, err });
-            return loadConfig(GameConfig.GameConfig, GameConfig.parseConfig, allocator, "config.json");
-        };
-    } else |_| {}
-
-    return loadConfig(GameConfig.GameConfig, GameConfig.parseConfig, allocator, "config.json");
+    return loadConfig(
+        GameConfig.GameConfig,
+        FreesrConfig.parseConfig,
+        allocator,
+        FreesrConfig.FILENAME,
+    );
 }
 pub fn loadConfig(
     comptime ConfigType: type,

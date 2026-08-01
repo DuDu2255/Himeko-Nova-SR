@@ -36,15 +36,10 @@ retail client uses). Make sure UDP `23301` is not blocked by your firewall.
 ## Configuration
 
 Your characters, their gear and the test battle come from `freesr-data.json`,
-which ships with the repo. Delete it and the server falls back to the original
-`config.json` instead:
+the community/SRTools format also used by RobinSR, March7thHoney and freesr.
+One ships with the repo; replace it with your own export, or sync from SRTools.
 
-| File | Format |
-|---|---|
-| `freesr-data.json` | The community/SRTools format, also used by RobinSR, March7thHoney and freesr. **Used by default.** |
-| `config.json` | This server's original format (relics as `id,level,main,count,stat:cnt:step,...` strings) |
-
-Reload either one in-game with `/sync`.
+Reload it in-game with `/sync`.
 
 ### SRTools
 

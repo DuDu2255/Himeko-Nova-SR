@@ -69,15 +69,27 @@ pub fn createAvatarPathData(
     }
     avatar.path_equipment_id = Uid.nextGlobalId();
     avatar.equip_relic_list = ArrayList(protocol.EquipRelic).init(allocator);
-    for (0..6) |i| {
+    // Unique ids are not stored: this replays the same counter sequence that
+    // syncItems uses to create the items, so it has to consume exactly one id
+    // per relic that actually exists. A fixed count of 6 desyncs the counter
+    // for every following avatar as soon as one has fewer (freesr-data.json
+    // routinely does). The slot comes from the relic id rather than the
+    // position, because freesr lists relics in arbitrary order.
+    for (avatarConf.relics.items) |relicConf| {
         try avatar.equip_relic_list.append(.{
             .relic_unique_id = Uid.nextGlobalId(),
-            .type = @intCast(i),
+            .type = relicSlot(relicConf.id),
         });
     }
     try createSkillTree(avatar.avatar_id, &avatar.avatar_path_skill_tree);
     return avatar;
 }
+/// Relic ids end in their slot number (1..6); EquipRelic.type is 0-based.
+fn relicSlot(relic_id: u32) u32 {
+    const digit = relic_id % 10;
+    return if (digit >= 1 and digit <= 6) digit - 1 else 0;
+}
+
 pub fn createAllAvatarPathData(
     allocator: Allocator,
     Avatar_id: u32,

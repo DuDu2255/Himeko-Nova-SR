@@ -7,6 +7,7 @@ const LineupManager = @import("../manager/lineup_mgr.zig");
 const Sync = @import("../commands/sync.zig");
 const AvatarManager = @import("../manager/avatar_mgr.zig");
 const ConfigManager = @import("../manager/config_mgr.zig");
+const Uid = @import("../utils/uid.zig");
 
 const ArrayList = std.ArrayList;
 const Allocator = std.mem.Allocator;
@@ -15,6 +16,11 @@ const CmdID = protocol.CmdID;
 const config = &ConfigManager.global_game_config_cache.game_config;
 
 pub fn onGetBag(session: *Session, _: *const Packet, allocator: Allocator) !void {
+    // Item unique ids are replayed from this counter rather than stored, and
+    // onGetAvatarData resets it to 0 before referencing them. Reset here too,
+    // otherwise the ids only line up on the first login of a server run.
+    Uid.resetGlobalUidGen(0);
+
     var rsp = protocol.GetBagScRsp.init(allocator);
     rsp.equipment_list = ArrayList(protocol.Equipment).init(allocator);
     rsp.relic_list = ArrayList(protocol.Relic).init(allocator);
