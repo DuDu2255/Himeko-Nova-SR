@@ -1,0 +1,8 @@
+# Zig build artifacts
+.zig-cache/
+zig-cache/
+zig-out/
+
+# Runtime state
+persistent
+*.log

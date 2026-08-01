@@ -1,0 +1,23 @@
+.{
+    .name = .gameserver,
+    .fingerprint = 0xe26640e562392392,
+    .version = "0.0.0",
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .protocol = .{
+            .path = "../protocol",
+        },
+        .httpz = .{
+            .url = "https://github.com/karlseguin/http.zig/archive/ef50c6878c3c512786e3311df657eb425b87ba91.tar.gz",
+            .hash = "1220cf9b8944def0907a43f208a004d9322c6f1972f86792d7f82527965020eb5fba",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}
