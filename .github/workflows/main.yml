@@ -1,115 +1,171 @@
 name: Build Himeko-NovaSR
 
+
 on:
   push:
     branches:
       - main
+
   workflow_dispatch:
+
 
 permissions:
   contents: write
 
+
+
 jobs:
+
 
   build:
 
+
     strategy:
+
+      fail-fast: false
+
       matrix:
+
         include:
 
           - name: linux-x64
-            os: ubuntu-latest
             target: x86_64-linux
 
           - name: linux-arm64
-            os: ubuntu-latest
             target: aarch64-linux
 
           - name: windows-x64
-            os: windows-latest
             target: x86_64-windows
 
 
-    runs-on: ${{ matrix.os }}
+
+    runs-on: ubuntu-latest
+
+
 
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v4
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
 
-    - name: Install Zig
-      uses: mlugg/setup-zig@v2
-      with:
-        version: 0.14.1
+
+      # 修复 Linux 大小写问题
+      - name: Fix filename case
+        run: |
+
+          git config core.ignorecase false
+
+          if [ -f gameserver/src/session.zig ]; then
+              mv gameserver/src/session.zig gameserver/src/Session.zig
+          fi
 
 
-    - name: Build
-      run: |
-        zig build -Dtarget=${{ matrix.target }} -Doptimize=ReleaseFast
+
+      - name: Install Zig
+        uses: mlugg/setup-zig@v2
+        with:
+          version: 0.14.1
 
 
-    - name: Prepare files
-      shell: bash
-      run: |
 
-        mkdir release
+      - name: Build
 
-        cp -r resources release/ || true
-        cp -r lua release/ || true
-        cp -r protocol release/ || true
-        cp -r dispatch release/ || true
-        cp -r gameserver release/ || true
-        cp -r launcher release/ || true
+        run: |
 
-        cp frecsr-data.json release/ || true
-        cp hotfix.json release/ || true
+          zig build \
+          -Dtarget=${{ matrix.target }} \
+          -Doptimize=ReleaseFast
 
 
-        if [ "${{ matrix.os }}" = "windows-latest" ]; then
-          cp zig-out/bin/*.exe release/ || true
-        else
+
+      - name: Prepare release
+
+        run: |
+
+          mkdir release
+
+
           cp zig-out/bin/* release/ || true
-        fi
 
 
-    - name: Compress
-      shell: bash
-      run: |
-
-        zip -r Himeko-NovaSR-${{ matrix.name }}.zip release
+          cp -r resources release/
+          cp -r lua release/
+          cp -r protocol release/
 
 
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Himeko-NovaSR-${{ matrix.name }}
-        path: Himeko-NovaSR-${{ matrix.name }}.zip
+          cp frecsr-data.json release/
+          cp hotfix.json release/
+
+
+
+          echo "Build:"
+          ls -la release
+
+
+
+      - name: Package
+
+        run: |
+
+          cd release
+
+          zip -r ../Himeko-NovaSR-${{ matrix.name }}.zip .
+
+
+
+      - name: Upload
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: Himeko-NovaSR-${{ matrix.name }}
+
+          path:
+
+            Himeko-NovaSR-${{ matrix.name }}.zip
+
+
 
 
 
   release:
 
+
     needs: build
+
     runs-on: ubuntu-latest
+
 
 
     steps:
 
-    - name: Download artifacts
-      uses: actions/download-artifact@v4
+
+      - name: Download
+
+        uses: actions/download-artifact@v4
 
 
-    - name: Create Release
-      uses: softprops/action-gh-release@v2
-      with:
 
-        tag_name: build-${{ github.run_number }}
+      - name: Release
 
-        name: Himeko-NovaSR Build ${{ github.run_number }}
+        uses: softprops/action-gh-release@v2
 
-        files: |
-          **/*.zip
+        with:
 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: build-${{ github.run_number }}
+
+          name: Himeko-NovaSR Build ${{ github.run_number }}
+
+          files: |
+
+            **/*.zip
+
+
+        env:
+
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
