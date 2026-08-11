@@ -1,0 +1,115 @@
+name: Build Himeko-NovaSR
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        include:
+
+          - name: linux-x64
+            os: ubuntu-latest
+            target: x86_64-linux
+
+          - name: linux-arm64
+            os: ubuntu-latest
+            target: aarch64-linux
+
+          - name: windows-x64
+            os: windows-latest
+            target: x86_64-windows
+
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+
+    - name: Install Zig
+      uses: mlugg/setup-zig@v2
+      with:
+        version: 0.14.1
+
+
+    - name: Build
+      run: |
+        zig build -Dtarget=${{ matrix.target }} -Doptimize=ReleaseFast
+
+
+    - name: Prepare files
+      shell: bash
+      run: |
+
+        mkdir release
+
+        cp -r resources release/ || true
+        cp -r lua release/ || true
+        cp -r protocol release/ || true
+        cp -r dispatch release/ || true
+        cp -r gameserver release/ || true
+        cp -r launcher release/ || true
+
+        cp frecsr-data.json release/ || true
+        cp hotfix.json release/ || true
+
+
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          cp zig-out/bin/*.exe release/ || true
+        else
+          cp zig-out/bin/* release/ || true
+        fi
+
+
+    - name: Compress
+      shell: bash
+      run: |
+
+        zip -r Himeko-NovaSR-${{ matrix.name }}.zip release
+
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Himeko-NovaSR-${{ matrix.name }}
+        path: Himeko-NovaSR-${{ matrix.name }}.zip
+
+
+
+  release:
+
+    needs: build
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v2
+      with:
+
+        tag_name: build-${{ github.run_number }}
+
+        name: Himeko-NovaSR Build ${{ github.run_number }}
+
+        files: |
+          **/*.zip
+
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
