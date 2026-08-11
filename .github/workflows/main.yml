@@ -34,18 +34,27 @@ jobs:
 
         include:
 
+
           - name: linux-x64
+
             os: ubuntu-latest
+
             target: x86_64-linux
 
 
+
           - name: linux-arm64
+
             os: ubuntu-latest
+
             target: aarch64-linux
 
 
+
           - name: windows-x64
+
             os: windows-latest
+
             target: x86_64-windows
 
 
@@ -57,7 +66,9 @@ jobs:
     steps:
 
 
+
       # 拉取源码
+
       - name: Checkout
 
         uses: actions/checkout@v4
@@ -68,7 +79,9 @@ jobs:
 
 
 
+
       # 安装 Zig
+
       - name: Setup Zig
 
         uses: mlugg/setup-zig@v2
@@ -79,45 +92,76 @@ jobs:
 
 
 
-      # 修复 Linux 大小写问题
+
+      # 修复 Zig 文件大小写
+
       - name: Fix Zig filename case
 
         shell: bash
 
         run: |
 
+
           echo "Checking Session.zig"
 
-          find gameserver/src -iname "*session*"
+
+          find gameserver/src -iname "*session*" || true
 
 
-          if [ -f gameserver/src/Session.zig ]; then
 
-              cp gameserver/src/Session.zig gameserver/src/session.zig
-
-          fi
+          if [ "${{ runner.os }}" = "Windows" ]; then
 
 
-          if [ -f gameserver/src/session.zig ]; then
+              echo "Windows detected"
 
-              echo "session.zig OK"
+              echo "Skip case rename"
+
 
           else
 
-              echo "session.zig missing"
+
+              if [ -f gameserver/src/Session.zig ] && [ ! -f gameserver/src/session.zig ]; then
+
+
+                  echo "Creating session.zig"
+
+
+                  cp gameserver/src/Session.zig gameserver/src/session.zig
+
+
+              fi
+
+
+          fi
+
+
+
+
+          if [ -f gameserver/src/Session.zig ] || [ -f gameserver/src/session.zig ]; then
+
+
+              echo "Session file OK"
+
+
+          else
+
+
+              echo "Session file missing"
 
               exit 1
 
+
           fi
+
+
 
 
 
       # 编译
+
       - name: Build
 
-
         shell: bash
-
 
         run: |
 
@@ -128,12 +172,13 @@ jobs:
 
 
 
-      # 整理文件
+
+
+      # 整理 Release
+
       - name: Prepare Release
 
-
         shell: bash
-
 
         run: |
 
@@ -142,13 +187,16 @@ jobs:
 
 
 
-          # 主程序
+          echo "Copy binary"
+
 
           cp -r zig-out/bin/* release/ || true
 
 
 
-          # 游戏资源
+
+          echo "Copy resources"
+
 
           cp -r resources release/ || true
 
@@ -158,11 +206,14 @@ jobs:
 
 
 
-          # 配置
+
+          echo "Copy configs"
+
 
           cp frecsr-data.json release/ || true
 
           cp hotfix.json release/ || true
+
 
 
 
@@ -173,13 +224,13 @@ jobs:
 
 
 
+
+
       # 压缩
 
       - name: Package
 
-
         shell: bash
-
 
         run: |
 
@@ -187,7 +238,8 @@ jobs:
           cd release
 
 
-          zip -r ../Himeko-NovaSR-${{ matrix.name }}.zip .
+          7z a ../Himeko-NovaSR-${{ matrix.name }}.zip *
+
 
 
 
@@ -197,13 +249,13 @@ jobs:
 
       - name: Upload Artifact
 
-
         uses: actions/upload-artifact@v4
-
 
         with:
 
+
           name: Himeko-NovaSR-${{ matrix.name }}
+
 
           path: Himeko-NovaSR-${{ matrix.name }}.zip
 
@@ -212,8 +264,9 @@ jobs:
 
 
 
-  release:
 
+
+  release:
 
 
     needs: build
