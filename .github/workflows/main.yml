@@ -2,14 +2,17 @@ name: Build Himeko-NovaSR
 
 
 on:
+
+  workflow_dispatch:
+
   push:
     branches:
       - main
 
-  workflow_dispatch:
 
 
 permissions:
+
   contents: write
 
 
@@ -18,6 +21,9 @@ jobs:
 
 
   build:
+
+
+    name: Build ${{ matrix.name }}
 
 
     strategy:
@@ -29,52 +35,92 @@ jobs:
         include:
 
           - name: linux-x64
+            os: ubuntu-latest
             target: x86_64-linux
 
+
           - name: linux-arm64
+            os: ubuntu-latest
             target: aarch64-linux
 
+
           - name: windows-x64
+            os: windows-latest
             target: x86_64-windows
 
 
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
 
 
     steps:
 
 
+      # 拉取源码
       - name: Checkout
+
         uses: actions/checkout@v4
+
         with:
+
           fetch-depth: 0
 
 
 
-      # 修复 Linux 大小写问题
-      - name: Fix filename case
-        run: |
+      # 安装 Zig
+      - name: Setup Zig
 
-          git config core.ignorecase false
-
-          if [ -f gameserver/src/session.zig ]; then
-              mv gameserver/src/session.zig gameserver/src/Session.zig
-          fi
-
-
-
-      - name: Install Zig
         uses: mlugg/setup-zig@v2
+
         with:
+
           version: 0.14.1
 
 
 
-      - name: Build
+      # 修复 Linux 大小写问题
+      - name: Fix Zig filename case
+
+        shell: bash
 
         run: |
+
+          echo "Checking Session.zig"
+
+          find gameserver/src -iname "*session*"
+
+
+          if [ -f gameserver/src/Session.zig ]; then
+
+              cp gameserver/src/Session.zig gameserver/src/session.zig
+
+          fi
+
+
+          if [ -f gameserver/src/session.zig ]; then
+
+              echo "session.zig OK"
+
+          else
+
+              echo "session.zig missing"
+
+              exit 1
+
+          fi
+
+
+
+      # 编译
+      - name: Build
+
+
+        shell: bash
+
+
+        run: |
+
 
           zig build \
           -Dtarget=${{ matrix.target }} \
@@ -82,52 +128,85 @@ jobs:
 
 
 
-      - name: Prepare release
+      # 整理文件
+      - name: Prepare Release
+
+
+        shell: bash
+
 
         run: |
+
 
           mkdir release
 
 
-          cp zig-out/bin/* release/ || true
 
+          # 主程序
 
-          cp -r resources release/
-          cp -r lua release/
-          cp -r protocol release/
-
-
-          cp frecsr-data.json release/
-          cp hotfix.json release/
+          cp -r zig-out/bin/* release/ || true
 
 
 
-          echo "Build:"
+          # 游戏资源
+
+          cp -r resources release/ || true
+
+          cp -r lua release/ || true
+
+          cp -r protocol release/ || true
+
+
+
+          # 配置
+
+          cp frecsr-data.json release/ || true
+
+          cp hotfix.json release/ || true
+
+
+
+          echo "Release files"
+
           ls -la release
 
 
 
+
+      # 压缩
+
       - name: Package
+
+
+        shell: bash
+
 
         run: |
 
+
           cd release
+
 
           zip -r ../Himeko-NovaSR-${{ matrix.name }}.zip .
 
 
 
-      - name: Upload
+
+
+      # 上传
+
+      - name: Upload Artifact
+
 
         uses: actions/upload-artifact@v4
+
 
         with:
 
           name: Himeko-NovaSR-${{ matrix.name }}
 
-          path:
+          path: Himeko-NovaSR-${{ matrix.name }}.zip
 
-            Himeko-NovaSR-${{ matrix.name }}.zip
 
 
 
@@ -136,7 +215,9 @@ jobs:
   release:
 
 
+
     needs: build
+
 
     runs-on: ubuntu-latest
 
@@ -145,27 +226,38 @@ jobs:
     steps:
 
 
-      - name: Download
+
+      - name: Download artifacts
 
         uses: actions/download-artifact@v4
 
 
 
-      - name: Release
+
+
+      - name: Create Release
+
 
         uses: softprops/action-gh-release@v2
 
+
         with:
+
 
           tag_name: build-${{ github.run_number }}
 
+
           name: Himeko-NovaSR Build ${{ github.run_number }}
 
+
           files: |
+
 
             **/*.zip
 
 
+
         env:
+
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
