@@ -1,316 +1,140 @@
 name: Build Himeko-NovaSR
 
-
 on:
-
   workflow_dispatch:
-
   push:
     branches:
       - main
 
-
-
 permissions:
-
   contents: write
 
-
-
 jobs:
-
-
   build:
-
-
     name: Build ${{ matrix.name }}
-
-
     strategy:
-
       fail-fast: false
-
       matrix:
-
         include:
-
-
           - name: linux-x64
-
             os: ubuntu-latest
-
-            target: x86_64-linux
-
-
-
+            target: x86_64-linux-musl
           - name: linux-arm64
-
             os: ubuntu-latest
-
-            target: aarch64-linux
-
-
-
+            target: aarch64-linux-musl
           - name: windows-x64
-
             os: windows-latest
-
             target: x86_64-windows
-
-
 
     runs-on: ${{ matrix.os }}
 
-
-
     steps:
-
-
-
-      # 拉取源码
-
       - name: Checkout
-
         uses: actions/checkout@v4
-
         with:
-
           fetch-depth: 0
 
-
-
-
-      # 安装 Zig
-
       - name: Setup Zig
-
         uses: mlugg/setup-zig@v2
-
         with:
-
           version: 0.14.1
 
-
-
-
-      # 修复 Zig 文件大小写
-
       - name: Fix Zig filename case
-
         shell: bash
-
         run: |
-
-
           echo "Checking Session.zig"
-
-
           find gameserver/src -iname "*session*" || true
-
-
-
           if [ "${{ runner.os }}" = "Windows" ]; then
-
-
-              echo "Windows detected"
-
-              echo "Skip case rename"
-
-
+            echo "Windows detected: Skip case rename"
           else
-
-
-              if [ -f gameserver/src/Session.zig ] && [ ! -f gameserver/src/session.zig ]; then
-
-
-                  echo "Creating session.zig"
-
-
-                  cp gameserver/src/Session.zig gameserver/src/session.zig
-
-
-              fi
-
-
+            if [ -f gameserver/src/Session.zig ] && [ ! -f gameserver/src/session.zig ]; then
+              echo "Creating session.zig"
+              cp gameserver/src/Session.zig gameserver/src/session.zig
+            fi
           fi
-
-
-
-
           if [ -f gameserver/src/Session.zig ] || [ -f gameserver/src/session.zig ]; then
-
-
-              echo "Session file OK"
-
-
+            echo "Session file OK"
           else
-
-
-              echo "Session file missing"
-
-              exit 1
-
-
+            echo "Session file missing"
+            exit 1
           fi
-
-
-
-
-
-      # 编译
 
       - name: Build
-
         shell: bash
-
         run: |
+          # ---- 不碰仓库源码：运行时给内存里的 build.zig 打静态链接补丁 ----
+          if [[ "${{ matrix.target }}" == *"-linux-musl" ]]; then
+            echo ">>> Linux musl target: patching build.zig in-memory"
+            cp build.zig build.zig.orig
 
+            # 在 b.installArtifact(exe); 前插入静态链接配置
+            # 兼容 Linux 上 GNU sed 与 macOS sed 的基本用法
+            sed -i.bak 's/b\.installArtifact(exe);/exe.linkage = .static;\n    exe.libc_static = true;\n    b.installArtifact(exe);/' build.zig
+
+            echo ">>> Patched build.zig (installArtifact context):"
+            grep -n -B1 -A4 "installArtifact" build.zig || true
+          fi
 
           zig build \
-          -Dtarget=${{ matrix.target }} \
-          -Doptimize=ReleaseFast
+            -Dtarget=${{ matrix.target }} \
+            -Doptimize=ReleaseFast
 
+          # 还原 build.zig（runner 是一次性的，但养成好习惯）
+          if [ -f build.zig.orig ]; then
+            mv build.zig.orig build.zig
+            rm -f build.zig.bak
+          fi
 
-
-
-
-      # 整理 Release
+      - name: Verify binary (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          cd zig-out/bin
+          ls -la
+          file *
+          echo "--- ldd (static => not a dynamic executable) ---"
+          ldd * || true
 
       - name: Prepare Release
-
         shell: bash
-
         run: |
-
-
           mkdir release
-
-
-
-          echo "Copy binary"
-
-
           cp -r zig-out/bin/* release/ || true
-
-
-
-
-          echo "Copy resources"
-
-
           cp -r resources release/ || true
-
           cp -r lua release/ || true
-
           cp -r protocol release/ || true
-
-
-
-
-          echo "Copy configs"
-
-
           cp frecsr-data.json release/ || true
-
           cp hotfix.json release/ || true
-
-
-
-
-          echo "Release files"
-
+          echo "Release files:"
           ls -la release
 
-
-
-
-
-
-      # 压缩
-
       - name: Package
-
         shell: bash
-
         run: |
-
-
           cd release
-
-
           7z a ../Himeko-NovaSR-${{ matrix.name }}.zip *
 
-
-
-
-
-
-      # 上传
-
       - name: Upload Artifact
-
         uses: actions/upload-artifact@v4
-
         with:
-
-
           name: Himeko-NovaSR-${{ matrix.name }}
-
-
           path: Himeko-NovaSR-${{ matrix.name }}.zip
 
-
-
-
-
-
-
-
   release:
-
-
     needs: build
-
-
     runs-on: ubuntu-latest
-
-
-
     steps:
-
-
-
       - name: Download artifacts
-
         uses: actions/download-artifact@v4
 
-
-
-
-
       - name: Create Release
-
-
         uses: softprops/action-gh-release@v2
-
-
         with:
-
-
           tag_name: build-${{ github.run_number }}
-
-
           name: Himeko-NovaSR Build ${{ github.run_number }}
-
-
           files: |
-
-
             **/*.zip
-
-
-
         env:
-
-
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
